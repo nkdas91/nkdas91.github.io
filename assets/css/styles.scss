@@ -1,0 +1,95 @@
+---
+---
+@import "minima";
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
+}
+.hero {
+  background-image: url(/assets/images/dark_mosaic.png);
+  margin-top: -15px;
+}
+.home-container {
+  //min-height: 100vh;
+
+
+  .social-links {
+    padding-left: 24px;
+  }
+
+  .user-interest {
+    text-decoration: none;
+
+    svg {
+      width: 0.5em;
+      height: 0.5em;
+      font-size: 100px;
+      fill: #FFF;
+      transition: .4s cubic-bezier(.4,0,.2,1);
+    }
+
+    h5 {
+      color: #FFF;
+      transition: .4s cubic-bezier(.4,0,.2,1);
+    }
+
+    &:hover {
+      & svg {
+        //font-size: 180px;
+        transform: rotate(360deg);
+        fill: #FF5F6D;
+      }
+      & h5 {
+        color: #FF5F6D;
+      }
+    }
+  }
+}
+
+.hello-header {
+  font-weight: 300;
+  line-height: 1.5;
+  //padding-left: 24px;
+  letter-spacing: 2px;
+  font-size: 2.3rem;
+}
+
+.site-name {
+  font-family: adventure, script;
+  letter-spacing: normal;
+  //color: rgb(255, 95, 109);
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+}
+
+.blog-container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.blog-title {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.sub-heading {
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
