@@ -34,8 +34,8 @@ and animations to Bootstrap components.
 
 <div class="m-shape-container shape-parent-bg-light mt-2 mb-4">
     <a href="https://materialstyle.github.io/"
-       class="btn btn-ms ripple btn-dark ripple text-white" role="button" style="width:200px;">
-        Material Style
+       class="btn btn-ms ripple btn-dark ripple text-white" role="button" style="width:250px;">
+        Check Material Style
     </a>
     <div class="angle-top-left"></div>
     <div class="angle-top-right"></div>
