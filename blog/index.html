@@ -9,7 +9,7 @@ title:  "Blogs"
 
             <ul class="list-group ml-0">
                 {%- for post in paginator.posts -%}
-                    <a href="{{ post.url | relative_url }}" class="list-group-item list-group-item-action border-0 pl-0">
+                    <a href="{{ post.url | relative_url }}" class="list-group-item list-group-item-action border-0">
                         <span class="list-item">
                             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
                             <span class="secondary-text text-grey-700">{{ post.date | date: date_format }}</span>

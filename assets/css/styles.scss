@@ -10,10 +10,19 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
 }
-.hero {
+
+.hero, #home-angle {
   background-image: url(/assets/images/dark_mosaic.png);
+}
+
+.hero {
   margin-top: -15px;
 }
+
+#home-angle {
+
+}
+
 .home-container {
   //min-height: 100vh;
 
