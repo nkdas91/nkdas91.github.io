@@ -6,3 +6,4 @@ permalink: /blog/:title
 url: https://neerajdas.com
 paginate: 5
 paginate_path: /blog/:num/
+title: Neeraj Das
