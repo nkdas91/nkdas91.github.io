@@ -35,7 +35,7 @@ src/Average.php
 ```php
 <?php declare(strict_types=1);
 
-final class Average
+class Average
 {
     private function ensureIsValidArrayOfIntegers(array $numbers): void
     {
@@ -64,7 +64,7 @@ Basic coventions for writing tests with PHPUnit:
 1. The tests for a class ```Class``` go into a class ```ClassTest```.
 2. ```ClassTest``` inherits (most of the time) from ```PHPUnit\Framework\TestCase```.
 3. The tests are public methods that are named ```test*```.
-4. Alternatively, you can use the ```@test``` annotation in a method’s docblock to mark it as a test method.
+4. Alternatively, we can use the ```@test``` annotation in a method’s docblock to mark it as a test method.
 5. Inside the test methods, assertion methods are used to assert that an actual value matches an expected value.
 
 To ensure that our class ```Average``` works, we need to create a test class ```AverageTest``` that extends ```PHPUnit\Framework\TestCase```.
@@ -76,6 +76,9 @@ use PHPUnit\Framework\TestCase;
 
 final class AverageTest extends TestCase
 {
+    /**
+     * Test for an Exception if invalid argument type is passed.
+     */
     public function testExceptionFromInvalidArgumentType(): void
     {
         $this->expectException(TypeError::class);
@@ -84,6 +87,9 @@ final class AverageTest extends TestCase
         $verage->getAverage('string');
     }
 
+    /**
+     * Test for an Exception if invalid argument is passed.
+     */
     public function testExceptionFromInvalidArgument(): void
     {
         $this->expectException(InvalidArgumentException::class);
@@ -92,6 +98,9 @@ final class AverageTest extends TestCase
         $average->getAverage([1, 'a', 3, 4, 5]);
     }
 
+    /**
+     * Test for an Error if an empty array is passed.
+     */
     public function testErrorFromEmptyArrayArgument(): void
     {
         $this->expectError();
@@ -108,7 +117,7 @@ final class AverageTest extends TestCase
 }
 ```
 ### Running our tests
-Running your tests is as simple as calling the phpunit executable and pointing it at your tests. 
+Running our tests is as simple as calling the phpunit executable and pointing it at our tests. 
 Here’s an example:
 
 ```
@@ -138,10 +147,10 @@ Examples:
 * Copying a specific known set of files 
 
 PHPUnit supports sharing the setup code. Before a test method is run, a template 
-method called ```setUp()``` is invoked. ```setUp()``` is where you create the objects against 
-which you will test. Once the test method has finished running, whether it succeeded 
+method called ```setUp()``` is invoked. ```setUp()``` is where we create the objects against 
+which we will test. Once the test method has finished running, whether it succeeded 
 or failed, another template method called ```tearDown()``` is invoked. ```tearDown()``` is where 
-you clean up the objects against which you tested.  
+we clean up the objects against which we tested.  
 
 In ```AverageTest.php```, it is tedious to instantiate ```Average``` class in each test case.
 So, we move it to ```setUp()``` and ```tearDown()```.
@@ -158,14 +167,23 @@ final class AverageTest extends TestCase
 {
     protected $average;
 
+    /**
+     * This function is invoked before each test function.
+     */
     protected function setUp(): void {
         $this->average = new Average();
     }
 
+    /**
+     * This function is invoked after each test function.
+     */
     protected function tearDown(): void {
         unset($this->average);
     }
 
+    /**
+     * Test for an Exception if invalid argument type is passed.
+     */
     public function testExceptionFromInvalidArgumentType(): void
     {
         $this->expectException(TypeError::class);
@@ -173,6 +191,9 @@ final class AverageTest extends TestCase
         $this->average->getAverage('string');
     }
 
+    /**
+     * Test for an Exception if invalid argument is passed.
+     */
     public function testExceptionFromInvalidArgument(): void
     {
         $this->expectException(InvalidArgumentException::class);
@@ -180,6 +201,9 @@ final class AverageTest extends TestCase
         $this->average->getAverage([1, 'a', 3, 4, 5]);
     }
 
+    /**
+     * Test for an Error if an empty array is passed.
+     */
     public function testErrorFromEmptyArrayArgument(): void
     {
         $this->expectError();
@@ -201,64 +225,22 @@ more data provider methods. The data provider method to be used is specified usi
 
 tests/AverageTest.php   
 ```php
-<?php declare(strict_types=1);
-use PHPUnit\Framework\TestCase;
-
-final class AverageTest extends TestCase
+/**
+ * @dataProvider averageProvider
+ */
+public function testGetAverageUsingDataProvider(int $a, int $b, float $expected): void
 {
-    protected $average;
+    $this->assertSame($expected, $this->average->getAverage([$a, $b]));
+}
 
-    protected function setUp(): void {
-        $this->average = new Average();
-    }
-
-    protected function tearDown(): void {
-        unset($this->average);
-    }
-
-    public function testExceptionFromInvalidArgumentType(): void
-    {
-        $this->expectException(TypeError::class);
-
-        $this->average->getAverage('string');
-    }
-
-    public function testExceptionFromInvalidArgument(): void
-    {
-        $this->expectException(InvalidArgumentException::class);
-
-        $this->average->getAverage([1, 'a', 3, 4, 5]);
-    }
-
-    public function testErrorFromEmptyArrayArgument(): void
-    {
-        $this->expectError();
-
-        $this->average->getAverage([]);
-    }
-
-    public function testGetAverage(): void
-    {
-        $this->assertEquals(3.0, $this->average->getAverage([1, 2, 3, 4, 5]));
-    }
-
-    /**
-     * @dataProvider averageProvider
-     */
-    public function testGetAverageUsingDataProvider(int $a, int $b, float $expected): void
-    {
-        $this->assertSame($expected, $this->average->getAverage([$a, $b]));
-    }
-
-    public function averageProvider(): array
-    {
-        return [
-            [1, 2, 1.5],
-            [3, 4, 3.5],
-            [4, 2, 3.0],
-            [4, 4, 4.0]
-        ];
-    }
+public function averageProvider(): array
+{
+    return [
+        [1, 2, 1.5],
+        [3, 4, 3.5],
+        [4, 2, 3.0],
+        [4, 4, 4.0]
+    ];
 }
 ```
 
@@ -277,7 +259,7 @@ implementations to return a value when called Using the ```will($this->returnVal
  or simply ```willReturn``` method.
 
 When the defaults used by the ```createStub``` and ```createMock``` methods do not match 
-your needs then you can use the ```getMockBuilder``` method to customize the test double 
+our needs then we can use the ```getMockBuilder``` method to customize the test double 
 generation.
 
 Please note that ```final```, ```private```, and ```static``` methods cannot be stubbed or mocked. 
@@ -367,7 +349,7 @@ public function logAverage(array $numbers, Logger $logger): void
 }
 ```
 
-Now lets Mock ```Logger``` and test if ```log``` method is called.
+Now let's Mock ```Logger``` and test if ```log``` method is called.
 
 tests/AverageTest.php
 ```php
