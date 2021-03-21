@@ -12,6 +12,14 @@ layout: default
                     </time>
                 </label>
                 <h1 class="blog-title m-0" itemprop="name headline">{{ page.title | escape }}</h1>
+                {%- if page.updated -%}
+                <label class="text-grey-700 mt-3"> Updated
+                    <time datetime="{{ page.updated | date_to_xmlschema }}" itemprop="dateUpdated">
+                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                        {{ page.updated | date: date_format }}
+                    </time>
+                </label>
+                {%- endif -%}
             </header>
 
             <div class="mb-5" itemprop="articleBody">

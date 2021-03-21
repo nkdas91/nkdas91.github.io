@@ -2,15 +2,17 @@
 layout: post
 title:  "Getting started with PHPUnit"
 date:   2020-08-18 18:24:32 +0530
+updated: 2021-03-21 18:24:32 +0530
 author: Neeraj Das
 categories: blog
 ---
-PHPUnit is a well-known testing framework for PHP. It uses assertions to verify that a specific 
-component or unit behaves as expected.  
+A unit test provides a strict, written contract that a piece of code must satisfy. 
+As a result, unit tests find problems early in the development cycle.
 
-The goal is to isolate each part of the program and verify that it is correct. A unit test provides 
-a strict, written contract that the piece of code must satisfy. As a result, unit tests find problems 
-early in the development cycle.  
+The goal is to isolate each part of the program and verify that it is correct.
+
+[PHPUnit][phpunit-link] is a well-known testing framework for PHP. It uses assertions to verify that a specific 
+component or unit behaves as expected.
 
 The purpose of this tutorial is to introduce you to the basics of PHPUnit.
 
@@ -19,9 +21,15 @@ Before we start writing our first unit test, we need to have PHPUnit installed. 
 process is documented at [https://phpunit.de/][phpunit-link].
 
 ### Writing our first test
+<div class="p-3 my-3 bg-indigo-50">
+Before we begin,<br>  
+Please download the example source code from <a href="">GitHub</a>.<br> 
+Run <b>composer install</b> in the root directory.<br>
+And create <b>env.php</b> file using <b>env.example.php</b>
+</div>
+
 To get started, we need something to test, so for the first example, I’ve written a simple 
-PHP class 
-```Average``` that calculates the average of an array of integers.
+PHP class ```Average``` that calculates the average of an array of integers.
 
 src/Average.php
 ```php
@@ -50,9 +58,16 @@ final class Average
         return array_sum($numbers) / count($numbers);
     }
 }
-```
+```  
 
-To ensure that our class ```Average``` works, we need to create a test class that extends ```PHPUnit\Framework\TestCase```.  
+Basic coventions for writing tests with PHPUnit:
+1. The tests for a class ```Class``` go into a class ```ClassTest```.
+2. ```ClassTest``` inherits (most of the time) from ```PHPUnit\Framework\TestCase```.
+3. The tests are public methods that are named ```test*```.
+4. Alternatively, you can use the ```@test``` annotation in a method’s docblock to mark it as a test method.
+5. Inside the test methods, assertion methods are used to assert that an actual value matches an expected value.
+
+To ensure that our class ```Average``` works, we need to create a test class ```AverageTest``` that extends ```PHPUnit\Framework\TestCase```.
 
 tests/AverageTest.php
 ```php
@@ -112,15 +127,26 @@ Time: 00:00.008, Memory: 4.00 MB
 OK (4 tests, 4 assertions)
 ```
 
-### Setup & Teardown
+### Fixtures (Setup & Teardown)
+The purpose of a fixture is to ensure that there is a well known and fixed environment 
+in which tests are run. This allows for tests to be repeatable, which is one of the key 
+features of an effective test framework.
 
-In ```AverageTest.php```, it is tedious to instantiate ```Average``` class in each test case.  
+Examples:
+* Loading a database with a specific known set of data.
+* Preparation of input data as well as set-up and creation of mock objects.
+* Copying a specific known set of files 
 
 PHPUnit supports sharing the setup code. Before a test method is run, a template 
 method called ```setUp()``` is invoked. ```setUp()``` is where you create the objects against 
 which you will test. Once the test method has finished running, whether it succeeded 
 or failed, another template method called ```tearDown()``` is invoked. ```tearDown()``` is where 
 you clean up the objects against which you tested.  
+
+In ```AverageTest.php```, it is tedious to instantiate ```Average``` class in each test case.
+So, we move it to ```setUp()``` and ```tearDown()```.
+
+<div class="p-3 my-3 bg-indigo-50">Also check tests/UserTest.php for another example.</div>
 
 tests/AverageTest.php
 
@@ -233,6 +259,131 @@ final class AverageTest extends TestCase
             [4, 4, 4.0]
         ];
     }
+}
+```
+
+### Test Doubles
+When we are writing a test in which we cannot (or chose not to) use a real depended-on 
+component (DOC), we can replace it with a Test Double. The Test Double doesn’t have to 
+behave exactly like the real DOC; it merely has to provide the same API as the real one 
+so that the system under test (SUT) thinks it is the real one!
+
+The ```createStub``` and ```createMock``` methods can be used in a test to 
+automatically generate an object that can act as a test double.
+
+By default, all methods of the original class are replaced with a dummy implementation 
+that returns null (without calling the original method). We can configure these dummy 
+implementations to return a value when called Using the ```will($this->returnValue())``` 
+ or simply ```willReturn``` method.
+
+When the defaults used by the ```createStub``` and ```createMock``` methods do not match 
+your needs then you can use the ```getMockBuilder``` method to customize the test double 
+generation.
+
+Please note that ```final```, ```private```, and ```static``` methods cannot be stubbed or mocked. 
+
+#### Stubs
+The practice of replacing an object with a test double that (optionally) returns configured 
+return values is referred to as stubbing. You can use a stub to replace a real component 
+on which the SUT depends so that the test has a control point for the indirect inputs of the SUT.
+
+Let's stub ```ensureIsValidArrayOfIntegers``` method and skip validation.
+
+tests/AverageTest.php
+```php
+public function testStub(): void
+{
+    /**
+     * createStub stubs all the methods in the stubbed class.
+     * Here, ensureIsValidArrayOfIntegers and getAverage methods 
+     * won't be invoked from the Original Average class.
+     */
+    $stub = $this->createStub(Average::class);
+
+    /**
+     * Since we didn't specify the return values,
+     * default values will be returned based on the functions return type.
+     *
+     * Return type of ensureIsValidArrayOfIntegers is void. So, nothing is returned.
+     * Return type of getAverage is float. So, 0.0 is returned
+     */
+    $this->assertEmpty($stub->ensureIsValidArrayOfIntegers([1, 3.5, 3]));
+    $this->assertEquals(0.0, round($stub->getAverage([1, 3.5, 3]), 2));
+}
+``` 
+
+tests/AverageTest.php
+```php
+public function testStubUsingMockBuilder(): void
+{
+    /**
+     * Here we used getMockBuilder to stub just one method: ensureIsValidArrayOfIntegers.
+     * This method won't be invoked.
+     */
+    $stub = $this->getMockBuilder(Average::class)
+        ->setMethods(['ensureIsValidArrayOfIntegers'])
+        ->getMock();
+
+    $this->assertEmpty($stub->ensureIsValidArrayOfIntegers([1, 3.5, 3]));
+
+    /**
+     * Since, ensureIsValidArrayOfIntegers method is stubbed,
+     * we are able to get an average even if we don't pass a valid array of Integers.
+     *
+     * getAverage method of the original Average class is invoked.
+     */
+    $this->assertEquals(2.5, round($stub->getAverage([1, 3.5, 3]), 2));
+}
+```
+
+#### Mock Objects
+The practice of replacing an object with a test double that verifies expectations, for instance 
+asserting that a method has been called, is referred to as mocking.
+
+Let's create a class ```Logger``` that logs a string.
+
+src/Logger.php
+```php
+<?php declare(strict_types=1);
+
+class Logger
+{
+    public function log($text): void
+    {
+        echo $text;
+    }
+}
+```
+
+We will add a method to the ```Average``` class that uses Logger's log method to log average.
+
+src/Average.php
+```php
+public function logAverage(array $numbers, Logger $logger): void
+{
+    $this->ensureIsValidArrayOfIntegers($numbers);
+
+    $logger->log(array_sum($numbers) / count($numbers));
+}
+```
+
+Now lets Mock ```Logger``` and test if ```log``` method is called.
+
+tests/AverageTest.php
+```php
+public function testMock(): void
+{
+    /**
+     * Here, we are mocking log method of Logger class,
+     * just to ensure that it is called with the specified arguments.
+     * The Average class does not need to verify what happens within the Logger log method.
+     */
+    $mockObject = $this->createMock(Logger::class);
+    $mockObject->expects($this->once())
+        ->method('log')
+        ->with(2.0);
+
+    $this->average->logAverage([1, 2, 3], $mockObject);
 }
 ```
 
