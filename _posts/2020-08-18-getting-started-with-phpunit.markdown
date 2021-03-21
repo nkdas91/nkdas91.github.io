@@ -23,9 +23,11 @@ process is documented at [https://phpunit.de/][phpunit-link].
 ### Writing our first test
 <div class="p-3 my-3 bg-indigo-50">
 Before we begin,<br>  
-Please download the example source code from <a href="">GitHub</a>.<br> 
-Run <b>composer install</b> in the root directory.<br>
-And create <b>env.php</b> file using <b>env.example.php</b>
+Please Clone / Download the example code from <a target="_blank" href="https://github.com/nkdas91/Getting-started-with-PHPUnit">GitHub</a>.<br>
+Copy <b>env.example.php</b> to <b>env.php</b> and replace default values.<br>
+Create a DB <b>phpunit</b> and import <b>sql/phpunit.sql</b>.<br>
+Update <b>ABSOLUTE_PATH_TO_DOCUMENT_ROOT</b> in <b>phpunit.xml</b>.<br>
+Run <b>composer install</b> in the root directory.
 </div>
 
 To get started, we need something to test, so for the first example, I’ve written a simple 
@@ -388,6 +390,11 @@ phpunit.xml
          failOnRisky="true"
          failOnWarning="true"
          verbose="true">
+         
+    <php>
+        <server name="DOCUMENT_ROOT" value="ABSOLUTE_PATH_TO_DOCUMENT_ROOT"/>
+    </php>
+             
     <testsuites>
         <testsuite name="default">
             <directory suffix="Test.php">tests</directory>
@@ -422,6 +429,11 @@ To generate code coverage, update ```phpunit.xml``` as follows:
          failOnRisky="true"
          failOnWarning="true"
          verbose="true">
+         
+    <php>
+        <server name="DOCUMENT_ROOT" value="ABSOLUTE_PATH_TO_DOCUMENT_ROOT"/>
+    </php>
+             
     <coverage cacheDirectory=".phpunit.cache/code-coverage">
         <include>
             <directory suffix=".php">src</directory>
