@@ -101,11 +101,11 @@ final class AverageTest extends TestCase
     }
 
     /**
-     * Test for an Error if an empty array is passed.
+     * Test for an Exception if an empty array is passed.
      */
-    public function testErrorFromEmptyArrayArgument(): void
+    public function testExceptionFromEmptyArrayArgument(): void
     {
-        $this->expectError();
+        $this->expectException(DivisionByZeroError::class);
         
         $average = new Average();
         $average->getAverage([]);
