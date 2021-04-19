@@ -14,12 +14,12 @@ The goal is to isolate each part of the program and verify that it is correct.
 [PHPUnit][phpunit-link] is a well-known testing framework for PHP. It uses assertions to verify that a specific 
 component or unit behaves as expected.
 
-The purpose of this tutorial is to introduce you to the basics of PHPUnit.
-
+The purpose of this tutorial is to introduce you to the basics of PHPUnit.  
+<br/>
 ### Installation
 Before we start writing our first unit test, we need to have PHPUnit installed. The installation 
-process is documented at [https://phpunit.de/][phpunit-link].
-
+process is documented at [https://phpunit.de/][phpunit-link].  
+<br/>
 ### Writing our first test
 <div class="p-3 my-3 bg-blue-50">
 Before we begin,<br>  
@@ -118,6 +118,7 @@ final class AverageTest extends TestCase
     }
 }
 ```
+<br/>
 ### Running our tests
 Running our tests is as simple as calling the phpunit executable and pointing it at our tests. 
 Here’s an example:
@@ -137,7 +138,7 @@ Time: 00:00.008, Memory: 4.00 MB
 
 OK (4 tests, 4 assertions)
 ```
-
+<br/>
 ### Fixtures (Setup & Teardown)
 The purpose of a fixture is to ensure that there is a well known and fixed environment 
 in which tests are run. This allows for tests to be repeatable, which is one of the key 
@@ -219,7 +220,7 @@ final class AverageTest extends TestCase
     }
 }
 ```
-
+<br/>
 ### Data Providers
 A test method can accept arbitrary arguments. These arguments are to be provided by one or 
 more data provider methods. The data provider method to be used is specified using the 
@@ -245,7 +246,7 @@ public function averageProvider(): array
     ];
 }
 ```
-
+<br/>
 ### Test Doubles
 When we are writing a test in which we cannot (or chose not to) use a real depended-on 
 component (DOC), we can replace it with a Test Double. The Test Double doesn’t have to 
@@ -370,7 +371,7 @@ public function testMock(): void
     $this->average->logAverage([1, 2, 3], $mockObject);
 }
 ```
-
+<br/>
 ### XML Configuration
 ```phpunit.xml``` file can be used to compose a test suite and specify other configurations.
 The following is an xml configuration that will add all ```*Test``` classes that are 
@@ -408,7 +409,7 @@ running our tests
 ```
 ./vendor/bin/phpunit
 ```
-
+<br/>
 ### Code Coverage
 Code coverage is a measure used to describe the degree to which the source code of a 
 program is tested by a particular test suite. A program with high code coverage has 
