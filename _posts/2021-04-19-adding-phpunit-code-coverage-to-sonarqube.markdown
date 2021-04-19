@@ -74,4 +74,8 @@ sonar.coverage.exclusions = files excluded from code coverage
 
 Run Sonar scanner
 
+<br/>
+### Viewing coverage in a browser
+Open ```index.html``` from the path that we specified in ```logging.testdoxHtml```.
+
 [xdebug-link]: https://xdebug.org/
