@@ -56,15 +56,34 @@ body {
 .hello-header {
   font-weight: 300;
   line-height: 1.5;
-  //padding-left: 24px;
   letter-spacing: 2px;
   font-size: 2.3rem;
+}
+
+@keyframes gradient-data-v-fb6d3afe {
+  0% {
+    background-position: 0 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  to {
+    background-position: 0 50%
+  }
 }
 
 .site-name {
   font-family: adventure, script;
   letter-spacing: normal;
-  //color: rgb(255, 95, 109);
+  font-weight: 600;
+
+  background: linear-gradient(141.27deg,#ff904e -4.24%,#ff5982 21.25%,#ec68f4 44.33%,#79e2ff 83.46%);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-animation: gradient-data-v-fb6d3afe 3s ease infinite;
+  animation: gradient-data-v-fb6d3afe 3s ease infinite;
+  -webkit-text-fill-color: transparent;
 }
 
 .navbar {
