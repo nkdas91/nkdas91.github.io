@@ -5,16 +5,14 @@ title:  "Blogs"
 <div class="row">
     <div class="col-md-9">
         {%- if site.posts.size > 0 -%}
-            <h2 class="blog-title my-5">{{ page.list_title | default: "Posts" }}</h2>
-
-            <ul class="list-group ml-0">
+            <ul class="list-group ml-0 post-list">
                 {%- for post in paginator.posts -%}
-                    <a href="{{ post.url | relative_url }}" class="list-group-item list-group-item-action border-0">
+                    <a href="{{ post.url | relative_url }}" class="list-group-item list-group-item-action border-0 pt-4">
                         <span class="list-item">
-                            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                            <span class="secondary-text text-grey-700">{{ post.date | date: date_format }}</span>
-                            <h3 class="primary-text sub-heading text-dark m-0">{{ post.title | escape }}</h3>
+                            <h2 class="primary-text sub-heading mb-3">{{ post.title | escape }}</h2>
+                            <span class="text-grey-700">{{ post.excerpt }}</span>
                         </span>
+
                     </a>
                 {%- endfor -%}
             </ul>
