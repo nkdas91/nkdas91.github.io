@@ -54,10 +54,8 @@ body {
 }
 
 .hello-header {
-  font-weight: 300;
-  line-height: 1.5;
-  letter-spacing: 2px;
-  font-size: 2.3rem;
+  font-size: 3rem;
+  font-family: adventure, script;
 }
 
 @keyframes gradient-data-v-fb6d3afe {
@@ -74,8 +72,6 @@ body {
 
 .site-name {
   font-family: adventure, script;
-  letter-spacing: normal;
-
   background: linear-gradient(141.27deg, #ff904e, #ff5982, #ec68f4, #8C9EFF);
   background-size: 200%;
   -webkit-background-clip: text;
