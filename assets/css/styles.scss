@@ -85,6 +85,13 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
+@media only screen and (max-width: 514px) {
+  .navbar-expand-sm .navbar-nav {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+
 footer {
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
