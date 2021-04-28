@@ -1,7 +1,7 @@
 ---
 ---
 <!doctype html>
-<html lang="en">
+<html lang="en" class="transition" data-theme="dark">
 <head>
     <meta charset="utf-8">
     <title>Neeraj Das</title>
@@ -32,7 +32,7 @@
 <section class="m-root">
 
     <!-- Container -->
-    <div class="m-container home-container bg-light">
+    <div class="m-container home-container">
 
         <div class="row hero">
             <div class="col p-5">
@@ -46,9 +46,9 @@
                 </h4>
 
                 <div class="d-flex justify-content-center justify-content-md-start flex-wrap">
-                    <div class="m-shape-container shape-parent-bg-black m-1">
+                    <div class="m-shape-container m-1">
                         <a href="/blog/"
-                           class="btn btn-ms ripple btn-indigo-a100 ripple text-dark" role="button" style="width:250px;">
+                           class="btn btn-ms btn-indigo-a100 text-dark" role="button" style="width:250px;">
                             WEB DEVELOPMENT BLOG
                         </a>
                         <div class="angle-top-left"></div>
@@ -57,9 +57,9 @@
                         <div class="angle-bottom-right"></div>
                     </div>
 
-                    <div class="m-shape-container shape-parent-bg-black m-1">
+                    <div class="m-shape-container m-1">
                         <a href="https://photography.neerajdas.com/"
-                           class="btn btn-ms ripple btn-pink-a100 ripple text-dark" role="button" style="width:250px;">
+                           class="btn btn-ms btn-indigo-a100 text-dark" role="button" style="width:250px;">
                             PHOTOGRAPHY
                         </a>
                         <div class="angle-top-left"></div>
@@ -70,28 +70,29 @@
                 </div>
             </div>
 
-            <div class="m-shape-container">
-                <div class="bg-light" style="height: 55px; width: 100vw;"></div>
-                <div class="angle-top-left size-40" style="overflow: hidden;"><div id="home-angle" style="width:200%; height:200%; transform: rotate(45deg);"></div></div>
-                <div class="angle-top-right size-40" style="overflow: hidden;"><div id="home-angle" style="width:200%; height:200%; transform: rotate(45deg);"></div></div>
-            </div>
+
         </div>
 
-        <div class="row bg-light">
-            <div class="col-md-6 pt-0 pb-5 px-5">
+        <div class="row">
+            <div class="m-shape-container shape-top hero-shape-top">
+                <div style="height: 55px; width: 100vw;"></div>
+                <div class="angle-top-left size-40"></div>
+                <div class="angle-top-right size-40"></div>
+            </div>
+            <div class="col-md-6 pt-0 pb-5 px-5 theme-secondary-bg">
                 <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-4">
                     <img src="https://materialstyle.github.io/assets/images/MSIconNewGreyBg.jpg"
                          alt="Material Style Logo" style="width:40px; height:40px;">
-                    <span class="text-dark ml-2" style="font-family: 'Roboto Mono', monospace; font-size: 1.5rem;">MATERIAL STYLE</span>
+                    <span class="theme-text-color ml-2" style="font-family: 'Roboto Mono', monospace; font-size: 1.5rem;">MATERIAL STYLE</span>
                 </div>
-                <h4 class="text-dark text-center text-md-left mb-4">
+                <h4 class="theme-text-color text-center text-md-left mb-4">
                     I created Material Style, an easy to use UI Library based on Bootstrap 4.5 that lets you add
                     Material Design styles and animations to Bootstrap components...
                 </h4>
                 <div class="d-flex justify-content-center justify-content-md-start flex-wrap">
-                    <div class="m-shape-container shape-parent-bg-light m-1">
+                    <div class="m-shape-container m-1">
                         <a href="/blog/material-style"
-                           class="btn btn-ms ripple btn-dark ripple text-white" role="button" style="width:250px;">
+                           class="btn btn-ms btn-pink-a100" role="button" style="width:250px;">
                             Read More
                         </a>
                         <div class="angle-top-left"></div>
@@ -100,9 +101,9 @@
                         <div class="angle-bottom-right"></div>
                     </div>
 
-                    <div class="m-shape-container shape-parent-bg-light m-1">
+                    <div class="m-shape-container m-1">
                         <a href="https://materialstyle.github.io/"
-                           class="btn btn-ms ripple btn-dark ripple text-white" role="button" style="width:250px;">
+                           class="btn btn-ms btn-pink-a100" role="button" style="width:250px;">
                             Check Material Style
                         </a>
                         <div class="angle-top-left"></div>
@@ -112,8 +113,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 pt-0 pb-5 px-5">
+            <div class="col-md-6 pt-0 pb-5 px-5 theme-secondary-bg">
                 <img src="/assets/images/materialstyle.png" class="img-fluid" alt="Responsive image" style="max-width: 1000px; width: 100%;">
+            </div>
+            <div class="m-shape-container shape-bottom">
+                <div style="height: 55px; width: 100vw;"></div>
+                <div class="angle-bottom-left size-40"></div>
+                <div class="angle-bottom-right size-40"></div>
             </div>
         </div>
 

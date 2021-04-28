@@ -1,15 +1,29 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="en" class="transition" data-theme="dark">
 
   {%- include head.html -%}
 
-  <body class="bg-white">
+  <body>
 
     {%- include header.html -%}
 
-    <section class="m-root bg-white">
-      <div class="m-container blog-container">
-        {{ content }}
+    <section class="m-root">
+      <div class="m-container px-0">
+          <div class="m-shape-container shape-top d-block">
+              <div style="height: 55px; width: 100vw;"></div>
+              <div class="angle-top-left size-40"></div>
+              <div class="angle-top-right size-40"></div>
+          </div>
+          <div class="theme-secondary-bg">
+              <div class="blog-container theme-text-color">
+                {{ content }}
+              </div>
+          </div>
+          <div class="m-shape-container shape-bottom d-block">
+              <div style="height: 55px; width: 100vw;"></div>
+              <div class="angle-bottom-left size-40"></div>
+              <div class="angle-bottom-right size-40"></div>
+          </div>
       </div>
     </section>
 
