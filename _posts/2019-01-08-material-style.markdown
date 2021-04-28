@@ -32,9 +32,9 @@ research and sleepless nights, [Material Style][material-style] was born.
 [Material Style][material-style] is now an easy to use UI Library based on Bootstrap 4.5 that lets you add Material Design styles 
 and animations to Bootstrap components.
 
-<div class="m-shape-container shape-parent-bg-light mt-2 mb-4">
+<div class="m-shape-container mt-2 mb-4">
     <a href="https://materialstyle.github.io/"
-       class="btn btn-ms ripple btn-dark ripple text-white" role="button" style="width:250px;">
+       class="btn btn-ms btn-pink-a100" role="button" style="width:250px;">
         Check Material Style
     </a>
     <div class="angle-top-left"></div>
