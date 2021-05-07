@@ -21,7 +21,7 @@ Before we start writing our first unit test, we need to have PHPUnit installed. 
 process is documented at [https://phpunit.de/][phpunit-link].  
 <br/>
 ### Writing our first test
-<div class="p-3 my-3 theme-secondary-bg theme-text-color">
+<div class="p-3 my-3 theme-secondary-bg theme-text-color-primary">
 Before we begin,<br>  
 Please Clone / Download the example code from <a target="_blank" href="https://github.com/nkdas91/Getting-started-with-PHPUnit">GitHub</a>.<br>
 Copy <b>env.example.php</b> to <b>env.php</b> and replace default values.<br>
@@ -158,7 +158,7 @@ we clean up the objects against which we tested.
 In ```AverageTest.php```, it is tedious to instantiate ```Average``` class in each test case.
 So, we move it to ```setUp()``` and ```tearDown()```.
 
-<div class="p-3 my-3 theme-secondary-bg theme-text-color">Also check tests/UserTest.php for another example.</div>
+<div class="p-3 my-3 theme-secondary-bg theme-text-color-primary">Also check tests/UserTest.php for another example.</div>
 
 tests/AverageTest.php
 

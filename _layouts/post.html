@@ -5,7 +5,7 @@ layout: default
     <div class="col-md-9">
         <article itemscope itemtype="http://schema.org/BlogPosting">
             <header class="my-5">
-                <label class="text-grey-700">
+                <label class="theme-text-color-secondary">
                     <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
                         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
                         {{ page.date | date: date_format }}
@@ -13,7 +13,7 @@ layout: default
                 </label>
                 <h1 class="blog-title m-0" itemprop="name headline">{{ page.title | escape }}</h1>
                 {%- if page.updated -%}
-                <label class="text-grey-700 mt-3"> Updated:
+                <label class="theme-text-color-secondary mt-3"> Updated:
                     <time datetime="{{ page.updated | date_to_xmlschema }}" itemprop="dateUpdated">
                         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
                         {{ page.updated | date: date_format }}
@@ -26,7 +26,7 @@ layout: default
                 {{ content }}
             </div>
 
-            <label class="text-grey-800 my-4">Subscribe <a href="{{ "/feed.xml" | relative_url }}" class="text-blue">via RSS</a></label>
+            <label class="theme-text-color-secondary my-4">Subscribe <a href="{{ "/feed.xml" | relative_url }}" class="text-blue">via RSS</a></label>
 
             {%- if site.disqus.shortname -%}
             {%- include disqus_comments.html -%}

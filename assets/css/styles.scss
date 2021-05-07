@@ -3,6 +3,7 @@
 html {
   --background-color: #1F1B3B;
   --primary-text-color: #FFFFFF;
+  --secondary-text-color: #E8EAF6;
   --secondary-color: #1A162F;
   --border-color: #8C9EFF;
   --hero-bg-color: #211C40;
@@ -17,6 +18,7 @@ html {
 html[data-theme="light"] {
   --background-color: #F5F5F5;
   --primary-text-color: #212121;
+  --secondary-text-color: #616161;
   --secondary-color: #FFFFFF;
   --border-color: #211C40;
 }
@@ -85,8 +87,12 @@ body {
   }
 }
 
-.theme-text-color {
+.theme-text-color-primary {
   color: var(--primary-text-color);
+}
+
+.theme-text-color-secondary {
+  color: var(--secondary-text-color);
 }
 
 .theme-secondary-bg {
