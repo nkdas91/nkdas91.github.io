@@ -44,21 +44,21 @@ and animations to Bootstrap components.
 </div>
 
 ### Few Components from Material Style
-<div class="row p-4 bg-light">
+<div class="row p-4 material-style-showcase">
     <div class="col">
     
         <div class="form-group">
-            <button class="btn btn-primary">Button</button>
+            <button class="btn btn-deep-purple">Button</button>
         </div>
 
         <div class="form-group">
-            <button type="button" class="btn btn-fab btn-pink">
+            <button type="button" class="btn btn-fab btn-deep-purple">
                 <i class="material-icons">favorite</i>
             </button>
         </div>
 
         <div class="form-group">
-            <button type="button" class="btn btn-fab extended-fab btn-indigo">
+            <button type="button" class="btn btn-fab extended-fab btn-deep-purple">
                 <i class="material-icons">search</i> Search
             </button>
         </div>
@@ -66,34 +66,21 @@ and animations to Bootstrap components.
         <span class="d-block" style="width: 100%;"></span>
 
         <div class="form-group" style="max-width: 200px">
-            <div class="m-text-field">
+            <div class="m-text-field primary-purple accent-pink-a400">
                 <label class="floating-label">Text Field</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control bg-transparent text-pink">
             </div>
         </div>
 
         <div class="form-group" style="max-width: 200px">
-            <div class="m-text-field-outline">
+            <div class="m-text-field-outline primary-purple accent-pink-a400">
                 <label class="floating-label">Text Field</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control text-pink">
             </div>
         </div>
 
         <div class="form-group" style="max-width: 200px;">
-            <div class="m-select">
-                <label class="floating-label">Select</label>
-                <select class="form-control">
-                    <option value=""></option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                    <option value="4">Option 4</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="form-group" style="max-width: 200px;">
-            <div class="m-select-outline">
+            <div class="m-select-outline primary-purple accent-pink-a400">
                 <label class="floating-label">Select</label>
                 <select class="form-control">
                     <option value=""></option>

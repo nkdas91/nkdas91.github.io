@@ -1,12 +1,12 @@
 ---
 ---
 html {
-  --background-color: #1F1B3B;
+  --background-color: #201b3b;
+  --secondary-color: #08051A;
   --primary-text-color: #FFFFFF;
-  --secondary-text-color: #E8EAF6;
-  --secondary-color: #1A162F;
+  --secondary-text-color: #f0eefecc;
   --border-color: #8C9EFF;
-  --hero-bg-color: #211C40;
+  --hero-bg-color: #201b3b;
   background-color: var(--background-color);
   transition: background-color .25s ease-out;
 
@@ -17,10 +17,10 @@ html {
 
 html[data-theme="light"] {
   --background-color: #F5F5F5;
+  --secondary-color: #FFFFFF;
   --primary-text-color: #212121;
   --secondary-text-color: #616161;
-  --secondary-color: #FFFFFF;
-  --border-color: #211C40;
+  --border-color: #201b3b;
 }
 
 body {
@@ -209,6 +209,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   letter-spacing: 2px;
 }
+
+.material-style-showcase, .author-note {
+  background: var(--background-color);
+}
+
 .highlight code {
   color: var(--primary-text-color);
 }
