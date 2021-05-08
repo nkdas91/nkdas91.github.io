@@ -1,4 +1,12 @@
 <head>
+    <script>
+        const currentTheme = localStorage.getItem('theme');
+
+        if (currentTheme == 'light') {
+            document.getElementsByTagName("html")[0].setAttribute('data-theme', 'light')
+        }
+    </script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

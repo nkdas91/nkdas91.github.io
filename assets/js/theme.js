@@ -1,10 +1,4 @@
 $(function () {
-    const currentTheme = localStorage.getItem('theme');
-
-    if (currentTheme == 'light') {
-        $('html').data('theme', 'light').attr('data-theme', 'light');
-    }
-
     if ('dark' === $('html').data('theme')) {
         $('#dark-mode').attr('checked', 'true');
         $('#light-mode-icon, #dark-mode-icon').attr('fill', '#FFFFFF');

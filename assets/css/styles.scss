@@ -1,18 +1,11 @@
 ---
 ---
-html {
+html[data-theme="dark"] {
   --background-color: #201b3b;
   --secondary-color: #08051A;
   --primary-text-color: #FFFFFF;
   --secondary-text-color: #f0eefecc;
   --border-color: #8C9EFF;
-  --hero-bg-color: #201b3b;
-  background-color: var(--background-color);
-  transition: background-color .25s ease-out;
-
-  * {
-    transition: background .25s ease-out, background-color .25s ease-out;
-  }
 }
 
 html[data-theme="light"] {
@@ -21,6 +14,11 @@ html[data-theme="light"] {
   --primary-text-color: #212121;
   --secondary-text-color: #616161;
   --border-color: #201b3b;
+}
+
+html {
+  --hero-bg-color: #201b3b;
+  background-color: var(--background-color);
 }
 
 body {
