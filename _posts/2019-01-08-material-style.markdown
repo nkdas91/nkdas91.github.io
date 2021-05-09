@@ -34,7 +34,7 @@ and animations to Bootstrap components.
 
 <div class="m-shape-container mt-2 mb-4">
     <a href="https://materialstyle.github.io/"
-       class="btn btn-ms btn-pink-a100" role="button" style="width:250px;">
+       class="btn btn-ms btn-deep-purple" role="button" style="width:250px;">
         Check Material Style
     </a>
     <div class="angle-top-left"></div>
@@ -48,17 +48,17 @@ and animations to Bootstrap components.
     <div class="col">
     
         <div class="form-group">
-            <button class="btn btn-deep-purple">Button</button>
+            <button class="btn btn-cyan-300">Button</button>
         </div>
 
         <div class="form-group">
-            <button type="button" class="btn btn-fab btn-deep-purple">
+            <button type="button" class="btn btn-fab btn-cyan-300">
                 <i class="material-icons">favorite</i>
             </button>
         </div>
 
         <div class="form-group">
-            <button type="button" class="btn btn-fab extended-fab btn-deep-purple">
+            <button type="button" class="btn btn-fab extended-fab btn-cyan-300">
                 <i class="material-icons">search</i> Search
             </button>
         </div>
@@ -66,21 +66,21 @@ and animations to Bootstrap components.
         <span class="d-block" style="width: 100%;"></span>
 
         <div class="form-group" style="max-width: 200px">
-            <div class="m-text-field primary-purple accent-pink-a400">
+            <div class="m-text-field primary-cyan-300 accent-pink-a400">
                 <label class="floating-label">Text Field</label>
                 <input type="text" class="form-control bg-transparent text-pink">
             </div>
         </div>
 
         <div class="form-group" style="max-width: 200px">
-            <div class="m-text-field-outline primary-purple accent-pink-a400">
+            <div class="m-text-field-outline primary-cyan-300 accent-pink-a400">
                 <label class="floating-label">Text Field</label>
                 <input type="text" class="form-control text-pink">
             </div>
         </div>
 
         <div class="form-group" style="max-width: 200px;">
-            <div class="m-select-outline primary-purple accent-pink-a400">
+            <div class="m-select-outline primary-cyan-300 accent-pink-a400">
                 <label class="floating-label">Select</label>
                 <select class="form-control">
                     <option value=""></option>

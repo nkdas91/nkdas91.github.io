@@ -5,7 +5,7 @@ html {
   --secondary-color: #08051A;
   --primary-text-color: #FFFFFF;
   --secondary-text-color: #F0EEFECC;
-  --border-color: #8C9EFF;
+  --border-color: #673AB7;
   --hero-bg-color: #201B3B;
   background-color: var(--background-color);
   transition: background-color .25s ease-out;
@@ -20,27 +20,7 @@ html[data-theme="light"] {
   --secondary-color: #FFFFFF;
   --primary-text-color: #212121;
   --secondary-text-color: #616161;
-  --border-color: #201B3B;
-
-  .btn-pink-a100 {
-    color: #FFFFFF;
-    background-color: #212121;
-
-    &.active, &.focus, &:active, &:focus, &:hover {
-      background-color: #141414;
-    }
-  }
-
-  .btn-fab {
-    &.btn-indigo-a100 {
-      color: #212529;
-      background-color: #EEEEEE;
-
-      &.active, &.focus, &:active, &:focus, &:hover {
-        background-color: #E1E1E1;
-      }
-    }
-  }
+  --border-color: #673AB7;
 }
 
 body {
@@ -184,13 +164,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-name {
   font-family: adventure, script;
-  background: linear-gradient(141.27deg, #ff904e, #ff5982, #ec68f4, #8C9EFF);
+  background: linear-gradient(141.27deg, #ff904e -4.24%, #ff5982 21.25%, #ec68f4 44.33%, #26C6DA 83.46%);
   background-size: 200%;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-animation: gradient-data-v-fb6d3afe 5s ease infinite;
   animation: gradient-data-v-fb6d3afe 5s ease infinite;
   -webkit-text-fill-color: transparent;
+}
+
+#blog-btn {
+  background: linear-gradient(141.27deg, #ff904e, #ff5982, #E91E63);
+}
+
+#photography-btn {
+  background: linear-gradient(141.27deg, #E91E63, #ec68f4, #26C6DA);
 }
 
 @media only screen and (max-width: 514px) {
@@ -278,7 +266,7 @@ div.highlighter-rouge {
 .highlight .ne { color: #008b45; font-weight: bold } /* Name.Exception */
 .highlight .nf { color: #008b45 } /* Name.Function */
 .highlight .nn { color: #008b45; text-decoration: underline } /* Name.Namespace */
-.highlight .nt { color: #8B008B; font-weight: bold } /* Name.Tag */
+.highlight .nt { color: #ca0bca; font-weight: bold } /* Name.Tag */
 .highlight .nv { color: #00688B } /* Name.Variable */
 .highlight .ow { color: #8B008B } /* Operator.Word */
 .highlight .w { color: #bbbbbb } /* Text.Whitespace */
