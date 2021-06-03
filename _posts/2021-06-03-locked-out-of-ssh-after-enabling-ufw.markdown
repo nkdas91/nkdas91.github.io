@@ -49,11 +49,9 @@ The script is not deleted after it is run. Be sure to delete the user data scrip
 Otherwise, the script will exist in this directory on any instance launched from the AMI.
     
 #### Reference
-[https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html][aws-link-1]
-[https://aws.amazon.com/premiumsupport/knowledge-center/execute-user-data-ec2/][aws-link-2]
+<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html" style="word-break: break-word;">https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html</a>
+<a href="https://aws.amazon.com/premiumsupport/knowledge-center/execute-user-data-ec2/" style="word-break: break-word;">https://aws.amazon.com/premiumsupport/knowledge-center/execute-user-data-ec2/</a>
 
-[aws-link-1]: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html
-[aws-link-2]: https://aws.amazon.com/premiumsupport/knowledge-center/execute-user-data-ec2/
 [instance-store-volumes]: https://aws.amazon.com/premiumsupport/knowledge-center/instance-store-vs-ebs/
 [back-up]: https://aws.amazon.com/premiumsupport/knowledge-center/back-up-instance-store-ebs/
 [determine-root-device-type]: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ComponentsAMIs.html#display-ami-root-device-type
