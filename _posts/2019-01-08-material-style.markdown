@@ -48,17 +48,17 @@ and animations to Bootstrap components.
     <div class="col">
     
         <div class="form-group">
-            <button class="btn btn-cyan-300">Button</button>
+            <button class="btn btn-cyan">Button</button>
         </div>
 
         <div class="form-group">
-            <button type="button" class="btn btn-fab btn-cyan-300">
+            <button type="button" class="btn btn-fab btn-cyan">
                 <i class="material-icons">favorite</i>
             </button>
         </div>
 
         <div class="form-group">
-            <button type="button" class="btn btn-fab extended-fab btn-cyan-300">
+            <button type="button" class="btn btn-fab extended-fab btn-cyan">
                 <i class="material-icons">search</i> Search
             </button>
         </div>
@@ -66,21 +66,21 @@ and animations to Bootstrap components.
         <span class="d-block" style="width: 100%;"></span>
 
         <div class="form-group" style="max-width: 200px">
-            <div class="m-text-field primary-cyan-300 accent-pink-a400">
+            <div class="m-text-field primary-cyan accent-pink-a400">
                 <label class="floating-label">Text Field</label>
                 <input type="text" class="form-control bg-transparent text-pink">
             </div>
         </div>
 
         <div class="form-group" style="max-width: 200px">
-            <div class="m-text-field-outline primary-cyan-300 accent-pink-a400">
+            <div class="m-text-field-outline primary-cyan accent-pink-a400">
                 <label class="floating-label">Text Field</label>
                 <input type="text" class="form-control text-pink">
             </div>
         </div>
 
         <div class="form-group" style="max-width: 200px;">
-            <div class="m-select-outline primary-cyan-300 accent-pink-a400">
+            <div class="m-select-outline primary-cyan accent-pink-a400">
                 <label class="floating-label">Select</label>
                 <select class="form-control">
                     <option value=""></option>
