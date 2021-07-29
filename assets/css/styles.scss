@@ -33,7 +33,7 @@ body {
   &.m-shape-container {
     .angle-top-left, .angle-top-right, .angle-bottom-left, .angle-bottom-right {
       background: var(--background-color);
-      border-bottom: 2px solid var(--border-color);
+      border-bottom: 4px solid var(--border-color);
     }
   }
 
@@ -44,13 +44,13 @@ body {
 
 .shape-top {
   div:first-child {
-    border-top: 2px solid var(--border-color);
+    border-top: 4px solid var(--border-color);
   }
 }
 
 .shape-bottom {
   div:first-child {
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: 4px solid var(--border-color);
   }
 }
 
@@ -126,7 +126,7 @@ body {
 }
 
 hr {
-  border-top: 2px solid var(--border-color);
+  border-top: 4px solid var(--border-color);
 }
 
 .list-group {
