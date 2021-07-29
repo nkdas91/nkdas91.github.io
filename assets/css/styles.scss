@@ -123,22 +123,18 @@ body {
 
 .navbar {
   background: var(--background-color);
+
+  a {
+    &:hover,
+    &:active,
+    &:focus {
+      color: #E91E63;
+    }
+  }
 }
 
 hr {
   border-top: 4px solid var(--border-color);
-}
-
-.list-group {
-  a {
-    background: transparent;
-    color: var(--primary-text-color);
-  }
-
-  a:hover {
-    background: var( --secondary-color);
-    color: var(--primary-text-color);
-  }
 }
 
 // Dark Mode Switch
@@ -235,9 +231,62 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.8rem;
 }
 
-.blog-container {
-  max-width: 1220px;
-  margin: 0 auto;
+html {
+  .blog-container {
+    max-width: 1220px;
+    margin: 0 auto;
+
+    .list-group {
+      .list-group-item {
+        color: var(--primary-text-color);
+        background-color: transparent;
+      }
+
+      .list-group-item-action {
+        &:hover,
+        &:active,
+        &:focus {
+          color: #E91E63;
+        }
+      }
+    }
+
+    a:link, a:visited {
+      color: #B388FF;
+    }
+
+    a:hover, a:active {
+      color: #E91E63;
+    }
+  }
+}
+
+html[data-theme="light"] {
+  .blog-container {
+
+    .list-group {
+      .list-group-item {
+        color: var(--primary-text-color);
+        background-color: transparent;
+      }
+
+      .list-group-item-action {
+        &:hover,
+        &:active,
+        &:focus {
+          color: #E91E63;
+        }
+      }
+    }
+
+    a:link, a:visited {
+      color: #5E35B1;
+    }
+
+    a:hover, a:active {
+      color: #E91E63;
+    }
+  }
 }
 
 .blog-title {
