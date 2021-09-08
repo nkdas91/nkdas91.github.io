@@ -63,19 +63,19 @@
         $('.m-select-outline').selectfield();
         $('.m-shape-container').shape();
 
-        let navbar = document.querySelector('.navbar');
-
-        if (navbar) {
-            window.addEventListener('scroll', () => {
-                const currentScrollPos = window.pageYOffset
-                if (currentScrollPos > 15) {
-                    navbar.style.borderBottom = '4px solid #673ab7';
-                    navbar.classList.add('raised-4dp');
-                } else {
-                    navbar.style.borderBottom = '0';
-                    navbar.classList.remove('raised-4dp');
-                }
-            });
-        }
+        // let navbar = document.querySelector('.navbar');
+        //
+        // if (navbar) {
+        //     window.addEventListener('scroll', () => {
+        //         const currentScrollPos = window.pageYOffset
+        //         if (currentScrollPos > 15) {
+        //             navbar.style.borderBottom = '4px solid #673ab7';
+        //             navbar.classList.add('raised-4dp');
+        //         } else {
+        //             navbar.style.borderBottom = '0';
+        //             navbar.classList.remove('raised-4dp');
+        //         }
+        //     });
+        // }
     });
 </script>

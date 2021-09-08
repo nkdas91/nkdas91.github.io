@@ -3,7 +3,7 @@
 html {
   --background-color: #201B3B;
   --secondary-color: #08051A;
-  --primary-text-color: #FFFFFF;
+  --primary-text-color: #EDE7F6;
   --secondary-text-color: #F0EEFECC;
   --border-color: #673AB7;
   --hero-bg-color: #201B3B;
@@ -25,6 +25,7 @@ html[data-theme="light"] {
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
   color: #212121;
   background-color: var(--background-color);
 }
@@ -199,6 +200,10 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(141.27deg, #E91E63, #ec68f4, #26C6DA);
 }
 
+#explore-photography-button {
+  background: linear-gradient(141.27deg, #ff904e -4.24%, #ff5982 21.25%, #ec68f4 44.33%, #26C6DA 83.46%);
+}
+
 .wrapper {
   overflow: hidden;
   position: relative;
@@ -251,11 +256,11 @@ html {
       }
     }
 
-    a:link, a:visited {
+    a:not(.btn, .list-group-item):link, a:not(.btn, .list-group-item):visited {
       color: #B388FF;
     }
 
-    a:hover, a:active {
+    a:not(.btn, .list-group-item):hover, a:not(.btn, .list-group-item):active {
       color: #E91E63;
     }
   }
