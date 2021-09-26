@@ -254,6 +254,47 @@ footer {
       color: var(--theme-accent-color);
     }
   }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+
+// Theme selector
+.theme-container {
+  .theme-selector {
+    border: 2px solid var(--theme-border-color);
+    cursor: pointer;
+
+    &:hover {
+      border: 2px solid var(--theme-accent-color);
+    }
+
+    img {
+      width: 150px;
+      min-width: 150px;
+      max-width: 150px;
+    }
+
+    span {
+      padding: 0.2rem 2rem;
+    }
+  }
+
+  .custom-control-input:checked + label {
+    border: 2px solid var(--theme-accent-color);
+  }
+
+  .custom-control-label:after, .custom-control-label:before {
+    top: auto;
+    bottom: .5rem;
+    left: .5rem;
+  }
+
+  .custom-control-input:checked:not(:disabled) ~ .custom-control-label:before {
+    background-color: var(--theme-accent-color);
+    border-color: var(--theme-accent-color);
+  }
 }
 
 hr {
