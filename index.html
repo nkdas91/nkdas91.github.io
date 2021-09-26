@@ -1,13 +1,13 @@
 ---
 ---
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="default">
 <head>
     <script>
         const currentTheme = localStorage.getItem('theme');
 
-        if (currentTheme == 'light') {
-            document.getElementsByTagName("html")[0].setAttribute('data-theme', 'light')
+        if (currentTheme) {
+            document.getElementsByTagName("html")[0].setAttribute('data-theme', currentTheme)
         }
     </script>
     <meta charset="utf-8">
@@ -84,20 +84,20 @@
                 <div class="angle-top-left size-40"></div>
                 <div class="angle-top-right size-40"></div>
             </div>
-            <div class="col-md-6 pt-0 pt-md-5 pb-5 px-5 theme-secondary-bg">
+            <div class="col-md-6 pt-0 pt-md-5 pb-5 px-5 theme-bg-surface">
                 <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-4">
                     <img src="https://materialstyle.github.io/assets/images/MSIconNewColorV2.svg"
                          alt="Material Style Logo" style="width:40px; height:40px;">
-                    <span class="theme-text-color-primary ml-2" style="font-family: 'Roboto Mono', monospace; font-size: 1.5rem;">MATERIAL STYLE</span>
+                    <span class="theme-text-primary ml-2" style="font-family: 'Roboto Mono', monospace; font-size: 1.5rem;">MATERIAL STYLE</span>
                 </div>
-                <h4 class="theme-text-color-primary text-center text-md-left mb-4">
+                <h4 class="theme-text-primary text-center text-md-left mb-4">
                     I created Material Style, an easy to use UI Library based on Bootstrap 4.5 that lets you add
                     Material Design styles and animations to Bootstrap components...
                 </h4>
                 <div class="d-flex justify-content-center justify-content-md-start flex-wrap">
                     <div class="m-shape-container m-1">
                         <a href="/blog/material-style"
-                           class="btn btn-ms btn-deep-purple" role="button" style="width:250px;">
+                           class="btn btn-ms btn-primary" role="button" style="width:250px;">
                             Read More
                         </a>
                         <div class="angle-top-left"></div>
@@ -108,7 +108,7 @@
 
                     <div class="m-shape-container m-1">
                         <a href="https://materialstyle.github.io/"
-                           class="btn btn-ms btn-deep-purple" role="button" style="width:250px;">
+                           class="btn btn-ms btn-primary" role="button" style="width:250px;">
                             Check Material Style
                         </a>
                         <div class="angle-top-left"></div>
@@ -118,7 +118,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 pt-0 pt-md-5 pb-5 px-5 theme-secondary-bg">
+            <div class="col-md-6 pt-0 pt-md-5 pb-5 px-5 theme-bg-surface">
                 <img src="/assets/images/materialstyle.png" class="img-fluid" alt="Responsive image" style="max-width: 1000px; width: 100%;">
             </div>
             <div class="m-shape-container shape-bottom">
@@ -134,7 +134,7 @@
                     <div class="sliding-background"></div>
                     <div class="w-100 d-flex justify-content-center" style="position:absolute; bottom: 40px;">
                         <a href="https://photography.neerajdas.com/"
-                           class="btn btn-deep-purple raised-2dp text-black"
+                           class="btn btn-primary raised-2dp text-black"
                            id="explore-photography-button">
                             Explore Photography
                         </a>

@@ -2,8 +2,8 @@
     <script>
         const currentTheme = localStorage.getItem('theme');
 
-        if (currentTheme == 'light') {
-            document.getElementsByTagName("html")[0].setAttribute('data-theme', 'light')
+        if (currentTheme) {
+            document.getElementsByTagName("html")[0].setAttribute('data-theme', currentTheme)
         }
     </script>
 

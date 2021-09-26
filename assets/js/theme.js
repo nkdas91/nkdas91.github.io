@@ -1,15 +1,14 @@
 $(function () {
-    if ('dark' === $('html').data('theme')) {
-        $('#dark-mode').attr('checked', 'true');
+    if ('default' === $('html').data('theme')) {
+        $('#theme-default').attr('checked', 'true');
+    } else if ('light' === $('html').data('theme')) {
+        $('#theme-light').attr('checked', 'true');
+    } else {
+        $('#theme-dark').attr('checked', 'true');
     }
 
-    $('#dark-mode').on('change', function () {
-        if ('dark' === $('html').data('theme')) {
-            $('html').data('theme', 'light').attr('data-theme', 'light');
-            localStorage.setItem('theme', 'light');
-        } else {
-            $('html').data('theme', 'dark').attr('data-theme', 'dark');
-            localStorage.setItem('theme', 'dark');
-        }
+    $('input[type=radio][name=theme]').change(function() {
+        $('html').data('theme', this.value).attr('data-theme', this.value);
+        localStorage.setItem('theme', this.value);
     });
 });
