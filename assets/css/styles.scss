@@ -21,7 +21,6 @@ html {
   --theme-accent-color: #FFEB3B;
   --theme-link-color: #00bdc5;
   --theme-border-color: #673AB7;
-  --theme-hero: #201B3B;
   --theme-code-block: #201B3B;
 
   background-color: var(--theme-background);
@@ -53,8 +52,7 @@ html[data-theme="light"] {
   --theme-accent-color: #E91E63;
   --theme-link-color: #673AB7;
   --theme-border-color: #673AB7;
-  --theme-hero: #201B3B;
-  --theme-code-block: #f5f5f5;
+  --theme-code-block: #F5F5F5;
 }
 
 // Dark Theme
@@ -78,7 +76,6 @@ html[data-theme="dark"] {
   --theme-accent-color: #FFEB3B;
   --theme-link-color: #FF80AB;
   --theme-border-color: #212121;
-  --theme-hero: #121212;
   --theme-code-block: #212121;
 }
 
@@ -99,6 +96,18 @@ footer {
 
   a:hover, a:active {
     color: var(--theme-accent-color);
+  }
+
+  .m-shape-container {
+    .angle-top-left, .angle-top-right, .angle-bottom-left, .angle-bottom-right {
+      border-bottom: 2px solid var(--theme-border-color);
+    }
+
+    &.active,  &:hover {
+      .angle-top-left, .angle-top-right, .angle-bottom-left, .angle-bottom-right {
+        border-bottom: 2px solid var(--theme-accent-color);
+      }
+    }
   }
 }
 
@@ -186,13 +195,11 @@ footer {
 
 // Hero
 .hero {
-  background-color: var(--theme-hero);
+  background-color: var(--theme-background);
   margin-top: -15px;
 
-  .m-shape-container {
-    .angle-top-left, .angle-top-right, .angle-bottom-left, .angle-bottom-right {
-      background: var(--theme-hero);
-    }
+  a:not(.btn):hover, a:not(.btn):active {
+    color: var(--theme-accent-color);
   }
 }
 
@@ -219,14 +226,6 @@ footer {
   .m-shape-container {
     .angle-top-left, .angle-top-right, .angle-bottom-left, .angle-bottom-right {
       background: var(--theme-surface);
-    }
-  }
-}
-
-.hero-shape-top {
-  &.m-shape-container {
-    .angle-top-left, .angle-top-right {
-      background: var(--theme-hero);
     }
   }
 }
