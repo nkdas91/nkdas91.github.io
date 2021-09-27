@@ -43,22 +43,22 @@ and animations to Bootstrap components.
     <div class="angle-bottom-right"></div>
 </div>
 
-### Few Components from Material Style
-<div class="row p-4 material-style-showcase">
+## Few Components from Material Style
+<div class="row p-4 material-style-showcase" id="example-dark">
     <div class="col">
     
         <div class="form-group">
-            <button class="btn btn-cyan">Button</button>
+            <button class="btn btn-pink-a100">Button</button>
         </div>
 
         <div class="form-group">
-            <button type="button" class="btn btn-fab btn-cyan">
+            <button type="button" class="btn btn-fab btn-pink-a100">
                 <i class="material-icons">favorite</i>
             </button>
         </div>
 
         <div class="form-group">
-            <button type="button" class="btn btn-fab extended-fab btn-cyan">
+            <button type="button" class="btn btn-fab extended-fab btn-pink-a100">
                 <i class="material-icons">search</i> Search
             </button>
         </div>
@@ -66,21 +66,72 @@ and animations to Bootstrap components.
         <span class="d-block" style="width: 100%;"></span>
 
         <div class="form-group" style="max-width: 200px">
-            <div class="m-text-field primary-cyan accent-pink-a400">
-                <label class="floating-label">Text Field</label>
-                <input type="text" class="form-control bg-transparent text-pink">
+            <div class="m-text-field primary-pink-a100 accent-yellow-300">
+                <label for="example-1" class="floating-label">Text Field</label>
+                <input id="example-1" type="text" class="form-control bg-transparent text-white">
             </div>
         </div>
 
         <div class="form-group" style="max-width: 200px">
-            <div class="m-text-field-outline primary-cyan accent-pink-a400">
-                <label class="floating-label">Text Field</label>
-                <input type="text" class="form-control text-pink">
+            <div class="m-text-field-outline primary-pink-a100 accent-yellow-300">
+                <label for="example-2" class="floating-label">Text Field</label>
+                <input id="example-2" type="text" class="form-control text-white">
             </div>
         </div>
 
         <div class="form-group" style="max-width: 200px;">
-            <div class="m-select-outline primary-cyan accent-pink-a400">
+            <div class="m-select-outline primary-pink-a100 accent-yellow-300">
+                <label class="floating-label">Select</label>
+                <select class="form-control">
+                    <option value=""></option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                </select>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="row p-4 material-style-showcase" id="example-light">
+    <div class="col">
+    
+        <div class="form-group">
+            <button class="btn btn-deep-purple">Button</button>
+        </div>
+
+        <div class="form-group">
+            <button type="button" class="btn btn-fab btn-deep-purple">
+                <i class="material-icons">favorite</i>
+            </button>
+        </div>
+
+        <div class="form-group">
+            <button type="button" class="btn btn-fab extended-fab btn-deep-purple">
+                <i class="material-icons">search</i> Search
+            </button>
+        </div>
+        
+        <span class="d-block" style="width: 100%;"></span>
+
+        <div class="form-group" style="max-width: 200px">
+            <div class="m-text-field primary-deep-purple accent-teal">
+                <label for="example-3" class="floating-label">Text Field</label>
+                <input id="example-3" type="text" class="form-control bg-transparent text-dark">
+            </div>
+        </div>
+
+        <div class="form-group" style="max-width: 200px">
+            <div class="m-text-field-outline primary-deep-purple accent-teal">
+                <label for="example-4" class="floating-label">Text Field</label>
+                <input id="example-4" type="text" class="form-control text-dark">
+            </div>
+        </div>
+
+        <div class="form-group" style="max-width: 200px;">
+            <div class="m-select-outline primary-deep-purple accent-teal">
                 <label class="floating-label">Select</label>
                 <select class="form-control">
                     <option value=""></option>

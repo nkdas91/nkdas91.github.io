@@ -48,7 +48,7 @@ The script is not deleted after it is run. Be sure to delete the user data scrip
 ```/var/lib/cloud/instances/instance-id/``` before you create an AMI from the instance. 
 Otherwise, the script will exist in this directory on any instance launched from the AMI.
     
-#### Reference
+## Reference
 <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html" style="word-break: break-word;">https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html</a>
 <a href="https://aws.amazon.com/premiumsupport/knowledge-center/execute-user-data-ec2/" style="word-break: break-word;">https://aws.amazon.com/premiumsupport/knowledge-center/execute-user-data-ec2/</a>
 

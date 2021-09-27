@@ -16,11 +16,11 @@ component or unit behaves as expected.
 
 The purpose of this tutorial is to introduce you to the basics of PHPUnit.  
 <br/>
-### Installation
+## Installation
 Before we start writing our first unit test, we need to have PHPUnit installed. The installation 
 process is documented at [https://phpunit.de/][phpunit-link].  
 <br/>
-### Writing our first test
+## Writing our first test
 <div class="p-3 my-3 author-note theme-text-primary">
 Before we begin,<br>  
 Please Clone / Download the example code from <a target="_blank" href="https://github.com/nkdas91/Getting-started-with-PHPUnit">GitHub</a>.<br>
@@ -119,7 +119,7 @@ final class AverageTest extends TestCase
 }
 ```
 <br/>
-### Running our tests
+## Running our tests
 Running our tests is as simple as calling the phpunit executable and pointing it at our tests. 
 Here’s an example:
 
@@ -139,7 +139,7 @@ Time: 00:00.008, Memory: 4.00 MB
 OK (4 tests, 4 assertions)
 ```
 <br/>
-### Fixtures (Setup & Teardown)
+## Fixtures (Setup & Teardown)
 The purpose of a fixture is to ensure that there is a well known and fixed environment 
 in which tests are run. This allows for tests to be repeatable, which is one of the key 
 features of an effective test framework.
@@ -221,7 +221,7 @@ final class AverageTest extends TestCase
 }
 ```
 <br/>
-### Data Providers
+## Data Providers
 A test method can accept arbitrary arguments. These arguments are to be provided by one or 
 more data provider methods. The data provider method to be used is specified using the 
 ```@dataProvider``` annotation.   
@@ -247,7 +247,7 @@ public function averageProvider(): array
 }
 ```
 <br/>
-### Test Doubles
+## Test Doubles
 When we are writing a test in which we cannot (or chose not to) use a real depended-on 
 component (DOC), we can replace it with a Test Double. The Test Double doesn’t have to 
 behave exactly like the real DOC; it merely has to provide the same API as the real one 
@@ -267,7 +267,7 @@ generation.
 
 Please note that ```final```, ```private```, and ```static``` methods cannot be stubbed or mocked. 
 
-#### Stubs
+### Stubs
 The practice of replacing an object with a test double that (optionally) returns configured 
 return values is referred to as stubbing. You can use a stub to replace a real component 
 on which the SUT depends so that the test has a control point for the indirect inputs of the SUT.
@@ -321,7 +321,7 @@ public function testStubUsingMockBuilder(): void
 }
 ```
 
-#### Mock Objects
+### Mock Objects
 The practice of replacing an object with a test double that verifies expectations, for instance 
 asserting that a method has been called, is referred to as mocking.
 
@@ -372,7 +372,7 @@ public function testMock(): void
 }
 ```
 <br/>
-### XML Configuration
+## XML Configuration
 ```phpunit.xml``` file can be used to compose a test suite and specify other configurations.
 The following is an xml configuration that will add all ```*Test``` classes that are 
 found in ```*Test.php``` files when the ```tests``` directory is recursively traversed.  
@@ -410,7 +410,7 @@ running our tests
 ./vendor/bin/phpunit
 ```
 <br/>
-### Code Coverage
+## Code Coverage
 Code coverage is a measure used to describe the degree to which the source code of a 
 program is tested by a particular test suite. A program with high code coverage has 
 been more thoroughly tested and has a lower chance of containing software bugs than 

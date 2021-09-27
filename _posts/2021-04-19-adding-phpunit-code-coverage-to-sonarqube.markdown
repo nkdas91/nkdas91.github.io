@@ -18,7 +18,7 @@ sudo apt-get install php-xdebug
 sudo service apache2 restart
 ```
 <br/>
-### Generating code coverage
+## Generating code coverage
 To generate code coverage, update ```phpunit.xml``` as follows:
 
 ```xml
@@ -72,11 +72,11 @@ Run the tests as:
 XDEBUG_MODE=coverage ./vendor/bin/phpunit
 ```
 <br/>
-### Viewing coverage in a browser
+## Viewing coverage in a browser
 Output directory is set as ```report```. So, open ```report/index.html``` on a browser to see 
 the code coverage.  
 <br/>
-### Adding Code Coverage to SonarQube
+## Adding Code Coverage to SonarQube
 SonarQube uses ```coverage.report.clover``` and ```logging.junit``` to show code coverage.  
 ```coverage.report.html``` generates a code coverage report in HTML.  
 ```logging.testdoxHtml``` generates an HTML report containing a list of Test Cases written.  

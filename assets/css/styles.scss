@@ -15,7 +15,7 @@ html {
   --theme-background: #201B3B;
   --theme-surface: #08051A;
 
-  --theme-on-surface: #FFFFFF;
+  --theme-on-surface: #F0EEFE;
   --theme-on-surface-muted: #F5F5F5;
 
   --theme-accent-color: #FFEB3B;
@@ -43,16 +43,16 @@ html[data-theme="light"] {
   --theme-btn-secondary-text: #FFFFFF;
   --theme-btn-secondary-text-hover: #FFFFFF;
 
-  --theme-background: #F5F5F5;
+  --theme-background: #FAFAFA;
   --theme-surface: #FFFFFF;
 
   --theme-on-surface: #212121;
   --theme-on-surface-muted: #616161;
 
-  --theme-accent-color: #E91E63;
+  --theme-accent-color: #673ab7;
   --theme-link-color: #673AB7;
   --theme-border-color: #673AB7;
-  --theme-code-block: #F5F5F5;
+  --theme-code-block: #FAFAFA;
 }
 
 // Dark Theme
@@ -764,7 +764,7 @@ html[data-theme="light"] {
   }
   /* Comment.Multiline */
   .highlight .cp {
-    color: #1e889b
+    color: #673ab7
   }
   /* Comment.Preproc */
   .highlight .c1 {
@@ -844,7 +844,7 @@ html[data-theme="light"] {
   }
   /* Keyword.Reserved */
   .highlight .kt {
-    color: #a7a7a7;
+    color: #555555;
     font-weight: bold
   }
   /* Keyword.Type */
@@ -853,19 +853,19 @@ html[data-theme="light"] {
   }
   /* Literal.Number */
   .highlight .s {
-    color: #ff8787
+    color: #0d47a1
   }
   /* Literal.String */
   .highlight .na {
-    color: #658b00
+    color: #445e00
   }
   /* Name.Attribute */
   .highlight .nb {
-    color: #658b00
+    color: #a71547
   }
   /* Name.Builtin */
   .highlight .nc {
-    color: #008b45;
+    color: #006331;
     font-weight: bold
   }
   /* Name.Class */
@@ -883,7 +883,7 @@ html[data-theme="light"] {
   }
   /* Name.Exception */
   .highlight .nf {
-    color: #008b45
+    color: #4a148c
   }
   /* Name.Function */
   .highlight .nn {
@@ -897,7 +897,7 @@ html[data-theme="light"] {
   }
   /* Name.Tag */
   .highlight .nv {
-    color: #00688B
+    color: #0d47a1
   }
   /* Name.Variable */
   .highlight .ow {
@@ -909,7 +909,7 @@ html[data-theme="light"] {
   }
   /* Text.Whitespace */
   .highlight .mf {
-    color: #B452CD
+    color: #7d398e
   }
   /* Literal.Number.Float */
   .highlight .mh {
@@ -962,7 +962,7 @@ html[data-theme="light"] {
   }
   /* Literal.String.Regex */
   .highlight .s1 {
-    color: #ff8787
+    color: #673ab7
   }
   /* Literal.String.Single */
   .highlight .ss {
