@@ -1,0 +1,26 @@
+{{ define "body_override" }}<body tabindex="0">{{ end }}
+{{ define "main" }}
+  {{ partial "navbar" . }}
+<section class="m-root">
+  <div class="m-container px-0">
+    <div class="m-shape-container shape-top d-block">
+      <div style="height: 55px; width: 100vw;"></div>
+      <div class="angle-top-left size-40"></div>
+      <div class="angle-top-right size-40"></div>
+    </div>
+    <div class="theme-bg-surface">
+      <div class="blog-container theme-text-primary">
+  <div class="container">
+  {{ .Content }}
+  </div>
+      </div>
+    </div>
+
+    <div class="m-shape-container shape-bottom d-block">
+      <div style="height: 55px; width: 100vw;"></div>
+      <div class="angle-bottom-left size-40"></div>
+      <div class="angle-bottom-right size-40"></div>
+    </div>
+  </div>
+</section>
+{{ end }}

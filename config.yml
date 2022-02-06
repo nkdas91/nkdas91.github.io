@@ -1,0 +1,36 @@
+baseURL: 'https://neerajdas.com'
+languageCode: 'en'
+title: 'Neeraj Das'
+
+markup:
+  goldmark:
+    renderer:
+      unsafe:           true
+  highlight:
+    noClasses:          false
+  tableOfContents:
+    startLevel:         2
+    endLevel:           6
+
+buildDrafts:            true
+buildFuture:            true
+
+enableRobotsTXT:        true
+metaDataFormat:         "yaml"
+disableKinds:           ["404", "taxonomy", "term", "RSS", "section"]
+
+publishDir: "_site"
+
+related:
+  includeNewer: false
+  indices:
+    - name: keywords
+      weight: 100
+    - name: date
+      weight: 10
+  threshold: 80
+  toLower: false
+
+params:
+  description:          "Neeraj's website"
+  authors:              "Neeraj Kumar Das"
