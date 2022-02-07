@@ -10,13 +10,12 @@ layout: home
       <h4 class="theme-text-primary text-center mb-4">
         I'm a Software Engineer at
         <a class="theme-text-primary text-decoration-none" href="https://www.mindfiresolutions.com/">Mindfire Solutions, India.</a>
-        I design, build and sometimes rescue web applications.<br>Besides Coding, I also have a keen interest in
-        Photography.
+        I design, build and sometimes rescue web applications.
       </h4>
       <div class="d-flex justify-content-center flex-wrap">
         <div class="m-shape-container m-1">
           <a id="blog-btn" href="/blog/"
-             class="btn btn-ms btn-indigo-a100 text-black" role="button" style="width:250px;">
+             class="btn btn-indigo text-black" role="button" style="width:250px;">
             BLOG
             <span class="ripple-surface"></span>
           </a>
@@ -27,7 +26,7 @@ layout: home
         </div>
         <div class="m-shape-container m-1">
           <a id="photography-btn" href="https://photography.neerajdas.com/"
-             class="btn btn-ms btn-indigo-a100 text-black" role="button" style="width:250px;">
+             class="btn btn-indigo text-black" role="button" style="width:250px;">
             PHOTOGRAPHY
             <span class="ripple-surface"></span>
           </a>
@@ -62,7 +61,7 @@ layout: home
             <div class="d-flex justify-content-center justify-content-md-start flex-wrap">
               <div class="m-shape-container m-1">
                 <a href="/blog/material-style"
-                   class="btn btn-ms btn-primary" role="button" style="width:250px;">
+                   class="btn btn-primary" role="button" style="width:250px;">
                   Read full blog
                   <span class="ripple-surface"></span>
                 </a>
@@ -97,24 +96,51 @@ layout: home
       <div class="angle-bottom-right size-40"></div>
     </div>
   </div>
-
-  <div id="image-showcase" class="overflow-hidden">
-    <div class="m-shape-container d-block">
-      <div class="wrapper">
-        <div class="sliding-background"></div>
-        <div class="w-100 d-flex justify-content-center" style="position:absolute; bottom: 40px;">
-          <a href="https://photography.neerajdas.com/"
-             class="btn btn-primary raised-2dp text-black rounded-pill"
-             id="explore-photography-button">
-            Explore Photography
-            <span class="ripple-surface"></span>
-          </a>
+  
+  <div class="mb-5">
+      <div class="m-shape-container shape-top hero-shape-top d-block">
+        <div style="height: 55px; width: 100vw;"></div>
+        <div class="angle-top-left size-40"></div>
+        <div class="angle-top-right size-40"></div>
+      </div>
+      <div class="theme-bg-surface">
+        <div class="container">
+          <div class="row">
+            <div class="col pt-0 pt-md-5 pb-5">
+              <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-4">
+                <span class="theme-text-primary" style="font-family: 'Roboto Mono', monospace; font-size: 1.5rem;">PHOTOGRAPHY</span>
+              </div>
+              <h4 class="theme-text-primary text-center text-md-start mb-4">
+                Besides Coding, I also have a keen interest in Photography.
+              </h4>
+              <div class="d-flex justify-content-center justify-content-md-start flex-wrap">
+                <div class="m-shape-container m-1">
+                  <a href="https://photography.neerajdas.com/"
+                     class="btn btn-primary" role="button" style="width:250px;">
+                    View Portfolio
+                    <span class="ripple-surface"></span>
+                  </a>
+                  <div class="angle-top-left"></div>
+                  <div class="angle-top-right"></div>
+                  <div class="angle-bottom-left"></div>
+                  <div class="angle-bottom-right"></div>
+                </div>
+              </div>
+            </div>
+            <div class="theme-bg-surface">
+              <div id="image-showcase" class="overflow-hidden">
+                  <div class="wrapper">
+                    <div class="sliding-background"></div>
+                  </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="angle-top-left size-40"></div>
-      <div class="angle-top-right size-40"></div>
-      <div class="angle-bottom-left size-40"></div>
-      <div class="angle-bottom-right size-40"></div>
+      <div class="m-shape-container shape-bottom d-block">
+        <div style="height: 55px; width: 100vw;"></div>
+        <div class="angle-bottom-left size-40"></div>
+        <div class="angle-bottom-right size-40"></div>
+      </div>
     </div>
-  </div>
 </div>

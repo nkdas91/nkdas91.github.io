@@ -1,6 +1,7 @@
 ---
-layout: blog
+layout: post
 title: Getting started with PHPUnit
+date: "2020-08-18T00:00:00Z"
 created: Aug 18, 2020
 updated: Mar 21, 2021
 group: blog

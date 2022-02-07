@@ -1,6 +1,7 @@
 ---
-layout: blog
+layout: post
 title: Adding PHPUnit code coverage to SonarQube
+date: "2021-04-19T00:00:00Z"
 created: Apr 19, 2021
 group: blog
 toc: true

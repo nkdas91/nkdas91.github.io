@@ -1,9 +1,10 @@
 ---
-layout: blog
+layout: post
 title: Locked out of SSH after enabling UFW on Ubuntu EC2 instance?
+date: "2021-06-03T00:00:00Z"
 created: Jun 3, 2021
 group: blog
-aliases:
+aliases: 
   - "/blog/"
 toc: true
 keywords: blog

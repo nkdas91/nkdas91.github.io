@@ -1,6 +1,7 @@
 ---
-layout: blog
+layout: post
 title: Material Style - A UI Library
+date: "2019-01-08T00:00:00Z"
 created: Jan 8, 2019
 group: blog
 toc: true

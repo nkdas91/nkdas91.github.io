@@ -22,7 +22,6 @@ disableKinds:           ["taxonomy", "term"]
 
 publishDir:             "_site"
 
-paginate:               5
 rssLimit:               10
 
 related:
@@ -46,7 +45,7 @@ outputFormats:
     baseName:           "feed"
 
 params:
-  description:          "Neeraj Kumar Das"
+  description:          "Neeraj Das"
   authors:              "Neeraj Kumar Das"
 
 
