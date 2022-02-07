@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "hugo --cleanDestinationDir",
-    "serve": "hugo server --port 9002 --disableFastRender"
+    "start": "hugo server --port 9002 --disableFastRender"
   },
   "repository": {
     "type": "git",

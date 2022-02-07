@@ -1,6 +1,6 @@
-baseURL: 'https://neerajdas.com'
-languageCode: 'en'
-title: 'Neeraj Das'
+languageCode:         'en'
+title:                'Neeraj Das'
+baseURL:              'https://neerajdas.com'
 
 markup:
   goldmark:
@@ -17,20 +17,40 @@ buildFuture:            true
 
 enableRobotsTXT:        true
 metaDataFormat:         "yaml"
-disableKinds:           ["404", "taxonomy", "term", "RSS", "section"]
 
-publishDir: "_site"
+disableKinds:           ["taxonomy", "term"]
+
+publishDir:             "_site"
+
+paginate:               5
+rssLimit:               10
 
 related:
-  includeNewer: false
+  includeNewer:         false
   indices:
-    - name: keywords
-      weight: 100
-    - name: date
-      weight: 10
-  threshold: 80
-  toLower: false
+    - name:             keywords
+      weight:           100
+    - name:             date
+      weight:           10
+  threshold:            80
+  toLower:              false
+
+outputs:
+  page:                 ["HTML"]
+  home:                 ["HTML", "RSS"]
+  section:              ["HTML", "RSS"]
+
+outputFormats:
+  RSS:
+    mediatype:          "application/rss"
+    baseName:           "feed"
 
 params:
-  description:          "Neeraj's website"
+  description:          "Neeraj Kumar Das"
   authors:              "Neeraj Kumar Das"
+
+
+
+
+
+
