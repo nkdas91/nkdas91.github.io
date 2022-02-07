@@ -3,7 +3,7 @@
 <head>
   {{ partial "header" . }}
 </head>
-{{ block "body_override" . }}<body data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="150" tabindex="0">{{ end }}
+{{ block "body_override" . }}<body data-bs-spy="scroll" data-bs-target="#spy #TableOfContents" data-bs-offset="150" tabindex="0">{{ end }}
 
   {{ block "main" . }}
   {{ end }}

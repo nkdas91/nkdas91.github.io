@@ -5,7 +5,6 @@ date: "2021-04-19T00:00:00Z"
 created: Apr 19, 2021
 group: blog
 toc: true
-keywords: blog
 ---
 Code coverage is a measure used to describe the degree to which the source code of a 
 program is tested by a particular test suite. A program with high code coverage has 

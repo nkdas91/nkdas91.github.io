@@ -44,8 +44,8 @@ html[data-theme="light"] {
   --theme-background: #FAFAFA;
   --theme-surface: #FFFFFF;
 
-  --theme-on-surface: #212121;
-  --theme-on-surface-muted: #616161;
+  --theme-on-surface: #424242;
+  --theme-on-surface-muted: #757575;
 
   --theme-accent-color: #673ab7;
   --theme-link-color: #673AB7;
@@ -79,9 +79,10 @@ html[data-theme="dark"] {
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.15rem;
   color: var(--theme-on-surface);
   background-color: var(--theme-background);
+  letter-spacing: 0.02em;
 }
 
 // Links
@@ -110,11 +111,12 @@ footer {
 }
 
 .blog-container {
-  a:not(.btn, .list-group-item):link, a:not(.btn, .list-group-item):visited {
+  a:not(.btn, .nav-link):link, a:not(.btn, .nav-link):visited {
     color: var(--theme-link-color);
+    overflow-wrap: anywhere;
   }
 
-  a:not(.btn, .list-group-item):hover, a:not(.btn, .list-group-item):active {
+  a:not(.btn, .nav-link):hover, a:not(.btn, .nav-link):active {
     color: var(--theme-accent-color);
   }
 }
@@ -137,10 +139,6 @@ footer {
       fill: var(--theme-btn-primary-text-hover);
     }
   }
-
-  .m-ripple {
-    background: var(--theme-btn-primary);
-  }
 }
 
 // Secondary Buttons
@@ -159,10 +157,6 @@ footer {
     .svg-in-btn {
       fill: var(--theme-btn-secondary-text-hover);
     }
-  }
-
-  .m-ripple {
-    background: var(--theme-btn-secondary);
   }
 }
 
@@ -354,10 +348,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media only screen and (max-width: 514px) {
-  .navbar-expand-sm .navbar-nav {
-    width: 100%;
-    justify-content: space-evenly;
+@media (max-width: 390px) {
+  #site-home-top-nav .navbar-nav {
+    flex-direction: column !important;
+    gap: 0.2rem !important;
   }
 }
 
@@ -367,20 +361,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .ms-toc {
   .nav-pills .nav-link {
-    color: var(--theme-on-surface) !important;
+    color: var(--theme-on-surface-muted) !important;
     border-radius: 0 !important;
-    border-left: 2px solid var(--theme-on-surface) !important;
+    border-left: 2px solid var(--theme-on-surface-muted) !important;
 
-    &.active {
+    &:hover, &.active {
       background-color: unset;
       color: var(--theme-accent-color) !important;
       border-left: 2px solid var(--theme-accent-color) !important;
       font-weight: 700;
-    }
-
-    &:hover {
-      color: var(--theme-accent-color) !important;
-      border-left: 2px solid var(--theme-accent-color) !important;
     }
   }
 }

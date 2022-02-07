@@ -7,7 +7,6 @@ group: blog
 aliases: 
   - "/blog/"
 toc: true
-keywords: blog
 ---
 The solution is to stop the instance and instruct it to disable the firewall program upon restart.  
 
@@ -53,9 +52,12 @@ The script is not deleted after it is run. Be sure to delete the user data scrip
 Otherwise, the script will exist in this directory on any instance launched from the AMI.
     
 ## Reference
-<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html" style="word-break: break-word;">https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html</a>
-<a href="https://aws.amazon.com/premiumsupport/knowledge-center/execute-user-data-ec2/" style="word-break: break-word;">https://aws.amazon.com/premiumsupport/knowledge-center/execute-user-data-ec2/</a>
+[https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html][user-data]
 
+[https://aws.amazon.com/premiumsupport/knowledge-center/execute-user-data-ec2/][execute-user-data]
+
+[user-data]: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html
+[execute-user-data]: https://aws.amazon.com/premiumsupport/knowledge-center/execute-user-data-ec2/
 [instance-store-volumes]: https://aws.amazon.com/premiumsupport/knowledge-center/instance-store-vs-ebs/
 [back-up]: https://aws.amazon.com/premiumsupport/knowledge-center/back-up-instance-store-ebs/
 [determine-root-device-type]: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ComponentsAMIs.html#display-ami-root-device-type

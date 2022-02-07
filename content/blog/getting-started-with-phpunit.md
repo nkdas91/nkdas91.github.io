@@ -6,7 +6,6 @@ created: Aug 18, 2020
 updated: Mar 21, 2021
 group: blog
 toc: true
-keywords: blog
 ---
 A unit test provides a strict, written contract that a piece of code must satisfy. 
 As a result, unit tests find problems early in the development cycle.
@@ -28,7 +27,7 @@ Before we begin,<br>
 Please Clone / Download the example code from <a target="_blank" href="https://github.com/nkdas91/Getting-started-with-PHPUnit">GitHub</a>.<br>
 Copy <b>env.example.php</b> to <b>env.php</b> and replace default values.<br>
 Create a DB <b>phpunit</b> and import <b>sql/phpunit.sql</b>.<br>
-Update <b>ABSOLUTE_PATH_TO_DOCUMENT_ROOT</b> in <b>phpunit.xml</b>.<br>
+Update <b>ABSOLUTE PATH TO DOCUMENT ROOT</b> in <b>phpunit.xml</b>.<br>
 Run <b>composer install</b> in the root directory.
 </div>
 
