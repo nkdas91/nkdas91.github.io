@@ -8,6 +8,8 @@ aliases:
   - "/blog/"
 toc: true
 ---
+Locked out of SSH after enabling UFW on Ubuntu EC2 instance?
+
 The solution is to stop the instance and instruct it to disable the firewall program upon restart.  
 
 WARNING: Before starting this procedure, review the following:
