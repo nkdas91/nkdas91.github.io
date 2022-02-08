@@ -1,0 +1,55 @@
+languageCode:         'en'
+title:                'Neeraj Das'
+baseURL:              'https://neerajdas.com'
+
+markup:
+  goldmark:
+    renderer:
+      unsafe:           true
+  highlight:
+    noClasses:          false
+  tableOfContents:
+    startLevel:         2
+    endLevel:           6
+
+buildDrafts:            true
+buildFuture:            true
+
+enableRobotsTXT:        true
+metaDataFormat:         "yaml"
+
+disableKinds:           ["taxonomy", "term", "section"]
+
+publishDir:             "_site"
+
+rssLimit:               10
+
+related:
+  includeNewer:         false
+  indices:
+    - name:             keywords
+      weight:           100
+    - name:             date
+      weight:           10
+  threshold:            80
+  toLower:              false
+
+outputs:
+  page:                 ["HTML"]
+  home:                 ["HTML", "RSS"]
+  section:              ["HTML", "RSS"]
+
+outputFormats:
+  RSS:
+    mediatype:          "application/rss"
+    baseName:           "feed"
+
+params:
+  description:          "Neeraj Das"
+  authors:              "Neeraj Kumar Das"
+
+
+
+
+
+
