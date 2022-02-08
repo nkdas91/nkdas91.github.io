@@ -1,6 +1,0 @@
-.idea
-.sass-cache
-_site
-/node_modules
-/resources/
-/.hugo_build.lock
