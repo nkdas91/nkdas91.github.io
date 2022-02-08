@@ -6,6 +6,7 @@
     max-width: 600px;
     text-align: center;
   }
+
   h1 {
     margin: 30px 0;
     font-size: 4em;
@@ -16,30 +17,27 @@
 
 {{ partial "navbar" . }}
 
-<section class="m-root">
-  <div class="m-container px-0">
-    <div class="m-shape-container shape-top d-block">
-      <div style="height: 55px; width: 100vw;"></div>
-      <div class="angle-top-left size-40"></div>
-      <div class="angle-top-right size-40"></div>
-    </div>
-    <div class="theme-bg-surface">
-      <div class="blog-container theme-text-primary">
-
-<div class="d-flex flex-column justify-content-center align-items-center">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+<div class="m-shape-container shape-top d-block">
+  <div style="height: 55px; width: 100vw;"></div>
+  <div class="angle-top-left size-40"></div>
+  <div class="angle-top-right size-40"></div>
 </div>
 
-      </div>
-    </div>
-    <div class="m-shape-container shape-bottom d-block">
-      <div style="height: 55px; width: 100vw;"></div>
-      <div class="angle-bottom-left size-40"></div>
-      <div class="angle-bottom-right size-40"></div>
-    </div>
+
+<div class="blog-container theme-bg-surface theme-text-primary">
+  <div class="d-flex flex-column justify-content-center align-items-center">
+    <h1>404</h1>
+
+    <p><strong>Page not found :(</strong></p>
+    <p>The requested page could not be found.</p>
   </div>
-</section>
+</div>
+
+
+<div class="m-shape-container shape-bottom d-block">
+  <div style="height: 55px; width: 100vw;"></div>
+  <div class="angle-bottom-left size-40"></div>
+  <div class="angle-bottom-right size-40"></div>
+</div>
+
 {{ end }}
