@@ -18,7 +18,7 @@ buildFuture:            true
 enableRobotsTXT:        true
 metaDataFormat:         "yaml"
 
-disableKinds:           ["taxonomy", "term"]
+disableKinds:           ["taxonomy", "term", "section"]
 
 publishDir:             "_site"
 
