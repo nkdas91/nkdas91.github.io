@@ -1,0 +1,31 @@
+{
+  "name": "nkdas91.github.io",
+  "version": "1.0.0",
+  "description": "Neeraj's website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "hugo --cleanDestinationDir",
+    "start": "hugo server --port 9002 --disableFastRender"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkdas91/nkdas91.github.io.git"
+  },
+  "author": "Neeraj Kumar Das",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkdas91/nkdas91.github.io/issues"
+  },
+  "homepage": "https://github.com/nkdas91/nkdas91.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "hugo-bin": "^0.80.1",
+    "postcss": "^8.4.6",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.49.7"
+  },
+  "hugo-bin": {
+    "buildTags": "extended"
+  }
+}

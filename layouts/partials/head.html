@@ -1,0 +1,34 @@
+<script>
+  const currentTheme = localStorage.getItem('theme');
+
+  if (currentTheme) {
+    document.getElementsByTagName("html")[0].setAttribute('data-theme', currentTheme)
+  }
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ with .Description }}{{ . | markdownify }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . | markdownify }}{{ end }}{{ end }}{{ end }}">
+<meta name="author" content="{{ .Site.Params.authors }}">
+<meta name="generator" content="Hugo {{ hugo.Version }}">
+
+<meta name="theme-color" content="#6f42c1"/>
+
+<meta property="og:url" content="https://materialstyle.github.io"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title | markdownify }} · {{ .Site.Params.description | markdownify }}{{ else }}{{ .Title | markdownify }} · {{ .Site.Title | markdownify }} {{ end }}"/>
+<meta property="og:description" content="{{ with .Description }}{{ . | markdownify }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . | markdownify }}{{ end }}{{ end }}{{ end }}"/>
+
+<title>{{ if .IsHome }}{{ .Site.Title | markdownify }}{{ else }}{{ .Title | markdownify }} · {{ .Site.Title | markdownify }} {{ end }}</title>
+
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+
+{{ with .OutputFormats.Get "rss" -}}
+{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
+{{ with .Params.robots -}}
+<meta name="robots" content="{{ . }}">
+{{- end }}
+
+{{ partial "stylesheet" . }}
