@@ -12,7 +12,7 @@ layout: home
         <a class="theme-text-primary text-decoration-none" href="https://www.mindfiresolutions.com/">Mindfire Solutions, India.</a>
         I design, build and sometimes rescue web applications.
       </h4>
-      <div class="d-flex justify-content-center flex-wrap">
+      <div class="d-flex justify-content-center flex-wrap mb-4">
         <div class="m-shape-container m-1">
           <a id="blog-btn" href="/blog/"
              class="btn btn-indigo text-black" role="button" style="width:250px;">
@@ -34,6 +34,19 @@ layout: home
           <div class="angle-top-right"></div>
           <div class="angle-bottom-left"></div>
           <div class="angle-bottom-right"></div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center flex-wrap">
+        <div class="dropdown">
+          <a class="dropdown-toggle theme-text-primary fs-5" href="#" id="theme-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-circle-half"></i>
+          </a>
+          <ul class="dropdown-menu theme-bg" aria-labelledby="theme-dropdown">
+            <li><button class="dropdown-item theme-text-primary" data-theme-value="light"><i class="bi bi-sun-fill me-2"></i> Light</button></li>
+            <li><button class="dropdown-item theme-text-primary" data-theme-value="dark"><i class="bi bi-moon-stars-fill me-2"></i> Dark</button></li>
+            <li><button class="dropdown-item theme-text-primary" data-theme-value="default"><i class="bi bi-star-fill me-2"></i> Dark Purple</button></li>
+            <li><button class="dropdown-item theme-text-primary active" data-theme-value="auto"><i class="bi bi-circle-half me-2"></i> Auto</button></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -97,7 +110,7 @@ layout: home
     </div>
   </div>
   
-  <div class="mb-5">
+  <div>
       <div class="m-shape-container shape-top hero-shape-top d-block">
         <div style="height: 55px; width: 100vw;"></div>
         <div class="angle-top-left size-40"></div>

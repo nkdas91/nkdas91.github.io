@@ -1,6 +1,19 @@
-function setActiveShape(theme) {
-  $('.m-shape-container').removeClass('active');
-  $('.theme-selector[data-theme=' + theme + ']').closest('.m-shape-container').addClass('active');
+var setTheme = function (theme) {
+  document.querySelectorAll('[data-theme-value]').forEach(function (el) {
+    el.classList.remove('active')
+  })
+
+  var btnToActive = document.querySelector('[data-theme-value="' + theme + '"]')
+
+  if ('light' == theme) {
+    document.querySelector('#theme-dropdown').innerHTML = '<i class="bi bi-sun-fill"></i>'
+  } else if ('dark' == theme) {
+    document.querySelector('#theme-dropdown').innerHTML = '<i class="bi bi-moon-stars-fill"></i>'
+  } else if ('default' == theme) {
+    document.querySelector('#theme-dropdown').innerHTML = '<i class="bi bi-star-fill"></i>'
+  }
+
+  btnToActive.classList.add('active')
 }
 
 function toggleExampleVisibility(theme) {
@@ -14,21 +27,27 @@ function toggleExampleVisibility(theme) {
 }
 
 $(function () {
-  if ('default' === $('html').data('theme')) {
-    $('#theme-default').attr('checked', 'true');
-  } else if ('light' === $('html').data('theme')) {
-    $('#theme-light').attr('checked', 'true');
-  } else {
-    $('#theme-dark').attr('checked', 'true');
+  if (activeTheme) {
+    setTheme(activeTheme)
   }
 
-  setActiveShape($('html').data('theme'));
-  toggleExampleVisibility($('html').data('theme'));
+  document.querySelectorAll('[data-theme-value]')
+    .forEach(function (toggle) {
+      toggle.addEventListener('click', function () {
+        var theme = this.getAttribute('data-theme-value')
 
-  $('.theme-selector').click(function () {
-    $('html').data('theme', $(this).data('theme')).attr('data-theme', $(this).data('theme'));
-    localStorage.setItem('theme', $(this).data('theme'));
-    setActiveShape($(this).data('theme'));
-    toggleExampleVisibility($(this).data('theme'));
-  });
+        setTheme(theme)
+        toggleExampleVisibility($('html').data('theme'))
+
+        if (theme === 'auto') {
+          root.removeAttribute('data-theme')
+          localStorage.removeItem('theme')
+          checkSystemTheme()
+          document.querySelector('#theme-dropdown').innerHTML = '<i class="bi bi-circle-half"></i>'
+        } else {
+          root.setAttribute('data-theme', theme)
+          localStorage.setItem('theme', theme)
+        }
+      })
+    })
 });
