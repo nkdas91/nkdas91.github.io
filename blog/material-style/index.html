@@ -1,6 +1,6 @@
 <!doctype html><html lang=en>
 <head>
-<script>const currentTheme=localStorage.getItem('theme');currentTheme&&document.getElementsByTagName("html")[0].setAttribute('data-theme',currentTheme)</script>
+<script>var root=document.documentElement,activeTheme=localStorage.getItem('theme'),checkSystemTheme=function(){window.matchMedia('(prefers-color-scheme: dark)').matches&&!activeTheme?document.documentElement.setAttribute('data-theme','dark'):document.documentElement.removeAttribute('data-theme')};activeTheme?root.setAttribute('data-theme',activeTheme):(window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){checkSystemTheme()}),checkSystemTheme())</script>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=description content="A year ago, I was involved in a project with the requirement to have Material Design styles and animations for the UI. Like always, I looked for frameworks or libraries that met the design specification.
@@ -27,15 +27,26 @@ It is a super lightweight library that didn’t rely on any JavaScript framework
 </head>
 <body data-bs-spy=scroll data-bs-target="#spy #TableOfContents" data-bs-offset=150 tabindex=0>
 <nav id=site-home-top-nav class="navbar flex-column">
-<a class="navbar-brand site-name" href=/>
+<a class="navbar-brand site-name mx-0" href=/>
 Neeraj Das
 </a>
-<ul class="navbar-nav d-flex flex-row align-items-center justify-content-evenly gap-4">
+<ul class="navbar-nav d-flex flex-row align-items-center justify-content-evenly gap-4 px-4">
+<div class="nav-item dropdown">
+<a class="dropdown-toggle theme-text-primary fs-5" href=# id=theme-dropdown role=button data-bs-toggle=dropdown aria-expanded=false>
+<i class="bi bi-circle-half"></i>
+</a>
+<ul class="dropdown-menu position-absolute theme-bg" aria-labelledby=theme-dropdown>
+<li><button class="dropdown-item theme-text-primary" data-theme-value=light><i class="bi bi-sun-fill me-2"></i> Light</button></li>
+<li><button class="dropdown-item theme-text-primary" data-theme-value=dark><i class="bi bi-moon-stars-fill me-2"></i> Dark</button></li>
+<li><button class="dropdown-item theme-text-primary" data-theme-value=default><i class="bi bi-star-fill me-2"></i> Dark Purple</button></li>
+<li><button class="dropdown-item theme-text-primary active" data-theme-value=auto><i class="bi bi-circle-half me-2"></i> Auto</button></li>
+</ul>
+</div>
 <li class=nav-item>
-<a class="nav-link mr-2 theme-text-primary" href=/blog>BLOG</a>
+<a class="nav-link theme-text-primary" href=/blog>BLOG</a>
 </li>
 <li class=nav-item>
-<a class="nav-link mr-2 theme-text-primary" href=https://photography.neerajdas.com/>PHOTOGRAPHY</a>
+<a class="nav-link theme-text-primary" href=https://photography.neerajdas.com/>PHOTOGRAPHY</a>
 </li>
 <li class=nav-item>
 <a class="nav-link theme-text-primary" href=https://materialstyle.github.io/>MATERIAL STYLE</a>
@@ -132,7 +143,7 @@ Button
 <span class=ripple-surface></span>
 </button>
 <span class=d-block></span>
-<fieldset class="form-floating base-pink primary-purple m-3 bg-trans" style=max-width:200px>
+<fieldset class="form-floating base-pink primary-yellow m-3 bg-transparent" style=max-width:200px>
 <input type=text class=form-control id=firstname placeholder=firstname autocomplete=off>
 <label for=firstname>Firstname</label>
 </fieldset>
@@ -140,7 +151,7 @@ Button
 <input type=text class="form-control text-white" id=firstname-outline placeholder=firstname autocomplete=off>
 <label for=firstname-outline>Firstname</label>
 </fieldset>
-<fieldset class="form-floating base-pink primary-purple m-3" style=max-width:200px>
+<fieldset class="form-floating base-pink primary-yellow m-3 bg-transparent" style=max-width:200px>
 <select class=form-select><option value></option><option value=1>Option 1</option><option value=2>Option 2</option><option value=3>Option 3</option><option value=4>Option 4</option></select>
 <label>Select One</label>
 </fieldset>
@@ -226,43 +237,6 @@ Button
 <div class="angle-bottom-right size-40"></div>
 </div>
 <footer class=container>
-<div class="row my-3">
-<div class="col-md-12 d-flex justify-content-center align-items-center">
-<label class=theme-text-primary>Themes</label>
-</div>
-<div class="col-md-12 d-flex justify-content-center align-items-center flex-wrap py-2 theme-container">
-<div class="m-shape-container m-1">
-<div class=theme-selector data-theme=default>
-<img src=/assets/images/theme_default.png class=img-fluid alt="Default theme image">
-<span class=d-block><i class="bi bi-check-lg me-1"></i></i>Default</span>
-</div>
-<div class="angle-top-left size-15"></div>
-<div class="angle-top-right size-15"></div>
-<div class="angle-bottom-left size-15"></div>
-<div class="angle-bottom-right size-15"></div>
-</div>
-<div class="m-shape-container m-1">
-<div class=theme-selector data-theme=light>
-<img src=/assets/images/theme_light.png class=img-fluid alt="Light theme image">
-<span class=d-block><i class="bi bi-check-lg me-1"></i></i>Light</span>
-</div>
-<div class="angle-top-left size-15"></div>
-<div class="angle-top-right size-15"></div>
-<div class="angle-bottom-left size-15"></div>
-<div class="angle-bottom-right size-15"></div>
-</div>
-<div class="m-shape-container m-1">
-<div class=theme-selector data-theme=dark>
-<img src=/assets/images/theme_dark.png class=img-fluid alt="Dark theme image">
-<span class=d-block><i class="bi bi-check-lg me-1"></i></i>Dark</span>
-</div>
-<div class="angle-top-left size-15"></div>
-<div class="angle-top-right size-15"></div>
-<div class="angle-bottom-left size-15"></div>
-<div class="angle-bottom-right size-15"></div>
-</div>
-</div>
-</div>
 <div class=row>
 <div class="col-md-6 d-flex justify-content-md-start justify-content-center align-items-center py-2">
 <div>

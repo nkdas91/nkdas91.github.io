@@ -533,7 +533,7 @@ Button
 &lt;span class="ripple-surface">&lt;/span>
 &lt;/button>
 &lt;span class="d-block">&lt;/span>
-&lt;fieldset class="form-floating base-pink primary-purple m-3 bg-trans" style="max-width: 200px;">
+&lt;fieldset class="form-floating base-pink primary-yellow m-3 bg-transparent" style="max-width: 200px;">
 &lt;input type="text" class="form-control" id="firstname"
 placeholder="firstname" autocomplete="off">
 &lt;label for="firstname">Firstname&lt;/label>
@@ -543,7 +543,7 @@ placeholder="firstname" autocomplete="off">
 placeholder="firstname" autocomplete="off">
 &lt;label for="firstname-outline">Firstname&lt;/label>
 &lt;/fieldset>
-&lt;fieldset class="form-floating base-pink primary-purple m-3" style="max-width: 200px;">
+&lt;fieldset class="form-floating base-pink primary-yellow m-3 bg-transparent" style="max-width: 200px;">
 &lt;select class="form-select">
 &lt;option value="">&lt;/option>
 &lt;option value="1">Option 1&lt;/option>
