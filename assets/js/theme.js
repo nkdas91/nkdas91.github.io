@@ -17,16 +17,18 @@ var setTheme = function (theme) {
 }
 
 function toggleExampleVisibility(theme) {
-  if ('light' == theme) {
-    $('#example-light').show();
-    $('#example-dark').hide();
-  } else {
+  if ('dark' == theme || 'default' == theme) {
     $('#example-light').hide();
     $('#example-dark').show();
+  } else {
+    $('#example-light').show();
+    $('#example-dark').hide();
   }
 }
 
 $(function () {
+  toggleExampleVisibility($('html').data('theme'))
+
   if (activeTheme) {
     setTheme(activeTheme)
   }
@@ -37,7 +39,7 @@ $(function () {
         var theme = this.getAttribute('data-theme-value')
 
         setTheme(theme)
-        toggleExampleVisibility($('html').data('theme'))
+        toggleExampleVisibility(theme)
 
         if (theme === 'auto') {
           root.removeAttribute('data-theme')

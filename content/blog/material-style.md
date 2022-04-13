@@ -65,7 +65,7 @@ and animations to Bootstrap components.
           <span class="ripple-surface"></span>
         </button>
         <span class="d-block"></span>
-        <fieldset class="form-floating base-pink primary-purple m-3 bg-trans" style="max-width: 200px;">
+        <fieldset class="form-floating base-pink primary-yellow m-3 bg-transparent" style="max-width: 200px;">
           <input type="text" class="form-control" id="firstname"
                  placeholder="firstname" autocomplete="off">
           <label for="firstname">Firstname</label>
@@ -75,7 +75,7 @@ and animations to Bootstrap components.
                  placeholder="firstname" autocomplete="off">
           <label for="firstname-outline">Firstname</label>
         </fieldset>
-        <fieldset class="form-floating base-pink primary-purple m-3" style="max-width: 200px;">
+        <fieldset class="form-floating base-pink primary-yellow m-3 bg-transparent" style="max-width: 200px;">
           <select class="form-select">
             <option value=""></option>
             <option value="1">Option 1</option>
