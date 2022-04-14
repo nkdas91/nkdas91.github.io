@@ -44,7 +44,6 @@ $(function () {
         if (theme === 'auto') {
           root.removeAttribute('data-theme')
           localStorage.removeItem('theme')
-          activeTheme = null
           checkSystemTheme()
           document.querySelector('#theme-dropdown').innerHTML = '<i class="bi bi-circle-half"></i>'
         } else {

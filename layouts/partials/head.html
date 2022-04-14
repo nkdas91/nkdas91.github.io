@@ -1,15 +1,17 @@
 <script>
-  // Toggle color modes
   var root = document.documentElement
   var activeTheme = localStorage.getItem('theme')
 
   var checkSystemTheme = function () {
-    // if OS dark mode is set, and there's no stored theme, set the theme to dark (but don't store it)
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches && !activeTheme) {
-      document.documentElement.setAttribute('data-theme', 'dark')
-    } else {
-      // otherwise, set the theme to the default (light)
-      document.documentElement.removeAttribute('data-theme')
+    activeTheme = localStorage.getItem('theme')
+    // If there's no stored theme (Auto mode is set)
+    if (!activeTheme) {
+      // If Dark mode is set in the OS, set the theme to dark (but don't store it)
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark')
+      } else {
+        document.documentElement.removeAttribute('data-theme')
+      }
     }
   }
 
