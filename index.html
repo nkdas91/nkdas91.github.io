@@ -1,6 +1,6 @@
 <!doctype html><html lang=en>
 <head>
-<script>var root=document.documentElement,activeTheme=localStorage.getItem('theme'),checkSystemTheme=function(){window.matchMedia('(prefers-color-scheme: dark)').matches&&!activeTheme?document.documentElement.setAttribute('data-theme','dark'):document.documentElement.removeAttribute('data-theme')};activeTheme?root.setAttribute('data-theme',activeTheme):(window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){checkSystemTheme()}),checkSystemTheme())</script>
+<script>var root=document.documentElement,activeTheme=localStorage.getItem('theme'),checkSystemTheme=function(){activeTheme=localStorage.getItem('theme'),activeTheme||(window.matchMedia('(prefers-color-scheme: dark)').matches?document.documentElement.setAttribute('data-theme','dark'):document.documentElement.removeAttribute('data-theme'))};activeTheme?root.setAttribute('data-theme',activeTheme):(window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){checkSystemTheme()}),checkSystemTheme())</script>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=description content="Neeraj Das">
@@ -19,7 +19,7 @@
 <link rel=stylesheet href=https://use.typekit.net/fqx2tla.css>
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css>
 <link href=/assets/css/materialstyle.min.css rel=stylesheet>
-<link href=/assets/css/styles.css rel=stylesheet>
+<link href=/assets/css/styles.css?v1 rel=stylesheet>
 <style>body{--offcanvas-expand-width:300px}</style>
 </head>
 <body data-bs-spy=scroll data-bs-target="#spy #TableOfContents" data-bs-offset=150 tabindex=0>
@@ -201,7 +201,7 @@ Hosted on <a href=https://pages.github.com/ class=text-decoration-none>GitHub</a
 <script src=https://code.jquery.com/jquery-3.5.1.min.js integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=anonymous></script>
 <script src=https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js integrity=sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo crossorigin=anonymous></script>
 <script src=/assets/js/materialstyle.min.js></script>
-<script src=/assets/js/site.min.js></script>
+<script src=/assets/js/site.min.js?v1></script>
 <script src=https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js></script>
 <script>document.addEventListener("DOMContentLoaded",function(){var a,b,e,c,f,d;anchors.add('h2, h3'),a=[].slice.call(document.querySelectorAll('.m-shape-container')),a.map(function(a){new materialstyle.Shape(a)}),b=[].slice.call(document.querySelectorAll('.form-control')),e=b.map(function(a){return new materialstyle.TextField(a)}),c=[].slice.call(document.querySelectorAll('.form-select')),f=c.map(function(a){return new materialstyle.SelectField(a)}),d=[].slice.call(document.querySelectorAll('.ripple-surface')),d.map(function(a){new materialstyle.Ripple(a)})})</script>
 </body>
