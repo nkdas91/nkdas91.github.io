@@ -35,7 +35,7 @@ and animations to Bootstrap components.
 
 <div class="m-shape-container mt-2 mb-4">
     <a href="https://materialstyle.github.io/"
-       class="btn btn-ms btn-primary" role="button" style="width:250px;">
+       class="btn btn-ms btn-primary fw-bold" role="button" style="width:250px;">
         Visit Material Style
     </a>
     <div class="angle-top-left"></div>

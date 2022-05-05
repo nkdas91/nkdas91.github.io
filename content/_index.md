@@ -15,7 +15,7 @@ layout: home
       <div class="d-flex justify-content-center flex-wrap mb-4">
         <div class="m-shape-container m-1">
           <a id="blog-btn" href="/blog/"
-             class="btn btn-indigo text-black" role="button" style="width:250px;">
+             class="btn btn-indigo text-black fw-bold" role="button" style="width:250px;">
             BLOG
             <span class="ripple-surface"></span>
           </a>
@@ -26,7 +26,7 @@ layout: home
         </div>
         <div class="m-shape-container m-1">
           <a id="photography-btn" href="https://photography.neerajdas.com/"
-             class="btn btn-indigo text-black" role="button" style="width:250px;">
+             class="btn btn-indigo text-black fw-bold" role="button" style="width:250px;">
             PHOTOGRAPHY
             <span class="ripple-surface"></span>
           </a>
@@ -72,7 +72,7 @@ layout: home
             <div class="d-flex justify-content-center justify-content-md-start flex-wrap">
               <div class="m-shape-container m-1">
                 <a href="/blog/material-style"
-                   class="btn btn-primary" role="button" style="width:250px;">
+                   class="btn btn-primary fw-bold" role="button" style="width:250px;">
                   Read full blog
                   <span class="ripple-surface"></span>
                 </a>
@@ -83,7 +83,7 @@ layout: home
               </div>
               <div class="m-shape-container m-1">
                 <a href="https://materialstyle.github.io/"
-                   class="btn btn-ms btn-primary" role="button" style="width:250px;">
+                   class="btn btn-ms btn-primary fw-bold" role="button" style="width:250px;">
                   Visit Material Style
                   <span class="ripple-surface"></span>
                 </a>
@@ -127,7 +127,7 @@ layout: home
               <div class="d-flex justify-content-center justify-content-md-start flex-wrap">
                 <div class="m-shape-container m-1">
                   <a href="https://photography.neerajdas.com/"
-                     class="btn btn-primary" role="button" style="width:250px;">
+                     class="btn btn-primary fw-bold" role="button" style="width:250px;">
                     View Portfolio
                     <span class="ripple-surface"></span>
                   </a>
