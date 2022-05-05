@@ -2,7 +2,7 @@
 layout: home
 ---
 <div class="m-container home-container">
-  <div class="container hero">
+  <div class="container hero py-5">
     <div class="py-5">
       <h1 class="hello-header theme-text-primary text-center mb-4">
         Hi, I'm <span class="site-name text-indigo-a100" style="white-space: nowrap;">Neeraj Das</span>.
@@ -36,18 +36,16 @@ layout: home
           <div class="angle-bottom-right"></div>
         </div>
       </div>
-      <div class="d-flex justify-content-center flex-wrap">
-        <div class="dropdown">
-          <a class="dropdown-toggle theme-text-primary fs-5" href="#" id="theme-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-circle-half"></i>
-          </a>
-          <ul class="dropdown-menu theme-bg" aria-labelledby="theme-dropdown">
-            <li><button class="dropdown-item theme-text-primary" data-theme-value="light"><i class="bi bi-sun-fill me-2"></i> Light</button></li>
-            <li><button class="dropdown-item theme-text-primary" data-theme-value="dark"><i class="bi bi-moon-stars-fill me-2"></i> Dark</button></li>
-            <li><button class="dropdown-item theme-text-primary" data-theme-value="default"><i class="bi bi-star-fill me-2"></i> Dark Purple</button></li>
-            <li><button class="dropdown-item theme-text-primary active" data-theme-value="auto"><i class="bi bi-circle-half me-2"></i> Auto</button></li>
-          </ul>
-        </div>
+      <div class="dropdown position-absolute top-0 end-0 m-2">
+        <a class="dropdown-toggle btn btn-secondary unelevated" href="#" id="theme-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-circle-half"></i>
+        </a>
+        <ul class="dropdown-menu theme-bg" aria-labelledby="theme-dropdown">
+          <li><button class="dropdown-item theme-text-primary" data-theme-value="light"><i class="bi bi-sun-fill me-2"></i> Light</button></li>
+          <li><button class="dropdown-item theme-text-primary" data-theme-value="dark"><i class="bi bi-moon-stars-fill me-2"></i> Dark</button></li>
+          <li><button class="dropdown-item theme-text-primary" data-theme-value="default"><i class="bi bi-star-fill me-2"></i> Dark Purple</button></li>
+          <li><button class="dropdown-item theme-text-primary active" data-theme-value="auto"><i class="bi bi-circle-half me-2"></i> Auto</button></li>
+        </ul>
       </div>
     </div>
   </div>
