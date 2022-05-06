@@ -333,14 +333,17 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-text-fill-color: transparent;
 }
 
-#blog-btn {
+#blog-btn, #photography-btn {
   letter-spacing: .0892857143em;
-  background: linear-gradient(141.27deg, #ff904e, #ff5982, #E91E63);
+  text-shadow: 0 0 15px #fff;
+}
+
+#blog-btn {
+  background: linear-gradient(141.27deg, #ff904e, #ff5982);
 }
 
 #photography-btn {
-  letter-spacing: .0892857143em;
-  background: linear-gradient(141.27deg, #E91E63, #ec68f4, #26C6DA);
+  background: linear-gradient(141.27deg, #ec68f4, #26C6DA);
 }
 
 .wrapper {
