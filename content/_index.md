@@ -37,7 +37,7 @@ layout: home
         </div>
       </div>
       <div class="dropdown position-absolute top-0 end-0 m-2">
-        <a class="dropdown-toggle btn btn-secondary unelevated" href="#" id="theme-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="dropdown-toggle btn btn-secondary unelevated rounded-pill" href="#" id="theme-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <i class="bi bi-circle-half"></i>
         </a>
         <ul class="dropdown-menu theme-bg" aria-labelledby="theme-dropdown">
