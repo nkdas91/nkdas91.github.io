@@ -18,7 +18,7 @@
 
 {{- $style := resources.Get "scss/styles.scss" | toCSS $sassOptions | postCSS $postcssOptions }}
 
-<link href="{{ $style.Permalink | relURL }}?v3" rel="stylesheet">
+<link href="{{ $style.Permalink | relURL }}?v4" rel="stylesheet">
 
 <style>
   body {

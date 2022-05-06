@@ -7,10 +7,13 @@ var setTheme = function (theme) {
 
   if ('light' == theme) {
     document.querySelector('#theme-dropdown').innerHTML = '<i class="bi bi-sun-fill"></i>'
+    document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#fafafa');
   } else if ('dark' == theme) {
     document.querySelector('#theme-dropdown').innerHTML = '<i class="bi bi-moon-stars-fill"></i>'
+    document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#121212');
   } else if ('default' == theme) {
     document.querySelector('#theme-dropdown').innerHTML = '<i class="bi bi-star-fill"></i>'
+    document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#201b3b');
   }
 
   btnToActive.classList.add('active')
