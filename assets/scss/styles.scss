@@ -189,6 +189,10 @@ footer {
   }
 }
 
+#theme-dropdown ~ .dropdown-menu {
+  border: 2px solid var(--theme-border-color);
+}
+
 // Hero
 .hero {
   background-color: var(--theme-background);
