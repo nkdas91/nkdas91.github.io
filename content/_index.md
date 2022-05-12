@@ -36,6 +36,16 @@ layout: home
           <div class="angle-bottom-right"></div>
         </div>
       </div>
+      <div class="d-flex justify-content-center flex-wrap pt-4">
+        <figure class="text-center mb-0">
+          <blockquote class="blockquote theme-text-primary">
+            <h4>You are what you do. Not what you say you'll do.</h4>
+          </blockquote>
+          <figcaption class="blockquote-footer theme-text-secondary">
+            Ankur Warikoo in <cite title="Source Title">Do Epic Shit</cite>
+          </figcaption>
+        </figure>
+      </div>
       <div class="dropdown position-absolute top-0 end-0 m-2">
         <a class="dropdown-toggle btn btn-secondary unelevated rounded-pill" href="#" id="theme-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <i class="bi bi-circle-half"></i>
