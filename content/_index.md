@@ -4,6 +4,9 @@ layout: home
 <div class="m-container home-container">
   <div class="container hero py-5">
     <div class="py-5">
+      <div class="d-flex justify-content-center mb-4">
+        <img src="/assets/images/Neeraj.jpg" class="rounded-circle" alt="Neeraj's photograph." style="width:200px;height:200px;object-fit:cover;">
+      </div>
       <h1 class="hello-header theme-text-primary text-center mb-4">
         Hi, I'm <span class="site-name text-indigo-a100" style="white-space: nowrap;">Neeraj Das</span>.
       </h1>
