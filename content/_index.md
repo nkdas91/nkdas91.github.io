@@ -50,11 +50,11 @@ layout: home
         <a class="dropdown-toggle btn btn-secondary unelevated rounded-pill" href="#" id="theme-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <i class="bi bi-circle-half"></i>
         </a>
-        <ul class="dropdown-menu theme-bg-surface" aria-labelledby="theme-dropdown">
-          <li><button class="dropdown-item theme-text-primary" data-theme-value="light"><i class="bi bi-sun-fill me-2"></i> Light</button></li>
-          <li><button class="dropdown-item theme-text-primary" data-theme-value="dark"><i class="bi bi-moon-stars-fill me-2"></i> Dark</button></li>
-          <li><button class="dropdown-item theme-text-primary" data-theme-value="default"><i class="bi bi-star-fill me-2"></i> Dark Purple</button></li>
-          <li><button class="dropdown-item theme-text-primary active" data-theme-value="auto"><i class="bi bi-circle-half me-2"></i> Device Theme</button></li>
+        <ul class="dropdown-menu" aria-labelledby="theme-dropdown">
+          <li><button class="dropdown-item" data-theme-value="light"><i class="bi bi-sun-fill me-2"></i> Light</button></li>
+          <li><button class="dropdown-item" data-theme-value="dark"><i class="bi bi-moon-stars-fill me-2"></i> Dark</button></li>
+          <li><button class="dropdown-item" data-theme-value="default"><i class="bi bi-star-fill me-2"></i> Dark Purple</button></li>
+          <li><button class="dropdown-item active" data-theme-value="auto"><i class="bi bi-circle-half me-2"></i> Device Theme</button></li>
         </ul>
       </div>
     </div>
