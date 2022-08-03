@@ -6,13 +6,13 @@ var setTheme = function (theme) {
   var btnToActive = document.querySelector('[data-theme-value="' + theme + '"]')
 
   if ('light' == theme) {
-    document.querySelector('#theme-dropdown').innerHTML = '<i class="bi bi-sun-fill"></i>'
+    document.querySelector('#theme-dropdown').innerHTML = '<i class="bi bi-sun-fill me-1"></i> Themes '
     document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#fafafa');
   } else if ('dark' == theme) {
-    document.querySelector('#theme-dropdown').innerHTML = '<i class="bi bi-moon-stars-fill"></i>'
+    document.querySelector('#theme-dropdown').innerHTML = '<i class="bi bi-moon-fill me-1"></i> Themes '
     document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#121212');
   } else if ('default' == theme) {
-    document.querySelector('#theme-dropdown').innerHTML = '<i class="bi bi-star-fill"></i>'
+    document.querySelector('#theme-dropdown').innerHTML = '<i class="bi bi-heart-fill me-1"></i> Themes '
     document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#201b3b');
   }
 
@@ -48,7 +48,7 @@ $(function () {
           root.removeAttribute('data-theme')
           localStorage.removeItem('theme')
           checkSystemTheme()
-          document.querySelector('#theme-dropdown').innerHTML = '<i class="bi bi-circle-half"></i>'
+          document.querySelector('#theme-dropdown').innerHTML = '<i class="bi bi-circle-half me-1"></i> Themes '
         } else {
           root.setAttribute('data-theme', theme)
           localStorage.setItem('theme', theme)
