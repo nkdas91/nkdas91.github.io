@@ -515,7 +515,7 @@ Visit Material Style
 &lt;h2 id="few-components-from-material-style">Few Components from Material Style&lt;/h2>
 &lt;div class="row p-4 material-style-showcase" id="example-dark">
 &lt;style>
-#example-dark .form-floating--outlined .btn-select {
+#example-dark .form-floating .btn-select {
 color: white;
 }
 &lt;/style>
@@ -533,17 +533,17 @@ Button
 &lt;span class="ripple-surface">&lt;/span>
 &lt;/button>
 &lt;span class="d-block">&lt;/span>
-&lt;fieldset class="form-floating base-pink primary-yellow m-3 bg-transparent" style="max-width: 200px;">
-&lt;input type="text" class="form-control" id="firstname"
+&lt;fieldset class="form-floating base-pink primary-yellow m-3 bg-black" style="max-width: 200px;">
+&lt;input type="text" class="form-control text-white" id="firstname"
 placeholder="firstname" autocomplete="off">
 &lt;label for="firstname">Firstname&lt;/label>
 &lt;/fieldset>
-&lt;fieldset class="form-floating form-floating--outlined base-pink primary-yellow m-3" style="max-width: 200px;">
+&lt;fieldset class="form-floating form-floating-outlined base-pink primary-yellow m-3" style="max-width: 200px;">
 &lt;input type="text" class="form-control text-white" id="firstname-outline"
 placeholder="firstname" autocomplete="off">
 &lt;label for="firstname-outline">Firstname&lt;/label>
 &lt;/fieldset>
-&lt;fieldset class="form-floating base-pink primary-yellow m-3 bg-transparent" style="max-width: 200px;">
+&lt;fieldset class="form-floating base-pink primary-yellow m-3 bg-black" style="max-width: 200px;">
 &lt;select class="form-select">
 &lt;option value="">&lt;/option>
 &lt;option value="1">Option 1&lt;/option>
@@ -553,8 +553,8 @@ placeholder="firstname" autocomplete="off">
 &lt;/select>
 &lt;label>Select One&lt;/label>
 &lt;/fieldset>
-&lt;fieldset class="form-floating form-floating--outlined base-pink primary-yellow m-3" style="max-width: 200px;">
-&lt;select class="form-select text-white">
+&lt;fieldset class="form-floating form-floating-outlined base-pink primary-yellow m-3" style="max-width: 200px;">
+&lt;select class="form-select">
 &lt;option value="">&lt;/option>
 &lt;option value="1">Option 1&lt;/option>
 &lt;option value="2">Option 2&lt;/option>
@@ -585,8 +585,8 @@ Button
 placeholder="firstname" autocomplete="off">
 &lt;label for="firstname">Firstname&lt;/label>
 &lt;/fieldset>
-&lt;fieldset class="form-floating form-floating--outlined base-purple primary-green m-3" style="max-width: 200px;">
-&lt;input type="text" class="form-control text-white" id="firstname-outline"
+&lt;fieldset class="form-floating form-floating-outlined base-purple primary-green m-3" style="max-width: 200px;">
+&lt;input type="text" class="form-control" id="firstname-outline"
 placeholder="firstname" autocomplete="off">
 &lt;label for="firstname-outline">Firstname&lt;/label>
 &lt;/fieldset>
@@ -600,8 +600,8 @@ placeholder="firstname" autocomplete="off">
 &lt;/select>
 &lt;label>Select One&lt;/label>
 &lt;/fieldset>
-&lt;fieldset class="form-floating form-floating--outlined base-purple primary-green m-3" style="max-width: 200px;">
-&lt;select class="form-select text-white">
+&lt;fieldset class="form-floating form-floating-outlined base-purple primary-green m-3" style="max-width: 200px;">
+&lt;select class="form-select">
 &lt;option value="">&lt;/option>
 &lt;option value="1">Option 1&lt;/option>
 &lt;option value="2">Option 2&lt;/option>
