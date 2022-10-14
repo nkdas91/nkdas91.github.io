@@ -47,7 +47,7 @@ and animations to Bootstrap components.
 ## Few Components from Material Style
 <div class="row p-4 material-style-showcase" id="example-dark">
     <style>
-    #example-dark .form-floating--outlined .btn-select {
+    #example-dark .form-floating .btn-select {
       color: white;
     }
     </style>
@@ -65,17 +65,17 @@ and animations to Bootstrap components.
           <span class="ripple-surface"></span>
         </button>
         <span class="d-block"></span>
-        <fieldset class="form-floating base-pink primary-yellow m-3 bg-transparent" style="max-width: 200px;">
-          <input type="text" class="form-control" id="firstname"
+        <fieldset class="form-floating base-pink primary-yellow m-3 bg-black" style="max-width: 200px;">
+          <input type="text" class="form-control text-white" id="firstname"
                  placeholder="firstname" autocomplete="off">
           <label for="firstname">Firstname</label>
         </fieldset>
-        <fieldset class="form-floating form-floating--outlined base-pink primary-yellow m-3" style="max-width: 200px;">
+        <fieldset class="form-floating form-floating-outlined base-pink primary-yellow m-3" style="max-width: 200px;">
           <input type="text" class="form-control text-white" id="firstname-outline"
                  placeholder="firstname" autocomplete="off">
           <label for="firstname-outline">Firstname</label>
         </fieldset>
-        <fieldset class="form-floating base-pink primary-yellow m-3 bg-transparent" style="max-width: 200px;">
+        <fieldset class="form-floating base-pink primary-yellow m-3 bg-black" style="max-width: 200px;">
           <select class="form-select">
             <option value=""></option>
             <option value="1">Option 1</option>
@@ -85,8 +85,8 @@ and animations to Bootstrap components.
           </select>
           <label>Select One</label>
         </fieldset>
-        <fieldset class="form-floating form-floating--outlined base-pink primary-yellow m-3" style="max-width: 200px;">
-          <select class="form-select text-white">
+        <fieldset class="form-floating form-floating-outlined base-pink primary-yellow m-3" style="max-width: 200px;">
+          <select class="form-select">
             <option value=""></option>
             <option value="1">Option 1</option>
             <option value="2">Option 2</option>
@@ -118,8 +118,8 @@ and animations to Bootstrap components.
                  placeholder="firstname" autocomplete="off">
           <label for="firstname">Firstname</label>
         </fieldset>
-        <fieldset class="form-floating form-floating--outlined base-purple primary-green m-3" style="max-width: 200px;">
-          <input type="text" class="form-control text-white" id="firstname-outline"
+        <fieldset class="form-floating form-floating-outlined base-purple primary-green m-3" style="max-width: 200px;">
+          <input type="text" class="form-control" id="firstname-outline"
                  placeholder="firstname" autocomplete="off">
           <label for="firstname-outline">Firstname</label>
         </fieldset>
@@ -133,8 +133,8 @@ and animations to Bootstrap components.
           </select>
           <label>Select One</label>
         </fieldset>
-        <fieldset class="form-floating form-floating--outlined base-purple primary-green m-3" style="max-width: 200px;">
-          <select class="form-select text-white">
+        <fieldset class="form-floating form-floating-outlined base-purple primary-green m-3" style="max-width: 200px;">
+          <select class="form-select">
             <option value=""></option>
             <option value="1">Option 1</option>
             <option value="2">Option 2</option>

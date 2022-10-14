@@ -11,8 +11,7 @@ layout: home
         Hi, I'm <span class="site-name text-indigo-a100" style="white-space: nowrap;">Neeraj Das</span>.
       </h1>
       <h4 class="theme-text-primary text-center mb-4">
-        I'm a Software Engineer at
-        <a class="theme-text-primary text-decoration-none" href="https://www.mindfiresolutions.com/">Mindfire Solutions, India.</a>
+        I'm a Software Engineer.
         I design, build and sometimes rescue web applications.
       </h4>
       <div class="d-flex justify-content-center flex-wrap mb-4">
@@ -38,16 +37,6 @@ layout: home
           <div class="angle-bottom-left"></div>
           <div class="angle-bottom-right"></div>
         </div>
-      </div>
-      <div class="d-flex justify-content-center flex-wrap pt-4">
-        <figure class="text-center mb-0">
-          <blockquote class="blockquote theme-text-primary">
-            <h4>You are what you do. Not what you say you'll do.</h4>
-          </blockquote>
-          <figcaption class="blockquote-footer theme-text-secondary">
-            Ankur Warikoo in <cite title="Source Title">Do Epic Shit</cite>
-          </figcaption>
-        </figure>
       </div>
       <div class="dropdown position-absolute top-0 end-0 m-2">
         <button class="dropdown-toggle btn btn-secondary rounded-pill px-3" id="theme-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
