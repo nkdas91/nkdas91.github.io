@@ -3,6 +3,17 @@ layout: home
 ---
 <div class="m-container home-container">
   <div class="container hero py-5">
+    <div class="dropdown position-absolute top-0 end-0 m-2">
+      <button class="dropdown-toggle btn btn-secondary rounded-pill px-3" id="theme-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-circle-half me-1"></i> Themes 
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="theme-dropdown">
+        <li><button class="dropdown-item" data-theme-value="default"><i class="bi bi-heart-fill me-2"></i> Deep Purple</button></li>
+        <li><button class="dropdown-item" data-theme-value="light"><i class="bi bi-sun-fill me-2"></i> Light</button></li>
+        <li><button class="dropdown-item" data-theme-value="dark"><i class="bi bi-moon-fill me-2"></i> Dark</button></li>
+        <li><button class="dropdown-item active" data-theme-value="auto"><i class="bi bi-circle-half me-2"></i> Device Theme</button></li>
+      </ul>
+    </div>
     <div class="py-5">
       <div class="d-flex justify-content-center mb-4">
         <img src="/assets/images/Neeraj.jpg" class="rounded-circle" alt="Neeraj's photograph." style="width:200px;height:200px;object-fit:cover;">
@@ -11,13 +22,12 @@ layout: home
         Hi, I'm <span class="site-name text-indigo-a100" style="white-space: nowrap;">Neeraj Das</span>.
       </h1>
       <h4 class="theme-text-primary text-center mb-4">
-        I'm a Software Engineer.
         I design, build and sometimes rescue web applications.
       </h4>
       <div class="d-flex justify-content-center flex-wrap mb-4">
         <div class="m-shape-container m-1">
           <a id="blog-btn" href="/blog/"
-             class="btn btn-indigo text-black fw-bold" role="button" style="width:250px;">
+             class="btn btn-purple text-black fw-bold" role="button" style="width:250px;">
             BLOG
             <span class="ripple-surface"></span>
           </a>
@@ -28,7 +38,7 @@ layout: home
         </div>
         <div class="m-shape-container m-1">
           <a id="photography-btn" href="https://photography.neerajdas.com/"
-             class="btn btn-indigo text-black fw-bold" role="button" style="width:250px;">
+             class="btn btn-purple text-black fw-bold" role="button" style="width:250px;">
             PHOTOGRAPHY
             <span class="ripple-surface"></span>
           </a>
@@ -37,17 +47,6 @@ layout: home
           <div class="angle-bottom-left"></div>
           <div class="angle-bottom-right"></div>
         </div>
-      </div>
-      <div class="dropdown position-absolute top-0 end-0 m-2">
-        <button class="dropdown-toggle btn btn-secondary rounded-pill px-3" id="theme-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-          <i class="bi bi-circle-half me-1"></i> Themes 
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="theme-dropdown">
-          <li><button class="dropdown-item" data-theme-value="default"><i class="bi bi-heart-fill me-2"></i> Deep Purple</button></li>
-          <li><button class="dropdown-item" data-theme-value="light"><i class="bi bi-sun-fill me-2"></i> Light</button></li>
-          <li><button class="dropdown-item" data-theme-value="dark"><i class="bi bi-moon-fill me-2"></i> Dark</button></li>
-          <li><button class="dropdown-item active" data-theme-value="auto"><i class="bi bi-circle-half me-2"></i> Device Theme</button></li>
-        </ul>
       </div>
     </div>
   </div>

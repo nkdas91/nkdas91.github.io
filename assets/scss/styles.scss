@@ -99,18 +99,6 @@ footer {
   a:hover, a:active {
     color: var(--theme-accent-color);
   }
-
-  .m-shape-container {
-    .angle-top-left, .angle-top-right, .angle-bottom-left, .angle-bottom-right {
-      border-bottom: 1px solid var(--theme-border-color);
-    }
-
-    &.active,  &:hover {
-      .angle-top-left, .angle-top-right, .angle-bottom-left, .angle-bottom-right {
-        border-bottom: 1px solid var(--theme-accent-color);
-      }
-    }
-  }
 }
 
 .blog-container {
@@ -163,7 +151,7 @@ footer {
   }
 }
 
-// Shapes
+// Section Shapes
 .shape-top, .shape-bottom {
   &.m-shape-container {
     .angle-top-left, .angle-top-right, .angle-bottom-left, .angle-bottom-right {
@@ -211,9 +199,34 @@ footer {
   }
 }
 
+// Shapes on Buttons
 .m-shape-container {
   .angle-top-left, .angle-top-right, .angle-bottom-left, .angle-bottom-right {
     background: var(--theme-background);
+    width: 10px;
+    height: 10px;
+  }
+
+  .btn {
+    border: 2px solid var(--theme-surface);
+    transition: letter-spacing .25s ease-out, font-style .25s ease-out;
+
+    &:hover,
+    &:focus,
+    &:focus-visible,
+    &:active {
+      letter-spacing: .2em;
+      font-style: italic;
+    }
+
+    &:focus-visible {
+      outline: 0;
+      border-color: var(--theme-accent-color);
+
+      ~ .angle-top-left, ~ .angle-top-right, ~ .angle-bottom-left, ~ .angle-bottom-right {
+        border-bottom: 2px solid var(--theme-accent-color);
+      }
+    }
   }
 }
 
@@ -269,42 +282,6 @@ footer {
   }
 }
 
-// Theme selector
-.theme-container {
-  .theme-selector {
-    border: 1px solid var(--theme-border-color);
-    cursor: pointer;
-
-    &:hover {
-      border: 1px solid var(--theme-accent-color);
-    }
-
-    img {
-      width: 150px;
-      min-width: 150px;
-      max-width: 150px;
-    }
-
-    span {
-      padding: 0.2rem 0.5rem;
-    }
-
-    .bi {
-      display: none;
-    }
-  }
-
-  .m-shape-container.active {
-    .theme-selector {
-      border: 1px solid var(--theme-accent-color);
-
-      .bi {
-        display: inline-block;
-      }
-    }
-  }
-}
-
 a {
   text-decoration: none;
 }
@@ -345,9 +322,25 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-text-fill-color: transparent;
 }
 
+// Hero Buttons
 #blog-btn, #photography-btn {
   letter-spacing: .0892857143em;
   text-shadow: 0 0 10px #fff;
+  border: 2px solid var(--theme-background);
+  transition: letter-spacing .25s ease-out, font-style .25s ease-out;
+
+  &:hover,
+  &:focus,
+  &:focus-visible,
+  &:active {
+    letter-spacing: .3em;
+    font-style: italic;
+  }
+
+  &:focus-visible {
+    outline: 0;
+    border-color: var(--theme-accent-color);
+  }
 }
 
 #blog-btn {
