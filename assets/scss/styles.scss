@@ -25,7 +25,7 @@
   --theme-on-surface: #424242;
   --theme-on-surface-muted: #757575;
 
-  --theme-accent-color: #673ab7;
+  --theme-accent-color: #dc3545;
   --theme-link-color: #673AB7;
   --theme-border-color: #673AB7;
   --theme-code-block: #FAFAFA;
@@ -199,30 +199,73 @@ footer {
   }
 }
 
-// Shapes on Buttons
-.m-shape-container {
-  .angle-top-left, .angle-top-right, .angle-bottom-left, .angle-bottom-right {
-    background: var(--theme-background);
-    width: 10px;
-    height: 10px;
+a {
+  border-radius: 4px;
+  border: 2px solid transparent;
+  transition: font-style .25s ease-out;
+
+  &:not(.site-name) {
+    &:hover,
+    &:focus,
+    &:focus-visible,
+    &:active {
+      font-style: italic;
+    }
   }
 
-  .btn {
-    border: 2px solid var(--theme-surface);
-    transition: letter-spacing .25s ease-out, font-style .25s ease-out;
+  &:focus-visible {
+    outline: 0;
+    border-color: var(--theme-accent-color);
+  }
+}
+
+.btn:not(.material-style-showcase .btn) {
+  border: 2px solid var(--theme-surface);
+  transition: letter-spacing .25s ease-out, font-style .25s ease-out;
+  box-shadow: none;
+
+  &:hover,
+  &:focus,
+  &:focus-visible,
+  &:active {
+    letter-spacing: .2em;
+    font-style: italic;
+    box-shadow: none !important;
+    border-color: var(--theme-surface);
+  }
+
+  &:focus-visible {
+    outline: 0;
+    border-color: var(--theme-accent-color);
+    box-shadow: none !important;
+  }
+
+  &.btn-fab, &.dropdown-toggle {
+    border-color: var(--theme-background);
 
     &:hover,
     &:focus,
     &:focus-visible,
     &:active {
-      letter-spacing: .2em;
-      font-style: italic;
+      border-color: var(--theme-background);
     }
 
     &:focus-visible {
-      outline: 0;
       border-color: var(--theme-accent-color);
+    }
+  }
+}
 
+// Shapes on Buttons
+.m-shape-container {
+  .angle-top-left, .angle-top-right, .angle-bottom-left, .angle-bottom-right {
+    background: var(--theme-background);
+    width: 12px;
+    height: 12px;
+  }
+
+  .btn {
+    &:focus-visible {
       ~ .angle-top-left, ~ .angle-top-right, ~ .angle-bottom-left, ~ .angle-bottom-right {
         border-bottom: 2px solid var(--theme-accent-color);
       }
@@ -390,7 +433,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0 !important;
     border-left: 2px solid var(--theme-on-surface-muted) !important;
 
-    &:hover, &.active {
+    &:hover, &:focus, &:focus-visible, &.active {
       background-color: unset;
       color: var(--theme-accent-color) !important;
       border-left: 2px solid var(--theme-accent-color) !important;
