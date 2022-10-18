@@ -24,8 +24,8 @@ layout: home
       <h4 class="theme-text-primary text-center mb-4">
         I'm a Software Engineer. I design, build and sometimes rescue web applications. Besides Coding, I also have a keen interest in Photography.
       </h4>
-      <div class="d-flex justify-content-center flex-wrap mb-4">
-        <div class="m-shape-container m-1">
+      <div class="d-flex justify-content-center flex-wrap gap-2 mb-4">
+        <div class="m-shape-container">
           <a id="blog-btn" href="/blog/"
              class="btn btn-purple text-black fw-bold" role="button" style="width:250px;">
             BLOG
@@ -36,7 +36,7 @@ layout: home
           <div class="angle-bottom-left"></div>
           <div class="angle-bottom-right"></div>
         </div>
-        <div class="m-shape-container m-1">
+        <div class="m-shape-container">
           <a id="photography-btn" href="https://photography.neerajdas.com/"
              class="btn btn-purple text-black fw-bold" role="button" style="width:250px;">
             PHOTOGRAPHY
@@ -70,8 +70,8 @@ layout: home
               I created Material Style, an easy to use UI Library based on Bootstrap that lets you add
               Material Design styles and animations to Bootstrap components...
             </h4>
-            <div class="d-flex justify-content-center justify-content-md-start flex-wrap">
-              <div class="m-shape-container m-1">
+            <div class="d-flex justify-content-center justify-content-md-start flex-wrap gap-2">
+              <div class="m-shape-container">
                 <a href="/blog/material-style"
                    class="btn btn-primary fw-bold" role="button" style="width:250px;">
                   Read full blog
@@ -82,7 +82,7 @@ layout: home
                 <div class="angle-bottom-left"></div>
                 <div class="angle-bottom-right"></div>
               </div>
-              <div class="m-shape-container m-1">
+              <div class="m-shape-container">
                 <a href="https://materialstyle.github.io/"
                    class="btn btn-ms btn-primary fw-bold" role="button" style="width:250px;">
                   Visit Material Style
