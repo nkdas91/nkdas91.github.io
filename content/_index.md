@@ -22,7 +22,7 @@ layout: home
         Hi, I'm <span class="site-name text-indigo-a100" style="white-space: nowrap;">Neeraj Das</span>.
       </h1>
       <h4 class="theme-text-primary text-center mb-4">
-        I design, build and sometimes rescue web applications.
+        I'm a Software Engineer. I design, build and sometimes rescue web applications. Besides Coding, I also have a keen interest in Photography.
       </h4>
       <div class="d-flex justify-content-center flex-wrap mb-4">
         <div class="m-shape-container m-1">
@@ -123,10 +123,10 @@ layout: home
                 <span class="theme-text-primary" style="font-family: 'Roboto Mono', monospace; font-size: 1.5rem;">PHOTOGRAPHY</span>
               </div>
               <h4 class="theme-text-primary text-center text-md-start mb-4">
-                Besides Coding, I also have a keen interest in Photography.
+                Photography has always been one of my favorite hobbies. Looking through the camera is literally seeing the world through a new perspective.
               </h4>
               <div class="d-flex justify-content-center justify-content-md-start flex-wrap">
-                <div class="m-shape-container m-1">
+                <div class="m-shape-container">
                   <a href="https://photography.neerajdas.com/"
                      class="btn btn-primary fw-bold" role="button" style="width:250px;">
                     View Portfolio
