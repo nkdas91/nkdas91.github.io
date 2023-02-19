@@ -1,58 +1,34 @@
-var setTheme = function (theme) {
-  document.querySelectorAll('[data-theme-value]').forEach(function (el) {
-    el.classList.remove('active')
-  })
+/* global activeTheme, root, checkSystemTheme */
 
-  var btnToActive = document.querySelector('[data-theme-value="' + theme + '"]')
+(() => {
+  'use strict'
 
-  if ('light' == theme) {
-    document.querySelector('#theme-dropdown').innerHTML = '<i class="bi bi-sun-fill me-1"></i> Themes '
-    document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#fafafa');
-  } else if ('dark' == theme) {
-    document.querySelector('#theme-dropdown').innerHTML = '<i class="bi bi-moon-fill me-1"></i> Themes '
-    document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#121212');
-  } else if ('default' == theme) {
-    document.querySelector('#theme-dropdown').innerHTML = '<i class="bi bi-heart-fill me-1"></i> Themes '
-    document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#201b3b');
+  document.querySelector('.btn-check[data-theme="auto"]').checked = true
+
+  const setTheme = function (theme) {
+    const themeButtons = Array.prototype.slice.call(document.querySelectorAll('.btn-check'))
+    themeButtons.forEach(tb => {
+      tb.checked = tb.dataset.theme === theme
+    })
   }
-
-  btnToActive.classList.add('active')
-}
-
-function toggleExampleVisibility(theme) {
-  if ('dark' == theme || 'default' == theme) {
-    $('#example-light').hide();
-    $('#example-dark').show();
-  } else {
-    $('#example-light').show();
-    $('#example-dark').hide();
-  }
-}
-
-$(function () {
-  toggleExampleVisibility($('html').data('theme'))
 
   if (activeTheme) {
     setTheme(activeTheme)
   }
 
-  document.querySelectorAll('[data-theme-value]')
-    .forEach(function (toggle) {
-      toggle.addEventListener('click', function () {
-        var theme = this.getAttribute('data-theme-value')
+  const themeButtons = Array.prototype.slice.call(document.querySelectorAll('.btn-check'))
+  themeButtons.forEach(tb => {
+    tb.addEventListener('click', function () {
+      const { theme } = this.dataset
 
-        setTheme(theme)
-        toggleExampleVisibility(theme)
-
-        if (theme === 'auto') {
-          root.removeAttribute('data-theme')
-          localStorage.removeItem('theme')
-          checkSystemTheme()
-          document.querySelector('#theme-dropdown').innerHTML = '<i class="bi bi-circle-half me-1"></i> Themes '
-        } else {
-          root.setAttribute('data-theme', theme)
-          localStorage.setItem('theme', theme)
-        }
-      })
+      if (theme === 'auto') {
+        root.removeAttribute('data-theme')
+        localStorage.removeItem('theme')
+        checkSystemTheme()
+      } else {
+        root.setAttribute('data-theme', theme)
+        localStorage.setItem('theme', theme)
+      }
     })
-});
+  })
+})()
