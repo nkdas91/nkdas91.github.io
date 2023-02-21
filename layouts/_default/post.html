@@ -1,55 +1,36 @@
 {{ define "main" }}
 
-<div class="dropdown position-absolute top-0 end-0 m-2" style="z-index:1030;">
-  <button class="dropdown-toggle btn btn-secondary rounded-pill px-3" id="theme-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-    <i class="bi bi-circle-half me-1"></i> Themes
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="theme-dropdown">
-    <li><button class="dropdown-item" data-theme-value="default"><i class="bi bi-heart-fill me-2"></i> Deep Purple</button></li>
-    <li><button class="dropdown-item" data-theme-value="light"><i class="bi bi-sun-fill me-2"></i> Light</button></li>
-    <li><button class="dropdown-item" data-theme-value="dark"><i class="bi bi-moon-fill me-2"></i> Dark</button></li>
-    <li><button class="dropdown-item active" data-theme-value="auto"><i class="bi bi-circle-half me-2"></i> Device Theme</button></li>
-  </ul>
-</div>
-
 {{ partial "navbar" . }}
 
-<div class="m-shape-container shape-top d-block">
-  <div style="height: 55px; width: 100vw;"></div>
-  <div class="angle-top-left size-40"></div>
-  <div class="angle-top-right size-40"></div>
-</div>
-
-
-<div class="blog-container theme-bg-surface theme-text-primary">
+<div class="blog-container theme-bg-surface rounded-5 py-5" style="--bs-bg-opacity: 0.75; --bs-border-radius-2xl: 3rem;">
 
   <div class="container">
     <div class="row">
       <div class="col-md-9">
         <article itemscope itemtype="http://schema.org/BlogPosting">
-          <header class="mt-5">
-            <label class="theme-text-secondary">{{ $.Page.Params.created }}</label>
+          <header>
+            <label>{{ $.Page.Params.created }}</label>
             <h1 class="blog-title m-0" itemprop="name headline">{{ $.Page.Params.title }}</h1>
             {{ if $.Page.Params.updated }}
-            <label class="theme-text-secondary mt-1">Updated: {{ $.Page.Params.updated }}</label>
+            <label class="mt-1">Updated: {{ $.Page.Params.updated }}</label>
             {{ end }}
           </header>
 
           <div class="share-buttons d-flex gap-1 mt-3 mb-5">
             <a href="https://twitter.com/intent/tweet?text={{ $.Page.Params.title }}&url={{ .Permalink }}"
-               class="btn btn-secondary rounded-pill fw-bold" aria-label="Tweet this article">
+               class="btn btn-purple rounded-pill fw-bold" aria-label="Tweet this article">
               <i class="bi bi-twitter"></i>
               Tweet
               <span class="ripple-surface"></span>
             </a>
             <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}"
-               class="btn btn-secondary rounded-pill fw-bold" aria-label="Share this article on LinkedIn">
+               class="btn btn-purple rounded-pill fw-bold" aria-label="Share this article on LinkedIn">
               <i class="bi bi-linkedin"></i>
               Link
               <span class="ripple-surface"></span>
             </a>
             <a href="https://www.facebook.com/sharer/sharer.php?caption={{ $.Page.Params.title }}&u={{ .Permalink }}"
-               class="btn btn-secondary rounded-pill fw-bold" aria-label="Share this article on Facebook">
+               class="btn btn-purple rounded-pill fw-bold" aria-label="Share this article on Facebook">
               <i class="bi bi-facebook"></i>
               Post
               <span class="ripple-surface"></span>
@@ -71,7 +52,7 @@
             {{ .Content }}
           </div>
 
-          <label class="theme-text-secondary my-4">Subscribe <a href="/feed.xml">via RSS</a></label>
+          <label class="my-4">Subscribe <a href="/feed.xml">via RSS</a></label>
         </article>
       </div>
       <div class="col-md-3">
@@ -80,7 +61,7 @@
           {{ if (eq .Page.Params.toc true) }}
           <div class="row d-none d-md-block">
             <div class="col">
-              <div id="spy" class="ms-toc my-2">
+              <div id="spy" class="ms-toc mb-2">
                 <label class="mb-2">CONTENTS</label>
                 {{ .Page.TableOfContents | replaceRE "(<li>)" "<li class=\"nav-item\">" | replaceRE "(<ul>)" "<ul class=\"nav nav-pills flex-column\">" | replaceRE "(?s:href)" "class=\"nav-link\" href" | safeHTML }}
               </div>
@@ -111,13 +92,6 @@
     </div>
   </div>
 
-</div>
-
-
-<div class="m-shape-container shape-bottom d-block">
-  <div style="height: 55px; width: 100vw;"></div>
-  <div class="angle-bottom-left size-40"></div>
-  <div class="angle-bottom-right size-40"></div>
 </div>
 
 {{ end }}
