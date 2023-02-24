@@ -33,70 +33,12 @@ research and sleepless nights, [Material Style][material-style] was born.
 [Material Style][material-style] is now an easy to use UI Library based on Bootstrap 4.5 that lets you add Material Design styles 
 and animations to Bootstrap components.
 
-<div class="m-shape-container mt-2 mb-4">
-    <a href="https://materialstyle.github.io/"
-       class="btn btn-ms btn-primary fw-bold" role="button" style="width:250px;">
-        Visit Material Style
-    </a>
-    <div class="angle-top-left"></div>
-    <div class="angle-top-right"></div>
-    <div class="angle-bottom-left"></div>
-    <div class="angle-bottom-right"></div>
-</div>
+<a href="https://materialstyle.github.io/"
+   class="btn btn-purple rounded-pill" role="button" style="width:200px;">
+    Visit Material Style
+</a>
 
 ## Few Components from Material Style
-<div class="row p-4 material-style-showcase" id="example-dark">
-    <style>
-    #example-dark .form-floating .btn-select {
-      color: white;
-    }
-    </style>
-    <div class="col">
-        <button type="button" class="btn btn-pink btn-lg m-1">
-          Button
-          <span class="ripple-surface"></span>
-        </button>
-        <button type="button" class="btn btn-pink btn-lg rounded-pill m-1">
-          <i class="bi bi-search"></i> Search
-          <span class="ripple-surface"></span>
-        </button>
-        <button type="button" class="btn btn-fab btn-pink m-1">
-          <i class="bi bi-heart-fill"></i>
-          <span class="ripple-surface"></span>
-        </button>
-        <span class="d-block"></span>
-        <fieldset class="form-floating base-pink primary-yellow m-3 bg-black" style="max-width: 200px;">
-          <input type="text" class="form-control text-white" id="firstname"
-                 placeholder="firstname" autocomplete="off">
-          <label for="firstname">Firstname</label>
-        </fieldset>
-        <fieldset class="form-floating form-floating-outlined base-pink primary-yellow m-3" style="max-width: 200px;">
-          <input type="text" class="form-control text-white" id="firstname-outline"
-                 placeholder="firstname" autocomplete="off">
-          <label for="firstname-outline">Firstname</label>
-        </fieldset>
-        <fieldset class="form-floating base-pink primary-yellow m-3 bg-black" style="max-width: 200px;">
-          <select class="form-select">
-            <option value=""></option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
-            <option value="4">Option 4</option>
-          </select>
-          <label>Select One</label>
-        </fieldset>
-        <fieldset class="form-floating form-floating-outlined base-pink primary-yellow m-3" style="max-width: 200px;">
-          <select class="form-select">
-            <option value=""></option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
-            <option value="4">Option 4</option>
-          </select>
-          <label>Select One</label>
-        </fieldset>
-    </div>
-</div>
 
 <div class="row p-4 material-style-showcase" id="example-light">
     <div class="col">
