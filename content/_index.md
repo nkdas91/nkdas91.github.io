@@ -12,12 +12,16 @@ layout: home
     I'm a Software Engineer. I design, build and sometimes rescue web applications. I also have a keen interest in Photography.
   </h4>
   <div class="d-flex justify-content-center flex-wrap gap-2 mb-5">
-    <a href="/blog/" class="btn btn-pink rounded-pill hero-button" role="button">
+    <a href="/dev/" class="btn btn-pink rounded-pill hero-button" role="button">
       Web Development
       <span class="ripple-surface"></span>
     </a>
-    <a href="/blog/" class="btn btn-pink rounded-pill hero-button" role="button">
+    <a href="/ux/" class="btn btn-pink rounded-pill hero-button" role="button">
       UX Design
+      <span class="ripple-surface"></span>
+    </a>
+    <a href="/blog/" class="btn btn-pink rounded-pill hero-button" role="button">
+      Blog
       <span class="ripple-surface"></span>
     </a>
     <a href="https://photography.neerajdas.com/" class="btn btn-pink rounded-pill hero-button" role="button">

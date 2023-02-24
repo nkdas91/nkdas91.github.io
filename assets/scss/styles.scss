@@ -10,7 +10,7 @@
   --theme-primary-rgb: var(--bs-purple-rgb);
   --theme-on-primary: var(--bs-white);
 
-  --theme-surface-rgb: 255, 255, 255;
+  --theme-surface-rgb: var(--bs-body-bg-rgb);
   --theme-on-surface: #424242;
   --theme-on-surface-muted: #757575;
 
@@ -22,13 +22,13 @@
 // Dark Theme
 [data-theme="dark"] {
   --bs-body-bg: #201B3B;
-  --bs-body-bg-rgb: 32, 27, 59;
+  --bs-body-bg-rgb: 8, 5, 26;
   --bs-body-color: var(--bs-light);
   --bs-body-color-rgb: var(--bs-light-rgb);
 
   --site-name-gradient: linear-gradient(141.27deg, #ff904e -4.24%, #ff5982 21.25%, #ec68f4 44.33%, #26C6DA 83.46%);
 
-  --theme-surface-rgb: 8, 5, 26;
+  --theme-surface-rgb: var(--bs-body-bg-rgb);
   --theme-on-surface: #EDE7F6;
   --theme-on-surface-muted: #D1C4E9;
 
