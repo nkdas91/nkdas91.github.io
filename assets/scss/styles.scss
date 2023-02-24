@@ -148,25 +148,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 200px;
 }
 
-.wrapper {
-  overflow: hidden;
-  position: relative;
-}
-
-.sliding-background {
-  background: url("/assets/images/photoslide.jpg") repeat-x;
-  background-size: contain;
-  height: 300px;
-  width: 12288px;
-  animation: slide 60s linear infinite;
-}
-
-@keyframes slide {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-4096px, 0, 0);
+#site-home-top-nav {
+  .nav-link.active {
+    color: var(--theme-accent-color) !important;
   }
 }
 
