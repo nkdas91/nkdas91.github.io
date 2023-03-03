@@ -7,16 +7,15 @@ created: Feb 21, 2023
 
 <div class="blog-container theme-bg-surface rounded-5 py-5" style="--bs-bg-opacity: 0.6; --bs-border-radius-2xl: 3rem;">
   <div class="container">
-    <h1 class="text-center text-md-start">Open source projects</h1>
     <div class="row">
       <div class="col-md-6 pt-0 pt-md-5 pb-5">
         <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-4">
           <img src="https://materialstyle.github.io/assets/images/MSIconNewColorV2.svg"
                alt="Material Style Logo" style="width:40px; height:40px;">
-          <span class="theme-text-primary ms-2" style="font-family: 'Roboto Mono', monospace; font-size: 1.5rem;">MATERIAL STYLE</span>
+          <span class="theme-text-primary ms-2" style="font-family: 'Roboto Mono', monospace; font-size: 1.8rem;">MATERIAL STYLE</span>
         </div>
         <h4 class="theme-text-primary text-center text-md-start mb-4">
-          I created Material Style - a Material Design UI library based on Bootstrap...
+          A Material Design UI Library based on Bootstrap.
         </h4>
         <div class="d-flex justify-content-center justify-content-md-start flex-wrap gap-2">
           <a href="/blog/material-style"
@@ -43,7 +42,7 @@ created: Feb 21, 2023
           <span class="theme-text-primary" style="font-family: 'Kaushan Script', cursive; font-size: 2.5rem;">Marqueefy</span>
         </div>
         <h4 class="theme-text-primary text-center text-md-start mb-4">
-          I created marqueefy - a custom Marquee component used to create horizontal or vertical scrolling content.
+          A custom Marquee component used to create horizontal or vertical scrolling content.
         </h4>
         <div class="d-flex justify-content-center justify-content-md-start flex-wrap gap-2">
           <a href="https://marqueefy.github.io/"
