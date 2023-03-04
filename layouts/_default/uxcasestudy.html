@@ -10,7 +10,9 @@
         <article itemscope itemtype="http://schema.org/BlogPosting">
           <header>
             <label>{{ $.Page.Params.created }}</label>
-            <h1 class="blog-title m-0" itemprop="name headline">{{ $.Page.Params.title }}</h1>
+            <h1 class="blog-title m-0 {{ $.Page.Params.titleFont }}" itemprop="name headline">{{ $.Page.Params.title }}</h1>
+            <label class="mt-1 d-block">{{ $.Page.Params.description }}</label>
+            <label class="mt-1">Duration: {{ $.Page.Params.duration }}</label>
             {{ if $.Page.Params.updated }}
             <label class="mt-1">Updated: {{ $.Page.Params.updated }}</label>
             {{ end }}
@@ -69,12 +71,12 @@
           </div>
           {{ end }}
 
-          {{ $related := ( where ( where .Site.RegularPages "Type" "blog" | first 5 ) "Title" "!=" .Title ) }}
+          {{ $related := ( where ( where .Site.RegularPages "Type" "ux" | first 5 ) "Title" "!=" .Title ) }}
           {{ with $related }}
           <div class="row">
             <div class="col">
               <div class="ms-toc mt-4 mb-2">
-                <label class="mb-2">OTHER STORIES</label>
+                <label class="mb-2">OTHER UX DESIGNS</label>
                 <nav>
                   <ul class="nav nav-pills flex-column">
                     {{ range . }}
