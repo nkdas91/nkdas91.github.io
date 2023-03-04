@@ -1,0 +1,325 @@
+<!doctype html><html lang=en>
+<head>
+<script>var root=document.documentElement,activeTheme=localStorage.getItem('theme'),checkSystemTheme=function(){activeTheme=localStorage.getItem('theme'),activeTheme||(window.matchMedia('(prefers-color-scheme: dark)').matches?document.documentElement.setAttribute('data-theme','dark'):document.documentElement.removeAttribute('data-theme'))};activeTheme?root.setAttribute('data-theme',activeTheme):(window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){checkSystemTheme()}),checkSystemTheme())</script>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Food delivery responsive web app">
+<meta name=author content="Neeraj Kumar Das">
+<meta name=generator content="Hugo 0.92.1">
+<meta name=theme-color content="#ffffff">
+<meta property="og:url" content="https://neerajdas.com">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Foodies (web app) · Neeraj Das ">
+<meta property="og:description" content="Food delivery responsive web app">
+<title>Foodies (web app) · Neeraj Das </title>
+<link rel=canonical href=https://neerajdas.com/ux/foodies-web/>
+<link rel=icon href=/assets/images/favicon.ico type=image/x-icon>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lemonada&family=Montserrat:wght@400;500&family=Roboto+Mono&family=Roboto:wght@300;400;500;700;900&display=swap" rel=stylesheet>
+<link rel=stylesheet href=https://use.typekit.net/fqx2tla.css>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@materialstyle/materialstyle@3.0.0/dist/css/materialstyle.min.css integrity=sha384-Lnu1KIAOFhyJWM4oUSzwxyStv1OD4B2ZiTZts6q+0kEuYbz7owWW1K4zyMFI8Kb5 crossorigin=anonymous>
+<link href=/assets/css/styles.css?v5 rel=stylesheet>
+<style>body{--offcanvas-expand-width:300px}</style>
+</head>
+<body data-bs-spy=scroll data-bs-target="#spy #TableOfContents" data-bs-offset=150 tabindex=0>
+<nav id=site-home-top-nav class="navbar flex-column pt-5 pt-sm-2">
+<a class="navbar-brand site-name mx-0" href=/>
+Neeraj Das
+</a>
+<ul class="navbar-nav d-flex flex-row align-items-center justify-content-evenly gap-4 px-4">
+<li class=nav-item>
+<a class="nav-link text-body" href=/dev>Web Development</a>
+</li>
+<li class=nav-item>
+<a class="nav-link text-body" href=/ux>UX design</a>
+</li>
+<li class=nav-item>
+<a class="nav-link text-body" href=/blog>Blog</a>
+</li>
+<li class=nav-item>
+<a class="nav-link text-body" href=https://photography.neerajdas.com/>Photography</a>
+</li>
+</ul>
+</nav>
+<div class="blog-container theme-bg-surface rounded-5 py-5" style=--bs-bg-opacity:0.6;--bs-border-radius-2xl:3rem>
+<div class=container>
+<div class=row>
+<div class=col-md-9>
+<article itemscope itemtype=http://schema.org/BlogPosting>
+<header>
+<label>Mar 2, 2023</label>
+<h1 class="blog-title m-0 lemonada" itemprop="name headline">Foodies (web app)</h1>
+<label class="mt-1 d-block">Food delivery responsive web app</label>
+<label class=mt-1>Duration: January 2023 to February 2023</label>
+</header>
+<div class="share-buttons d-flex gap-1 mt-3 mb-5">
+<a href="https://twitter.com/intent/tweet?text=Foodies%20%28web%20app%29&url=https%3a%2f%2fneerajdas.com%2fux%2ffoodies-web%2f" class="btn btn-purple rounded-pill fw-bold" aria-label="Tweet this article">
+<i class="bi bi-twitter"></i>
+Tweet
+<span class=ripple-surface></span>
+</a>
+<a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fneerajdas.com%2fux%2ffoodies-web%2f" class="btn btn-purple rounded-pill fw-bold" aria-label="Share this article on LinkedIn">
+<i class="bi bi-linkedin"></i>
+Link
+<span class=ripple-surface></span>
+</a>
+<a href="https://www.facebook.com/sharer/sharer.php?caption=Foodies%20%28web%20app%29&u=https%3a%2f%2fneerajdas.com%2fux%2ffoodies-web%2f" class="btn btn-purple rounded-pill fw-bold" aria-label="Share this article on Facebook">
+<i class="bi bi-facebook"></i>
+Post
+<span class=ripple-surface></span>
+</a>
+</div>
+<div class="row d-block d-md-none">
+<div class=col>
+<div class="ms-toc my-2">
+<label class=mb-2>CONTENTS</label>
+<nav id=TableOfContents>
+<ul class="nav nav-pills flex-column">
+<li class=nav-item><a class=nav-link href=#overview>Overview</a></li>
+<li class=nav-item><a class=nav-link href=#user-research>User research</a>
+<ul class="nav nav-pills flex-column">
+<li class=nav-item><a class=nav-link href=#pain-points>Pain points</a></li>
+<li class=nav-item><a class=nav-link href=#persona>Persona</a></li>
+</ul>
+</li>
+<li class=nav-item><a class=nav-link href=#starting-the-design>Starting the design</a>
+<ul class="nav nav-pills flex-column">
+<li class=nav-item><a class=nav-link href=#wireframes>Wireframes</a></li>
+<li class=nav-item><a class=nav-link href=#low-fidelity-prototype>Low-fidelity prototype</a></li>
+</ul>
+</li>
+<li class=nav-item><a class=nav-link href=#usability-study>Usability study</a>
+<ul class="nav nav-pills flex-column">
+<li class=nav-item><a class=nav-link href=#findings>Findings</a></li>
+</ul>
+</li>
+<li class=nav-item><a class=nav-link href=#refining-the-design>Refining the design</a></li>
+<li class=nav-item><a class=nav-link href=#high-fidelity-prototype>High fidelity prototype</a></li>
+<li class=nav-item><a class=nav-link href=#accessibility-considerations>Accessibility considerations</a></li>
+<li class=nav-item><a class=nav-link href=#takeaways>Takeaways</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="mb-5 article-body" itemprop=articleBody>
+<div class="d-flex justify-content-center mb-5">
+<img src=/assets/images/foodies_desktop/foodies_desktop.png class=img-fluid alt="Foodies image" style=max-width:1200px;width:100%>
+</div>
+<h2 id=overview>Overview</h2>
+<p>This case study focuses on designing a responsive web app for the existing &ldquo;Foodies&rdquo; food delivery mobile app, as described in this <a href=/ux/foodies/>case study</a>.</p>
+<p>It targets customers who prefer devices with large screen sizes (laptops, tablets or desktops) to mobile devices.</p>
+<br>
+<div class=row>
+<div class=col-md-6>
+<h4><i class="bi bi-exclamation-circle-fill"></i> The Problem</h4>
+<p>
+Some people prefer devices with large screen sizes for online activities.
+</p>
+</div>
+<div class=col-md-6>
+<h4><i class="bi bi-star-fill"></i> The Goal</h4>
+<p>Design a food delivery responsive web app that allows users to easily order healthy meals and get it delivered at their doorstep.</p>
+</div>
+</div>
+<div class=row>
+<div class=col-md-6>
+<h4><i class="bi bi-person-circle"></i> My Role</h4>
+<p>UX designer designing a food delivery responsive web app from conception to delivery.</p>
+</div>
+<div class=col-md-6>
+<h4><i class="bi bi-body-text"></i> Responsibilities</h4>
+<p>Conducting interviews, paper and digital wireframing, low and high-fidelity prototyping, conducting usability studies, accounting for accessibility, and iterating on designs.</p>
+</div>
+</div><svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse"><g><path d="M114 4c-5.067 4.667-10.133 4.667-15.2.0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4-17.733 8.667-22.8 4-32.933-.667-38 4-48.133 8.667-53.2 4-63.333-.667-68.4 4-78.533 8.667-83.6 4-93.733-.667-98.8 4-108.933 8.667-114 4s-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0" stroke="var(--bs-purple)" stroke-linecap="square"/></g></pattern><rect width="100%" height="100%" fill="url(#s1)"/></svg>
+<h2 id=user-research>User research</h2>
+<p>I conducted interviews and created empathy maps to understand the users' problems. The primary user group were people who preferred devices with large screen sizes for online activities.</p>
+<p>This user group confirmed initial assumptions about potential customers. Research also revealed that apart from screen size, the availability of a mobile device was also a factor limiting users from using the mobile app.</p>
+<br>
+<h3 id=pain-points>Pain points</h3>
+<h4><i class="bi bi-universal-access"></i> Accessibility</h4>
+<p>Either the target users don't have access to a mobile device or have difficulties using one.</p>
+<h3 id=persona>Persona</h3>
+<div class="row border border-purple px-2 py-4">
+<div class="col-md-4 d-flex flex-column align-items-center">
+<img src=/assets/images/foodies/pratyush.jpg class="img-fluid rounded-circle" alt="Blood donor app wireframe" style=max-width:200px;width:100%>
+<b>Pratyush</b>
+<div class=pt-2>
+<label class=d-block><b>Age:</b> 31</label>
+<label class=d-block><b>Education:</b> MBBS</label>
+<label class=d-block><b>Occupation:</b> Doctor</label>
+<label class=d-block><b>Hometown:</b> Sambalpur, Odisha</label>
+</div>
+</div>
+<div class=col-md-8>
+<i>"Healing the world and searching for tools that can help me live a better life"</i>
+<div class="row py-3">
+<div class=col-md-6>
+<b>Goals</b>
+<ul>
+<li>Make time for each of his patients</li>
+<li>To have easy access to healthy food</li>
+</ul>
+</div>
+<div class=col-md-6>
+<b>Frustrations</b>
+<ul>
+<li>Having a busy schedule makes it difficult for him to prepare a meal</li>
+</ul>
+</div>
+</div>
+<div>
+Pratyush is a Doctor with a busy and demanding schedule at a hospital in Sambalpur.
+He cares a lot about being available to his patients and often takes appointments at the
+last minute. He lives alone and mostly orders food online. Text-heavy and unresponsive apps
+make it difficult for him to find and order the right food.
+</div>
+</div>
+</div>
+<br><svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse"><g><path d="M114 4c-5.067 4.667-10.133 4.667-15.2.0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4-17.733 8.667-22.8 4-32.933-.667-38 4-48.133 8.667-53.2 4-63.333-.667-68.4 4-78.533 8.667-83.6 4-93.733-.667-98.8 4-108.933 8.667-114 4s-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0" stroke="var(--bs-purple)" stroke-linecap="square"/></g></pattern><rect width="100%" height="100%" fill="url(#s1)"/></svg>
+<h2 id=starting-the-design>Starting the design</h2>
+<h3 id=wireframes>Wireframes</h3>
+<div class="d-flex justify-content-center mb-3">
+<img src=/assets/images/foodies_desktop/wireframes.png class=img-fluid alt="Foodies image" style=max-width:1000px;width:100%>
+</div>
+<br>
+<h3 id=low-fidelity-prototype>Low-fidelity prototype</h3>
+<p>Using the completed set of digital wireframes, I created a low-fidelity prototype. The primary user flow was to select a restaurant and order food. This prototype was used in a usability study.</p>
+<div class="d-flex justify-content-center mb-3">
+<img src=/assets/images/foodies_desktop/lofi.png class=img-fluid alt="Foodies image" style=max-width:1000px;width:100%>
+</div><svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse"><g><path d="M114 4c-5.067 4.667-10.133 4.667-15.2.0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4-17.733 8.667-22.8 4-32.933-.667-38 4-48.133 8.667-53.2 4-63.333-.667-68.4 4-78.533 8.667-83.6 4-93.733-.667-98.8 4-108.933 8.667-114 4s-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0" stroke="var(--bs-purple)" stroke-linecap="square"/></g></pattern><rect width="100%" height="100%" fill="url(#s1)"/></svg>
+<h2 id=usability-study>Usability study</h2>
+<p>I used the high-fidelity prototype for the usability study and it revealed aspects of the designs that needed refining.</p>
+<h3 id=findings>Findings</h3>
+<ul>
+<li>Menu tab was missing from the restaurant page.</li>
+<li>Important links: Help, Contact and About were missing from the design.</li>
+</ul><svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse"><g><path d="M114 4c-5.067 4.667-10.133 4.667-15.2.0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4-17.733 8.667-22.8 4-32.933-.667-38 4-48.133 8.667-53.2 4-63.333-.667-68.4 4-78.533 8.667-83.6 4-93.733-.667-98.8 4-108.933 8.667-114 4s-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0" stroke="var(--bs-purple)" stroke-linecap="square"/></g></pattern><rect width="100%" height="100%" fill="url(#s1)"/></svg>
+<h2 id=refining-the-design>Refining the design</h2>
+<p>I added the Menu tab and the missing links.</p>
+<div class="d-flex justify-content-center mb-3">
+<img src=/assets/images/foodies_desktop/restaurant.png class=img-fluid alt="Foodies image" style=max-width:1000px;width:100%>
+</div><svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse"><g><path d="M114 4c-5.067 4.667-10.133 4.667-15.2.0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4-17.733 8.667-22.8 4-32.933-.667-38 4-48.133 8.667-53.2 4-63.333-.667-68.4 4-78.533 8.667-83.6 4-93.733-.667-98.8 4-108.933 8.667-114 4s-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0" stroke="var(--bs-purple)" stroke-linecap="square"/></g></pattern><rect width="100%" height="100%" fill="url(#s1)"/></svg>
+<h2 id=high-fidelity-prototype>High fidelity prototype</h2>
+<p>The final high-fidelity prototype presented cleaner user flows for ordering food and checkout. It also met user needs for payment on delivery option.</p>
+<p><a href="https://www.figma.com/proto/W6EntDiwAN7SqHDTkR2mUZ/Foodies?node-id=545%3A1857&scaling=scale-down&page-id=545%3A1856&starting-point-node-id=545%3A1857" class="btn btn-purple rounded-pill" role=button style=width:250px>
+Play prototype
+<span class=ripple-surface></span>
+</a></p>
+<div class="d-flex justify-content-center mb-3">
+<img src=/assets/images/foodies_desktop/hifi.png class=img-fluid alt="Foodies image" style=max-width:1000px;width:100%>
+</div><svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse"><g><path d="M114 4c-5.067 4.667-10.133 4.667-15.2.0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4-17.733 8.667-22.8 4-32.933-.667-38 4-48.133 8.667-53.2 4-63.333-.667-68.4 4-78.533 8.667-83.6 4-93.733-.667-98.8 4-108.933 8.667-114 4s-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0" stroke="var(--bs-purple)" stroke-linecap="square"/></g></pattern><rect width="100%" height="100%" fill="url(#s1)"/></svg>
+<h2 id=accessibility-considerations>Accessibility considerations</h2>
+<ul>
+<li>Provided access to users who are visually impaired through adding alt text to images for screen readers.</li>
+<li>Used icons to help make navigation easier.</li>
+<li>Used detailed imagery for food items to help all users better understand the designs.</li>
+</ul><svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse"><g><path d="M114 4c-5.067 4.667-10.133 4.667-15.2.0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4-17.733 8.667-22.8 4-32.933-.667-38 4-48.133 8.667-53.2 4-63.333-.667-68.4 4-78.533 8.667-83.6 4-93.733-.667-98.8 4-108.933 8.667-114 4s-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0" stroke="var(--bs-purple)" stroke-linecap="square"/></g></pattern><rect width="100%" height="100%" fill="url(#s1)"/></svg>
+<h2 id=takeaways>Takeaways</h2>
+<div class=row>
+<div class=col-md-6>
+<h5>Impact</h5>
+<p>Users love the web version of the food delivery mobile app.</p>
+<h5>Quote from peer feedback</h5>
+<p><i>"Wow, now I don't have to switch devices to order food while working on my laptop. Big thanks to the Foodies team for thinking about this."</i></p>
+</div>
+<div class=col-md-6>
+<h5>What I learned</h5>
+<p>While designing this app, I learned that the first ideas for an app are only the beginning of the process. Usability studies and peer feedback influenced each iteration of the app's designs.</p>
+</div>
+</div>
+</div>
+<label class=my-4>Subscribe <a href=/feed.xml>via RSS</a></label>
+</article>
+</div>
+<div class=col-md-3>
+<div class=sticky-md-top style=top:3rem>
+<div class="row d-none d-md-block">
+<div class=col>
+<div id=spy class="ms-toc mb-2">
+<label class=mb-2>CONTENTS</label>
+<nav id=TableOfContents>
+<ul class="nav nav-pills flex-column">
+<li class=nav-item><a class=nav-link href=#overview>Overview</a></li>
+<li class=nav-item><a class=nav-link href=#user-research>User research</a>
+<ul class="nav nav-pills flex-column">
+<li class=nav-item><a class=nav-link href=#pain-points>Pain points</a></li>
+<li class=nav-item><a class=nav-link href=#persona>Persona</a></li>
+</ul>
+</li>
+<li class=nav-item><a class=nav-link href=#starting-the-design>Starting the design</a>
+<ul class="nav nav-pills flex-column">
+<li class=nav-item><a class=nav-link href=#wireframes>Wireframes</a></li>
+<li class=nav-item><a class=nav-link href=#low-fidelity-prototype>Low-fidelity prototype</a></li>
+</ul>
+</li>
+<li class=nav-item><a class=nav-link href=#usability-study>Usability study</a>
+<ul class="nav nav-pills flex-column">
+<li class=nav-item><a class=nav-link href=#findings>Findings</a></li>
+</ul>
+</li>
+<li class=nav-item><a class=nav-link href=#refining-the-design>Refining the design</a></li>
+<li class=nav-item><a class=nav-link href=#high-fidelity-prototype>High fidelity prototype</a></li>
+<li class=nav-item><a class=nav-link href=#accessibility-considerations>Accessibility considerations</a></li>
+<li class=nav-item><a class=nav-link href=#takeaways>Takeaways</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class=row>
+<div class=col>
+<div class="ms-toc mt-4 mb-2">
+<label class=mb-2>OTHER UX DESIGNS</label>
+<nav>
+<ul class="nav nav-pills flex-column">
+<li class=nav-item><a class=nav-link href=/ux/blood-donor/>Blood donor</a></li>
+<li class=nav-item><a class=nav-link href=/ux/foodies/>Foodies</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="container d-flex justify-content-between align-items-center gap-3 my-4">
+<div class="d-flex justify-content-center align-items-center gap-1">
+<a href=https://www.linkedin.com/in/neerajkumardas/ class="btn btn-fab btn-purple shadow-none" aria-label="Neeraj's LinkedIn profile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="22" height="44" fill="currentcolor"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1.0 83.5.0 53.8a53.79 53.79.0 01107.58.0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29.0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+<span class=ripple-surface></span>
+</a>
+<a href=https://github.com/nkdas91/ class="btn btn-fab btn-purple shadow-none" aria-label="Neeraj's GitHub profile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="22" height="44" fill="currentcolor"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6.0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6.0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3.0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1.0-6.2-.3-40.4-.3-61.4.0.0-70 15-84.7-29.8.0.0-11.4-29.1-27.8-36.6.0.0-22.9-15.7 1.6-15.4.0.0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5.0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9.0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4.0 33.7-.3 75.4-.3 83.6.0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6.0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9.0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+<span class=ripple-surface></span>
+</a>
+<a href=https://www.npmjs.com/~nkdas91 class="btn btn-fab btn-purple shadow-none" aria-label="Neeraj's NPM profile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="44" height="44" fill="currentcolor" style="margin-left:-6px"><path d="M288 288h-32v-64h32v64zm288-128v192H288v32H160v-32H0V160h576zm-416 32H32v128h64v-96h32v96h32V192zm160 0H192v160h64v-32h64V192zm224 0H352v128h64v-96h32v96h32v-96h32v96h32V192z"/></svg>
+<span class=ripple-surface></span>
+</a>
+<a href=https://www.instagram.com/neerajdasphotography/ class="btn btn-fab btn-purple shadow-none" aria-label="Neeraj Das Photography"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="22" height="44" fill="currentcolor"><path d="M224.1 141c-63.6.0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1.0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9.0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9.0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9.0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9.0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8.0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+<span class=ripple-surface></span>
+</a>
+</div>
+<div class="d-flex justify-content-center align-items-center gap-2">
+<label>Themes</label>
+<div class="bg-purple bg-opacity-10 rounded-5">
+<input type=radio class=btn-check name=themes id=theme-auto data-theme=auto autocomplete=off aria-label="Auto Theme">
+<label class="btn btn-theme btn-fab mini-fab fs-5 shadow-none" for=theme-auto><i class="bi bi-circle-half"></i><span class=ripple-surface></span></label>
+<input type=radio class=btn-check name=themes id=theme-light data-theme=light autocomplete=off aria-label="Light Theme">
+<label class="btn btn-theme btn-fab mini-fab fs-5 shadow-none" for=theme-light><i class="bi bi-sun-fill"></i><span class=ripple-surface></span></label>
+<input type=radio class=btn-check name=themes id=theme-dark data-theme=dark autocomplete=off aria-label="Dark Theme">
+<label class="btn btn-theme btn-fab mini-fab fs-5 shadow-none" for=theme-dark><i class="bi bi-moon-stars-fill"></i><span class=ripple-surface></span></label>
+</div>
+</div>
+</footer>
+<script src=https://code.jquery.com/jquery-3.5.1.min.js integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js integrity=sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/npm/@material/ripple@14.0.0/dist/mdc.ripple.min.js integrity=sha384-9QANVmWxL3S8VRs8x1Q+bF1Zzogpy7P/Qw1+y5qHLdC1ig0EuoHg9VbB1SXyecdZ crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/npm/@materialstyle/materialstyle@3.0.0/dist/js/materialstyle.min.js integrity=sha384-Q5hpQ5oxjAOFZ4FCVYZ679rhwdssrUFlQuc38BExagMP+344TVLBb/3zKGhMBSES crossorigin=anonymous></script>
+<script src=/assets/js/site.min.js?v1></script>
+<script src=https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js></script>
+<script>document.addEventListener("DOMContentLoaded",function(){var a,b,d,c,e;anchors.add('h2, h3'),a=[].slice.call(document.querySelectorAll('.m-shape-container')),a.map(function(a){new materialstyle.Shape(a)}),b=[].slice.call(document.querySelectorAll('.form-control')),d=b.map(function(a){return new materialstyle.TextField(a)}),c=[].slice.call(document.querySelectorAll('.form-select')),e=c.map(function(a){return new materialstyle.SelectField(a)});const f=Array.prototype.slice.call(document.querySelectorAll('.ripple-surface'));f.map(a=>new mdc.ripple.MDCRipple(a))})</script>
+</body>
+</html>

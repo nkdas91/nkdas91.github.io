@@ -1,4 +1,757 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Neeraj Das</title><link>https://neerajdas.com/</link><description>Recent content on Neeraj Das</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 03 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://neerajdas.com/feed.xml" rel="self" type="application/rss+xml"/><item><title>Locked out of SSH after enabling UFW on Ubuntu EC2 instance?</title><link>https://neerajdas.com/blog/locked-out-of-ssh-after-enabling-ufw/</link><pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate><guid>https://neerajdas.com/blog/locked-out-of-ssh-after-enabling-ufw/</guid><description>&lt;p>Locked out of SSH after enabling UFW on Ubuntu EC2 instance?&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Neeraj Das</title><link>https://neerajdas.com/</link><description>Recent content on Neeraj Das</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 02 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://neerajdas.com/feed.xml" rel="self" type="application/rss+xml"/><item><title>Foodies (web app)</title><link>https://neerajdas.com/ux/foodies-web/</link><pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate><guid>https://neerajdas.com/ux/foodies-web/</guid><description>&lt;div class="d-flex justify-content-center mb-5">
+&lt;img src="https://neerajdas.com/assets/images/foodies_desktop/foodies_desktop.png" class="img-fluid" alt="Foodies image"
+style="max-width: 1200px; width: 100%;">
+&lt;/div>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>This case study focuses on designing a responsive web app for the existing &amp;ldquo;Foodies&amp;rdquo; food delivery mobile app, as described in this &lt;a href="https://neerajdas.com/ux/foodies/">case study&lt;/a>.&lt;/p>
+&lt;p>It targets customers who prefer devices with large screen sizes (laptops, tablets or desktops) to mobile devices.&lt;/p>
+&lt;br>
+&lt;div class="row">
+&lt;div class="col-md-6">
+&lt;h4>&lt;i class="bi bi-exclamation-circle-fill">&lt;/i> The Problem&lt;/h4>
+&lt;p>
+Some people prefer devices with large screen sizes for online activities.
+&lt;/p>
+&lt;/div>
+&lt;div class="col-md-6">
+&lt;h4>&lt;i class="bi bi-star-fill">&lt;/i> The Goal&lt;/h4>
+&lt;p>Design a food delivery responsive web app that allows users to easily order healthy meals and get it delivered at their doorstep.&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;div class="row">
+&lt;div class="col-md-6">
+&lt;h4>&lt;i class="bi bi-person-circle">&lt;/i> My Role&lt;/h4>
+&lt;p>UX designer designing a food delivery responsive web app from conception to delivery.&lt;/p>
+&lt;/div>
+&lt;div class="col-md-6">
+&lt;h4>&lt;i class="bi bi-body-text">&lt;/i> Responsibilities&lt;/h4>
+&lt;p>Conducting interviews, paper and digital wireframing, low and high-fidelity prototyping, conducting usability studies, accounting for accessibility, and iterating on designs.&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;h2 id="user-research">User research&lt;/h2>
+&lt;p>I conducted interviews and created empathy maps to understand the users' problems. The primary user group were people who preferred devices with large screen sizes for online activities.&lt;/p>
+&lt;p>This user group confirmed initial assumptions about potential customers. Research also revealed that apart from screen size, the availability of a mobile device was also a factor limiting users from using the mobile app.&lt;/p>
+&lt;br>
+&lt;h3 id="pain-points">Pain points&lt;/h3>
+&lt;h4>&lt;i class="bi bi-universal-access">&lt;/i> Accessibility&lt;/h4>
+&lt;p>Either the target users don't have access to a mobile device or have difficulties using one.&lt;/p>
+&lt;h3 id="persona">Persona&lt;/h3>
+&lt;div class="row border border-purple px-2 py-4">
+&lt;div class="col-md-4 d-flex flex-column align-items-center">
+&lt;img src="https://neerajdas.com/assets/images/foodies/pratyush.jpg" class="img-fluid rounded-circle" alt="Blood donor app wireframe"
+style="max-width: 200px; width: 100%;">
+&lt;b>Pratyush&lt;/b>
+&lt;div class="pt-2">
+&lt;label class="d-block">&lt;b>Age:&lt;/b> 31&lt;/label>
+&lt;label class="d-block">&lt;b>Education:&lt;/b> MBBS&lt;/label>
+&lt;label class="d-block">&lt;b>Occupation:&lt;/b> Doctor&lt;/label>
+&lt;label class="d-block">&lt;b>Hometown:&lt;/b> Sambalpur, Odisha&lt;/label>
+&lt;/div>
+&lt;/div>
+&lt;div class="col-md-8">
+&lt;i>"Healing the world and searching for tools that can help me live a better life"&lt;/i>
+&lt;div class="row py-3">
+&lt;div class="col-md-6">
+&lt;b>Goals&lt;/b>
+&lt;ul>
+&lt;li>Make time for each of his patients&lt;/li>
+&lt;li>To have easy access to healthy food&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="col-md-6">
+&lt;b>Frustrations&lt;/b>
+&lt;ul>
+&lt;li>Having a busy schedule makes it difficult for him to prepare a meal&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/div>
+&lt;div>
+Pratyush is a Doctor with a busy and demanding schedule at a hospital in Sambalpur.
+He cares a lot about being available to his patients and often takes appointments at the
+last minute. He lives alone and mostly orders food online. Text-heavy and unresponsive apps
+make it difficult for him to find and order the right food.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;br>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;h2 id="starting-the-design">Starting the design&lt;/h2>
+&lt;h3 id="wireframes">Wireframes&lt;/h3>
+&lt;div class="d-flex justify-content-center mb-3">
+&lt;img src="https://neerajdas.com/assets/images/foodies_desktop/wireframes.png" class="img-fluid" alt="Foodies image"
+style="max-width: 1000px; width: 100%;">
+&lt;/div>
+&lt;br>
+&lt;h3 id="low-fidelity-prototype">Low-fidelity prototype&lt;/h3>
+&lt;p>Using the completed set of digital wireframes, I created a low-fidelity prototype. The primary user flow was to select a restaurant and order food. This prototype was used in a usability study.&lt;/p>
+&lt;div class="d-flex justify-content-center mb-3">
+&lt;img src="https://neerajdas.com/assets/images/foodies_desktop/lofi.png" class="img-fluid" alt="Foodies image"
+style="max-width: 1000px; width: 100%;">
+&lt;/div>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;h2 id="usability-study">Usability study&lt;/h2>
+&lt;p>I used the high-fidelity prototype for the usability study and it revealed aspects of the designs that needed refining.&lt;/p>
+&lt;h3 id="findings">Findings&lt;/h3>
+&lt;ul>
+&lt;li>Menu tab was missing from the restaurant page.&lt;/li>
+&lt;li>Important links: Help, Contact and About were missing from the design.&lt;/li>
+&lt;/ul>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;h2 id="refining-the-design">Refining the design&lt;/h2>
+&lt;p>I added the Menu tab and the missing links.&lt;/p>
+&lt;div class="d-flex justify-content-center mb-3">
+&lt;img src="https://neerajdas.com/assets/images/foodies_desktop/restaurant.png" class="img-fluid" alt="Foodies image"
+style="max-width: 1000px; width: 100%;">
+&lt;/div>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;h2 id="high-fidelity-prototype">High fidelity prototype&lt;/h2>
+&lt;p>The final high-fidelity prototype presented cleaner user flows for ordering food and checkout. It also met user needs for payment on delivery option.&lt;/p>
+&lt;p>&lt;a href="https://www.figma.com/proto/W6EntDiwAN7SqHDTkR2mUZ/Foodies?node-id=545%3A1857&amp;scaling=scale-down&amp;page-id=545%3A1856&amp;starting-point-node-id=545%3A1857"
+class="btn btn-purple rounded-pill" role="button" style="width:250px;">
+Play prototype
+&lt;span class="ripple-surface">&lt;/span>
+&lt;/a>&lt;/p>
+&lt;div class="d-flex justify-content-center mb-3">
+&lt;img src="https://neerajdas.com/assets/images/foodies_desktop/hifi.png" class="img-fluid" alt="Foodies image"
+style="max-width: 1000px; width: 100%;">
+&lt;/div>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;h2 id="accessibility-considerations">Accessibility considerations&lt;/h2>
+&lt;ul>
+&lt;li>Provided access to users who are visually impaired through adding alt text to images for screen readers.&lt;/li>
+&lt;li>Used icons to help make navigation easier.&lt;/li>
+&lt;li>Used detailed imagery for food items to help all users better understand the designs.&lt;/li>
+&lt;/ul>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;h2 id="takeaways">Takeaways&lt;/h2>
+&lt;div class="row">
+&lt;div class="col-md-6">
+&lt;h5>Impact&lt;/h5>
+&lt;p>Users love the web version of the food delivery mobile app.&lt;/p>
+&lt;h5>Quote from peer feedback&lt;/h5>
+&lt;p>&lt;i>"Wow, now I don't have to switch devices to order food while working on my laptop. Big thanks to the Foodies team for thinking about this."&lt;/i>&lt;/p>
+&lt;/div>
+&lt;div class="col-md-6">
+&lt;h5>What I learned&lt;/h5>
+&lt;p>While designing this app, I learned that the first ideas for an app are only the beginning of the process. Usability studies and peer feedback influenced each iteration of the app's designs.&lt;/p>
+&lt;/div>
+&lt;/div></description></item><item><title>Blood donor</title><link>https://neerajdas.com/ux/blood-donor/</link><pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate><guid>https://neerajdas.com/ux/blood-donor/</guid><description>&lt;div class="d-flex justify-content-center mb-5">
+&lt;img src="https://neerajdas.com/assets/images/blood_donor/blood_donor.png" class="img-fluid" alt="Blood donor app screenshot"
+style="max-width: 1200px; width: 100%;">
+&lt;/div>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>&amp;ldquo;Blood Donor&amp;rdquo; is a mobile app designed to help people donate or find blood donors. It targets people who have difficulties finding a blood donor.&lt;/p>
+&lt;br>
+&lt;div class="row">
+&lt;div class="col-md-6">
+&lt;h4>&lt;i class="bi bi-exclamation-circle-fill">&lt;/i> The Problem&lt;/h4>
+&lt;p>People have difficulties finding blood donors.&lt;/p>
+&lt;/div>
+&lt;div class="col-md-6">
+&lt;h4>&lt;i class="bi bi-star-fill">&lt;/i> The Goal&lt;/h4>
+&lt;p>Design an app to help people donate or find blood donors easily.&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;div class="row">
+&lt;div class="col-md-6">
+&lt;h4>&lt;i class="bi bi-person-circle">&lt;/i> My Role&lt;/h4>
+&lt;p>UX designer designing a blood donation and procurement app from conception to delivery.&lt;/p>
+&lt;/div>
+&lt;div class="col-md-6">
+&lt;h4>&lt;i class="bi bi-body-text">&lt;/i> Responsibilities&lt;/h4>
+&lt;p>Conducting interviews, wireframing, low and high-fidelity prototyping, conducting usability studies, accounting for accessibility, and iterating on designs.&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;h2 id="user-research">User research&lt;/h2>
+&lt;p>I conducted interviews and created empathy maps to understand the users' problems. The primary user group were people who had faced a situation where they needed a blood donor.&lt;/p>
+&lt;br>
+&lt;h3 id="pain-points">Pain points&lt;/h3>
+&lt;div class="row">
+&lt;div class="col-md-6">
+&lt;h4>&lt;i class="bi bi-binoculars-fill">&lt;/i> Finding donors&lt;/h4>
+&lt;ul>
+&lt;li>Posting on multiple social platforms is tiring, consumes a lot of time and doesn't give a positive response.&lt;/li>
+&lt;li>Unable to find donors who are nearby or available.&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="col-md-6">
+&lt;h4>&lt;i class="bi bi-patch-question-fill">&lt;/i> Availability&lt;/h4>
+&lt;p>Unaware of the availability of blood, travelling to different blood banks is a pain.&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;br>
+&lt;h3 id="persona">Persona&lt;/h3>
+&lt;div class="row border border-purple px-2 py-4">
+&lt;div class="col-md-4 d-flex flex-column align-items-center">
+&lt;img src="https://neerajdas.com/assets/images/blood_donor/nancy.jpg" class="img-fluid rounded-circle" alt="Blood donor app wireframe"
+style="max-width: 200px; width: 100%;">
+&lt;b>Nancy&lt;/b>
+&lt;div class="pt-2">
+&lt;label class="d-block">&lt;b>Age:&lt;/b> 26&lt;/label>
+&lt;label class="d-block">&lt;b>Education:&lt;/b> B Ed&lt;/label>
+&lt;label class="d-block">&lt;b>Occupation:&lt;/b> Teacher&lt;/label>
+&lt;label class="d-block">&lt;b>Hometown:&lt;/b> Bhubaneswar&lt;/label>
+&lt;/div>
+&lt;/div>
+&lt;div class="col-md-8">
+&lt;i>"Looking for a tool that can help me find blood donors near me"&lt;/i>
+&lt;div class="row py-3">
+&lt;div class="col-md-6">
+&lt;b>Goals&lt;/b>
+&lt;ul>
+&lt;li>To find blood on time&lt;/li>
+&lt;li>To find the right blood match&lt;/li>
+&lt;li>Easily connect to a donor&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="col-md-6">
+&lt;b>Frustrations&lt;/b>
+&lt;ul>
+&lt;li>Trouble finding donors&lt;/li>
+&lt;li>Unavailability of blood&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/div>
+&lt;div>
+Nancy is a teacher at a primary school in Bhubaneswar. She is suffering from a chronic illness which requires frequent blood transfusions. She lives with her parents and hopes to find an easy way to find blood donors during her treatment.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;h2 id="starting-the-design">Starting the design&lt;/h2>
+&lt;h3 id="wireframes">Wireframes&lt;/h3>
+&lt;div class="d-flex justify-content-center mb-3">
+&lt;img src="https://neerajdas.com/assets/images/blood_donor/wireframes.png" class="img-fluid" alt="Blood donor app wireframe"
+style="max-width: 1200px; width: 100%;">
+&lt;/div>
+&lt;br>
+&lt;h3 id="low-fidelity-prototype">Low-fidelity prototype&lt;/h3>
+&lt;p>Using the completed set of digital wireframes, I created a low-fidelity prototype. The primary user flow was to find a blood donor. This prototype was used in a usability study.&lt;/p>
+&lt;div class="d-flex justify-content-center mb-3">
+&lt;img src="https://neerajdas.com/assets/images/blood_donor/lofi.png" class="img-fluid" alt="Blood donor app low fidelity prototype image"
+style="max-width: 1200px; width: 100%;">
+&lt;/div>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;h2 id="usability-study">Usability study&lt;/h2>
+&lt;p>I conducted two rounds of usability studies. Findings from the first study helped guide the designs from wireframes to mockups. The second study used a high-fidelity prototype and revealed what aspects of the mockups needed refining.&lt;/p>
+&lt;h3 id="round-1-findings">Round 1 findings&lt;/h3>
+&lt;p>The design didn&amp;rsquo;t include a sign-in process for recipients to help find a blood donor fast. Because of this, users couldn&amp;rsquo;t track their requests after closing the app.&lt;/p>
+&lt;h3 id="round-2-findings">Round 2 findings&lt;/h3>
+&lt;p>The &amp;ldquo;blood group&amp;rdquo; and &amp;ldquo;state&amp;rdquo; appeared to be text input fields which should have been dropdown menus.&lt;/p>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;h2 id="refining-the-design">Refining the design&lt;/h2>
+&lt;p>I added a simple phone number and OTP sign-in process to help users track their requests.&lt;/p>
+&lt;div class="d-flex justify-content-center mb-3">
+&lt;img src="https://neerajdas.com/assets/images/blood_donor/login.png" class="img-fluid" alt="Foodies image"
+style="max-width: 820px; width: 100%;">
+&lt;/div>
+&lt;p>I added icons to make &amp;ldquo;blood group&amp;rdquo; and &amp;ldquo;state&amp;rdquo; appear like dropdown menus.&lt;/p>
+&lt;div class="d-flex justify-content-center mb-3">
+&lt;img src="https://neerajdas.com/assets/images/blood_donor/form.png" class="img-fluid" alt="Foodies image"
+style="max-width: 820px; width: 100%;">
+&lt;/div>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;h2 id="high-fidelity-prototype">High fidelity prototype&lt;/h2>
+&lt;p>The final high-fidelity prototype presented cleaner user flows for finding a blood donor.&lt;/p>
+&lt;p>&lt;a href="https://www.figma.com/proto/XCwGka9bxhZJg4w2ALasZs/Blood-Donor?node-id=24%3A200&amp;scaling=scale-down&amp;page-id=0%3A1&amp;starting-point-node-id=24%3A200"
+class="btn btn-purple rounded-pill" role="button" style="width:250px;">
+Play prototype
+&lt;span class="ripple-surface">&lt;/span>
+&lt;/a>&lt;/p>
+&lt;div class="d-flex justify-content-center mb-3">
+&lt;img src="https://neerajdas.com/assets/images/blood_donor/hifi.png" class="img-fluid" alt="Blood donor app high fidelity prototype image"
+style="max-width: 1200px; width: 100%;">
+&lt;/div>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;h2 id="takeaways">Takeaways&lt;/h2>
+&lt;div class="row">
+&lt;div class="col-md-6">
+&lt;h5>Impact&lt;/h5>
+&lt;p>The app makes users feel the "Blood donors" app does a nice job finding a blood donor.&lt;/p>
+&lt;h5>Quote from peer feedback&lt;/h5>
+&lt;p>&lt;i>"The app made it so easy and quick to find a blood donor. I would definitely use this app."&lt;/i>&lt;/p>
+&lt;/div>
+&lt;div class="col-md-6">
+&lt;h5>What I learned&lt;/h5>
+&lt;p>While designing this app, I learned that the first ideas for an app are only the beginning of the process. Usability studies and peer feedback influenced each iteration of the app's designs.&lt;/p>
+&lt;/div>
+&lt;/div></description></item><item><title>Foodies</title><link>https://neerajdas.com/ux/foodies/</link><pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate><guid>https://neerajdas.com/ux/foodies/</guid><description>&lt;div class="d-flex justify-content-center mb-5">
+&lt;img src="https://neerajdas.com/assets/images/foodies/foodies.png" class="img-fluid" alt="Foodies image"
+style="max-width: 1200px; width: 100%;">
+&lt;/div>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Foodies is a food delivery mobile app. It strives to deliver a wide range of food items from various restaurants. It targets customers who lack the time to prepare meal and helps them order food online and get it at their doorstep.&lt;/p>
+&lt;br>
+&lt;div class="row">
+&lt;div class="col-md-6">
+&lt;h4>&lt;i class="bi bi-exclamation-circle-fill">&lt;/i> The Problem&lt;/h4>
+&lt;p>Busy workers and commuters lack the time necessary to prepare a meal.&lt;/p>
+&lt;/div>
+&lt;div class="col-md-6">
+&lt;h4>&lt;i class="bi bi-star-fill">&lt;/i> The Goal&lt;/h4>
+&lt;p>Design a food delivery app that allows users to easily order healthy meals and get it delivered at their doorstep.&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;div class="row">
+&lt;div class="col-md-6">
+&lt;h4>&lt;i class="bi bi-person-circle">&lt;/i> My Role&lt;/h4>
+&lt;p>UX designer designing a food delivery app from conception to delivery.&lt;/p>
+&lt;/div>
+&lt;div class="col-md-6">
+&lt;h4>&lt;i class="bi bi-body-text">&lt;/i> Responsibilities&lt;/h4>
+&lt;p>Conducting interviews, paper and digital wireframing, low and high-fidelity prototyping, conducting usability studies, accounting for accessibility, and iterating on designs.&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;h2 id="user-research">User research&lt;/h2>
+&lt;p>I conducted interviews and created empathy maps to understand the users I’m
+designing for and their needs. A primary user group identified through research
+was working adults who don’t have time to cook meals.&lt;/p>
+&lt;p>This user group confirmed initial assumptions about potential customers, but research
+also revealed that time was not the only factor limiting users from cooking at home.
+Other user problems included obligations, interests, or challenges that make it
+difficult to get groceries for cooking or go to restaurants in-person.&lt;/p>
+&lt;br>
+&lt;h3 id="pain-points">Pain points&lt;/h3>
+&lt;div class="row">
+&lt;div class="col-md-4">
+&lt;h4>&lt;i class="bi bi-clock-fill">&lt;/i> Time&lt;/h4>
+&lt;p>Working adults are too busy to spend time on meal prep.&lt;/p>
+&lt;/div>
+&lt;div class="col-md-4">
+&lt;h4>&lt;i class="bi bi-universal-access">&lt;/i> Accessibility&lt;/h4>
+&lt;p>Platforms for ordering food are not equipped with assistive technologies.&lt;/p>
+&lt;/div>
+&lt;div class="col-md-4">
+&lt;h4>&lt;i class="bi bi-diagram-3-fill">&lt;/i> Information Architecture&lt;/h4>
+&lt;p>Text-heavy menus in apps are often difficult to read and order from.&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;br>
+&lt;h3 id="persona">Persona&lt;/h3>
+&lt;div class="row border border-purple px-2 py-4">
+&lt;div class="col-md-4 d-flex flex-column align-items-center">
+&lt;img src="https://neerajdas.com/assets/images/foodies/pratyush.jpg" class="img-fluid rounded-circle" alt="Blood donor app wireframe"
+style="max-width: 200px; width: 100%;">
+&lt;b>Pratyush&lt;/b>
+&lt;div class="pt-2">
+&lt;label class="d-block">&lt;b>Age:&lt;/b> 31&lt;/label>
+&lt;label class="d-block">&lt;b>Education:&lt;/b> MBBS&lt;/label>
+&lt;label class="d-block">&lt;b>Occupation:&lt;/b> Doctor&lt;/label>
+&lt;label class="d-block">&lt;b>Hometown:&lt;/b> Sambalpur, Odisha&lt;/label>
+&lt;/div>
+&lt;/div>
+&lt;div class="col-md-8">
+&lt;i>"Healing the world and searching for tools that can help me live a better life"&lt;/i>
+&lt;div class="row py-3">
+&lt;div class="col-md-6">
+&lt;b>Goals&lt;/b>
+&lt;ul>
+&lt;li>Make time for each of his patients&lt;/li>
+&lt;li>To have easy access to healthy food&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="col-md-6">
+&lt;b>Frustrations&lt;/b>
+&lt;ul>
+&lt;li>Having a busy schedule makes it difficult for him to prepare a meal&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/div>
+&lt;div>
+Pratyush is a Doctor with a busy and demanding schedule at a hospital in Sambalpur.
+He cares a lot about being available to his patients and often takes appointments at the
+last minute. He lives alone and mostly orders food online. Text-heavy and unresponsive apps
+make it difficult for him to find and order the right food.
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;br>
+&lt;h3 id="user-journey-map">User journey map&lt;/h3>
+&lt;div class="d-flex justify-content-center mb-3">
+&lt;img src="https://neerajdas.com/assets/images/foodies/user_journey.png" class="img-fluid" alt="Foodies image"
+style="max-width: 1000px; width: 100%;">
+&lt;/div>
+&lt;p>Mapping Pratyush’s user journey revealed how helpful it would be for users to have access to a food delivery app.&lt;/p>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;h2 id="starting-the-design">Starting the design&lt;/h2>
+&lt;h3 id="paper-wireframes">Paper wireframes&lt;/h3>
+&lt;div class="d-flex justify-content-center mb-3">
+&lt;img src="https://neerajdas.com/assets/images/foodies/paper_wireframes.jpg" class="img-fluid" alt="Foodies image"
+style="max-width: 1000px; width: 100%;">
+&lt;/div>
+&lt;p>Taking the time to draft iterations of each screen of the app on paper ensured that the elements that made it to digital wireframes would be well-suited to address user pain points. For the home screen, I prioritized a quick and easy ordering process to help users save time.&lt;/p>
+&lt;br>
+&lt;h3 id="digital-wireframes">Digital wireframes&lt;/h3>
+&lt;div class="d-flex justify-content-center mb-3">
+&lt;img src="https://neerajdas.com/assets/images/foodies/digital_wireframe.png" class="img-fluid" alt="Foodies image"
+style="max-width: 650px; width: 100%;">
+&lt;/div>
+&lt;p>As the initial design phase continued, I made sure to base screen designs on feedback and findings from the user research.&lt;/p>
+&lt;br>
+&lt;h3 id="low-fidelity-prototype">Low-fidelity prototype&lt;/h3>
+&lt;p>Using the completed set of digital wireframes, I created a low-fidelity prototype. The primary user flow I connected was selecting a restaurant and ordering food, so the prototype could be used in a usability study.&lt;/p>
+&lt;div class="d-flex justify-content-center mb-3">
+&lt;img src="https://neerajdas.com/assets/images/foodies/lofi.png" class="img-fluid" alt="Foodies image"
+style="max-width: 1000px; width: 100%;">
+&lt;/div>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;h2 id="usability-study">Usability study&lt;/h2>
+&lt;p>I conducted two rounds of usability studies. Findings from the first study helped guide the designs from wireframes to mockups. The second study used a low-fidelity prototype and revealed what aspects of the mockups needed refining.&lt;/p>
+&lt;h3 id="round-1-findings">Round 1 findings&lt;/h3>
+&lt;ul>
+&lt;li>Users want to be able to edit quantity of food items from the review page as well&lt;/li>
+&lt;/ul>
+&lt;h3 id="round-2-findings">Round 2 findings&lt;/h3>
+&lt;ul>
+&lt;li>Sign In link was missing from the Sign Up page&lt;/li>
+&lt;/ul>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;h2 id="refining-the-design">Refining the design&lt;/h2>
+&lt;p>Early designs didn’t have a way to edit quantity from the Review page, but after the usability studies, I updated the Review order page to allow Quantity adjustments.&lt;/p>
+&lt;div class="d-flex justify-content-center mb-3">
+&lt;img src="https://neerajdas.com/assets/images/foodies/review_before_after.png" class="img-fluid" alt="Foodies image"
+style="max-width: 650px; width: 100%;">
+&lt;/div>
+&lt;p>The second usability study revealed that the Sign Up page didn’t have a Sign In link. Added it.&lt;/p>
+&lt;div class="d-flex justify-content-center mb-3">
+&lt;img src="https://neerajdas.com/assets/images/foodies/signup_before_after.png" class="img-fluid" alt="Foodies image"
+style="max-width: 650px; width: 100%;">
+&lt;/div>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;h2 id="high-fidelity-prototype">High fidelity prototype&lt;/h2>
+&lt;p>The final high-fidelity prototype presented cleaner user flows for ordering food and checkout. It also met user needs for payment on delivery option.&lt;/p>
+&lt;p>&lt;a href="https://www.figma.com/proto/W6EntDiwAN7SqHDTkR2mUZ/Foodies?node-id=238%3A1009&amp;scaling=scale-down&amp;page-id=238%3A1008&amp;starting-point-node-id=238%3A1009"
+class="btn btn-purple rounded-pill" role="button" style="width:250px;">
+Play prototype
+&lt;span class="ripple-surface">&lt;/span>
+&lt;/a>&lt;/p>
+&lt;div class="d-flex justify-content-center mb-3">
+&lt;img src="https://neerajdas.com/assets/images/foodies/hifi.png" class="img-fluid" alt="Foodies image"
+style="max-width: 1000px; width: 100%;">
+&lt;/div>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;h2 id="accessibility-considerations">Accessibility considerations&lt;/h2>
+&lt;ul>
+&lt;li>Provided access to users who are visually impaired through adding alt text to images for screen readers.&lt;/li>
+&lt;li>Used icons to help make navigation easier.&lt;/li>
+&lt;li>Used detailed imagery for food items to help all users better understand the designs.&lt;/li>
+&lt;/ul>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;h2 id="takeaways">Takeaways&lt;/h2>
+&lt;div class="row">
+&lt;div class="col-md-6">
+&lt;h5>Impact&lt;/h5>
+&lt;p>The app makes users feel the "Foodies" team thinks about how to meet their needs.&lt;/p>
+&lt;h5>Quote from peer feedback&lt;/h5>
+&lt;p>&lt;i>"The app made it so easy to select a restaurant and order food! I would definitely use this app for a delicious, fast, and healthy meal."&lt;/i>&lt;/p>
+&lt;/div>
+&lt;div class="col-md-6">
+&lt;h5>What I learned&lt;/h5>
+&lt;p>While designing this app, I learned that the first ideas for an app are only the beginning of the process. Usability studies and peer feedback influenced each iteration of the app's designs.&lt;/p>
+&lt;/div>
+&lt;/div></description></item><item><title>UX Design</title><link>https://neerajdas.com/ux/</link><pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate><guid>https://neerajdas.com/ux/</guid><description>&lt;div class="blog-container theme-bg-surface rounded-5 py-5" style="--bs-bg-opacity: 0.6; --bs-border-radius-2xl: 3rem;">
+&lt;div class="container">
+&lt;div class="row">
+&lt;div class="col-md-6 pt-0 pt-md-5 pb-5">
+&lt;div class="d-flex align-items-center justify-content-center justify-content-md-start mb-4">
+&lt;span class="theme-text-primary" style="font-family: 'Lemonada', cursive; font-size: 2rem;">Foodies&lt;/span>
+&lt;/div>
+&lt;h4 class="theme-text-primary text-center text-md-start mb-4">
+Food delivery mobile app.
+&lt;/h4>
+&lt;div class="d-flex justify-content-center justify-content-md-start flex-wrap gap-2">
+&lt;a href="https://neerajdas.com/ux/foodies"
+class="btn btn-purple rounded-pill" role="button" style="width:250px;">
+View case study
+&lt;span class="ripple-surface">&lt;/span>
+&lt;/a>
+&lt;a href="https://www.figma.com/proto/W6EntDiwAN7SqHDTkR2mUZ/Foodies?node-id=238%3A1009&amp;scaling=scale-down&amp;page-id=238%3A1008&amp;starting-point-node-id=238%3A1009"
+class="btn btn-purple rounded-pill" role="button" style="width:250px;">
+Play prototype
+&lt;span class="ripple-surface">&lt;/span>
+&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;div class="col-md-6 pt-0 pt-md-5 pb-5">
+&lt;div class="d-flex justify-content-center">
+&lt;img src="https://neerajdas.com/assets/images/foodies/foodies.png" class="img-fluid" alt="Foodies image"
+style="max-width: 1200px; width: 100%;">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;div class="row">
+&lt;div class="col-md-6 pt-0 pt-md-5 pb-5">
+&lt;div class="d-flex align-items-center justify-content-center justify-content-md-start mb-4">
+&lt;span class="theme-text-primary" style="font-family: 'Lemonada', cursive; font-size: 2rem;">Foodies&lt;/span>
+&lt;/div>
+&lt;h4 class="theme-text-primary text-center text-md-start mb-4">
+Food delivery responsive web app.
+&lt;/h4>
+&lt;div class="d-flex justify-content-center justify-content-md-start flex-wrap gap-2">
+&lt;a href="https://neerajdas.com/ux/foodies-web"
+class="btn btn-purple rounded-pill" role="button" style="width:250px;">
+View case study
+&lt;span class="ripple-surface">&lt;/span>
+&lt;/a>
+&lt;a href="https://www.figma.com/proto/W6EntDiwAN7SqHDTkR2mUZ/Foodies?node-id=545%3A1857&amp;scaling=scale-down&amp;page-id=545%3A1856&amp;starting-point-node-id=545%3A1857"
+class="btn btn-purple rounded-pill" role="button" style="width:250px;">
+Play prototype
+&lt;span class="ripple-surface">&lt;/span>
+&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;div class="col-md-6 pt-0 pt-md-5 pb-5">
+&lt;img src="https://neerajdas.com/assets/images/foodies_desktop/foodies_desktop.png" class="img-fluid" alt="Foodies desktop image"
+style="max-width: 1000px; width: 100%;">
+&lt;/div>
+&lt;/div>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;div class="row">
+&lt;div class="col-md-6 pt-0 pt-md-5 pb-5">
+&lt;div class="d-flex align-items-center justify-content-center justify-content-md-start mb-4">
+&lt;span class="theme-text-primary" style="font-size: 2rem;">Blood Donor&lt;/span>
+&lt;/div>
+&lt;h4 class="theme-text-primary text-center text-md-start mb-4">
+Mobile app to help people donate or find blood donors.
+&lt;/h4>
+&lt;div class="d-flex justify-content-center justify-content-md-start flex-wrap gap-2">
+&lt;a href="https://neerajdas.com/ux/blood-donor"
+class="btn btn-purple rounded-pill" role="button" style="width:250px;">
+View case study
+&lt;span class="ripple-surface">&lt;/span>
+&lt;/a>
+&lt;a href="https://www.figma.com/proto/XCwGka9bxhZJg4w2ALasZs/Blood-Donor?node-id=24%3A200&amp;scaling=scale-down&amp;page-id=0%3A1&amp;starting-point-node-id=24%3A200"
+class="btn btn-purple rounded-pill" role="button" style="width:250px;">
+Play prototype
+&lt;span class="ripple-surface">&lt;/span>
+&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;div class="col-md-6 pt-0 pt-md-5 pb-5">
+&lt;img src="https://neerajdas.com/assets/images/blood_donor/blood_donor.png" class="img-fluid" alt="Blood donor app screenshot"
+style="max-width: 1000px; width: 100%;">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>Web development</title><link>https://neerajdas.com/dev/</link><pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate><guid>https://neerajdas.com/dev/</guid><description>&lt;div class="blog-container theme-bg-surface rounded-5 py-5" style="--bs-bg-opacity: 0.6; --bs-border-radius-2xl: 3rem;">
+&lt;div class="container">
+&lt;div class="row">
+&lt;div class="col-md-6 pt-0 pt-md-5 pb-5">
+&lt;div class="d-flex align-items-center justify-content-center justify-content-md-start mb-4">
+&lt;img src="https://materialstyle.github.io/assets/images/MSIconNewColorV2.svg"
+alt="Material Style Logo" style="width:40px; height:40px;">
+&lt;span class="theme-text-primary ms-2" style="font-family: 'Roboto Mono', monospace; font-size: 1.8rem;">MATERIAL STYLE&lt;/span>
+&lt;/div>
+&lt;h4 class="theme-text-primary text-center text-md-start mb-4">
+A Material Design UI Library based on Bootstrap.
+&lt;/h4>
+&lt;div class="d-flex justify-content-center justify-content-md-start flex-wrap gap-2">
+&lt;a href="https://neerajdas.com/blog/material-style"
+class="btn btn-purple rounded-pill" role="button" style="width:250px;">
+Read full blog
+&lt;span class="ripple-surface">&lt;/span>
+&lt;/a>
+&lt;a href="https://materialstyle.github.io/"
+class="btn btn-purple rounded-pill" role="button" style="width:250px;">
+Visit Material Style
+&lt;span class="ripple-surface">&lt;/span>
+&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;div class="col-md-6 pt-0 pt-md-5 pb-5">
+&lt;img src="https://neerajdas.com/assets/images/materialstyle.png" class="img-fluid shadow-2dp" alt="Material Style website screenshot"
+style="max-width: 1000px; width: 100%;">
+&lt;/div>
+&lt;/div>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;div class="row">
+&lt;div class="col-md-6 pt-0 pt-md-5 pb-5">
+&lt;div class="d-flex align-items-center justify-content-center justify-content-md-start mb-4">
+&lt;span class="theme-text-primary" style="font-family: 'Kaushan Script', cursive; font-size: 2.5rem;">Marqueefy&lt;/span>
+&lt;/div>
+&lt;h4 class="theme-text-primary text-center text-md-start mb-4">
+A custom Marquee component used to create horizontal or vertical scrolling content.
+&lt;/h4>
+&lt;div class="d-flex justify-content-center justify-content-md-start flex-wrap gap-2">
+&lt;a href="https://marqueefy.github.io/"
+class="btn btn-purple rounded-pill" role="button" style="width:250px;">
+Visit Marqueefy
+&lt;span class="ripple-surface">&lt;/span>
+&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;div class="col-md-6 pt-0 pt-md-5 pb-5">
+&lt;img src="https://neerajdas.com/assets/images/marqueefy.png" class="img-fluid shadow-2dp" alt="Marqueefy website screenshot"
+style="max-width: 1000px; width: 100%;">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>Locked out of SSH after enabling UFW on Ubuntu EC2 instance?</title><link>https://neerajdas.com/blog/locked-out-of-ssh-after-enabling-ufw/</link><pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate><guid>https://neerajdas.com/blog/locked-out-of-ssh-after-enabling-ufw/</guid><description>&lt;p>Locked out of SSH after enabling UFW on Ubuntu EC2 instance?&lt;/p>
 &lt;p>The solution is to stop the instance and instruct it to disable the firewall program upon restart.&lt;/p>
 &lt;p>WARNING: Before starting this procedure, review the following:&lt;/p>
 &lt;ul>
@@ -132,7 +885,7 @@ component or unit behaves as expected.&lt;/p>
 process is documented at &lt;a href="https://phpunit.de/">https://phpunit.de/&lt;/a>.&lt;br>
 &lt;br/>&lt;/p>
 &lt;h2 id="writing-our-first-test">Writing our first test&lt;/h2>
-&lt;div class="p-3 my-3 author-note theme-text-primary">
+&lt;div class="p-3 my-3 author-note">
 Before we begin,&lt;br>
 Please Clone / Download the example code from &lt;a target="_blank" href="https://github.com/nkdas91/Getting-started-with-PHPUnit">GitHub&lt;/a>.&lt;br>
 Copy &lt;b>env.example.php&lt;/b> to &lt;b>env.php&lt;/b> and replace default values.&lt;br>
@@ -240,7 +993,7 @@ or failed, another template method called &lt;code>tearDown()&lt;/code> is invok
 we clean up the objects against which we tested.&lt;/p>
 &lt;p>In &lt;code>AverageTest.php&lt;/code>, it is tedious to instantiate &lt;code>Average&lt;/code> class in each test case.
 So, we move it to &lt;code>setUp()&lt;/code> and &lt;code>tearDown()&lt;/code>.&lt;/p>
-&lt;div class="p-3 my-3 author-note theme-text-primary">Also check tests/UserTest.php for another example.&lt;/div>
+&lt;div class="p-3 my-3 author-note">Also check tests/UserTest.php for another example.&lt;/div>
 &lt;p>tests/AverageTest.php&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="o">&amp;lt;?&lt;/span>&lt;span class="nx">php&lt;/span> &lt;span class="k">declare&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">strict_types&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;span class="k">use&lt;/span> &lt;span class="nx">PHPUnit\Framework\TestCase&lt;/span>&lt;span class="p">;&lt;/span>
@@ -502,69 +1255,11 @@ Material Design Guidelines. I set about developing it and six months later, with
 research and sleepless nights, &lt;a href="https://materialstyle.github.io/">Material Style&lt;/a> was born.&lt;/p>
 &lt;p>&lt;a href="https://materialstyle.github.io/">Material Style&lt;/a> is now an easy to use UI Library based on Bootstrap 4.5 that lets you add Material Design styles
 and animations to Bootstrap components.&lt;/p>
-&lt;div class="m-shape-container mt-2 mb-4">
-&lt;a href="https://materialstyle.github.io/"
-class="btn btn-ms btn-primary fw-bold" role="button" style="width:250px;">
+&lt;p>&lt;a href="https://materialstyle.github.io/"
+class="btn btn-purple rounded-pill" role="button" style="width:200px;">
 Visit Material Style
-&lt;/a>
-&lt;div class="angle-top-left">&lt;/div>
-&lt;div class="angle-top-right">&lt;/div>
-&lt;div class="angle-bottom-left">&lt;/div>
-&lt;div class="angle-bottom-right">&lt;/div>
-&lt;/div>
+&lt;/a>&lt;/p>
 &lt;h2 id="few-components-from-material-style">Few Components from Material Style&lt;/h2>
-&lt;div class="row p-4 material-style-showcase" id="example-dark">
-&lt;style>
-#example-dark .form-floating .btn-select {
-color: white;
-}
-&lt;/style>
-&lt;div class="col">
-&lt;button type="button" class="btn btn-pink btn-lg m-1">
-Button
-&lt;span class="ripple-surface">&lt;/span>
-&lt;/button>
-&lt;button type="button" class="btn btn-pink btn-lg rounded-pill m-1">
-&lt;i class="bi bi-search">&lt;/i> Search
-&lt;span class="ripple-surface">&lt;/span>
-&lt;/button>
-&lt;button type="button" class="btn btn-fab btn-pink m-1">
-&lt;i class="bi bi-heart-fill">&lt;/i>
-&lt;span class="ripple-surface">&lt;/span>
-&lt;/button>
-&lt;span class="d-block">&lt;/span>
-&lt;fieldset class="form-floating base-pink primary-yellow m-3 bg-black" style="max-width: 200px;">
-&lt;input type="text" class="form-control text-white" id="firstname"
-placeholder="firstname" autocomplete="off">
-&lt;label for="firstname">Firstname&lt;/label>
-&lt;/fieldset>
-&lt;fieldset class="form-floating form-floating-outlined base-pink primary-yellow m-3" style="max-width: 200px;">
-&lt;input type="text" class="form-control text-white" id="firstname-outline"
-placeholder="firstname" autocomplete="off">
-&lt;label for="firstname-outline">Firstname&lt;/label>
-&lt;/fieldset>
-&lt;fieldset class="form-floating base-pink primary-yellow m-3 bg-black" style="max-width: 200px;">
-&lt;select class="form-select">
-&lt;option value="">&lt;/option>
-&lt;option value="1">Option 1&lt;/option>
-&lt;option value="2">Option 2&lt;/option>
-&lt;option value="3">Option 3&lt;/option>
-&lt;option value="4">Option 4&lt;/option>
-&lt;/select>
-&lt;label>Select One&lt;/label>
-&lt;/fieldset>
-&lt;fieldset class="form-floating form-floating-outlined base-pink primary-yellow m-3" style="max-width: 200px;">
-&lt;select class="form-select">
-&lt;option value="">&lt;/option>
-&lt;option value="1">Option 1&lt;/option>
-&lt;option value="2">Option 2&lt;/option>
-&lt;option value="3">Option 3&lt;/option>
-&lt;option value="4">Option 4&lt;/option>
-&lt;/select>
-&lt;label>Select One&lt;/label>
-&lt;/fieldset>
-&lt;/div>
-&lt;/div>
 &lt;div class="row p-4 material-style-showcase" id="example-light">
 &lt;div class="col">
 &lt;button type="button" class="btn btn-purple btn-lg m-1">

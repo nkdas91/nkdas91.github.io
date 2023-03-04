@@ -9,7 +9,7 @@ PHPUnit is a well-known testing framework for PHP. It uses assertions to verify 
 The purpose of this tutorial is to introduce you to the basics of PHPUnit.">
 <meta name=author content="Neeraj Kumar Das">
 <meta name=generator content="Hugo 0.92.1">
-<meta name=theme-color content="#fafafa">
+<meta name=theme-color content="#ffffff">
 <meta property="og:url" content="https://neerajdas.com">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Getting started with PHPUnit · Neeraj Das ">
@@ -20,68 +20,57 @@ The purpose of this tutorial is to introduce you to the basics of PHPUnit.">
 <title>Getting started with PHPUnit · Neeraj Das </title>
 <link rel=canonical href=https://neerajdas.com/blog/getting-started-with-phpunit/>
 <link rel=icon href=/assets/images/favicon.ico type=image/x-icon>
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Mono:400,500,700&display=swap" rel=stylesheet>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lemonada&family=Montserrat:wght@400;500&family=Roboto+Mono&family=Roboto:wght@300;400;500;700;900&display=swap" rel=stylesheet>
 <link rel=stylesheet href=https://use.typekit.net/fqx2tla.css>
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css>
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@materialstyle/materialstyle@3.0.0/dist/css/materialstyle.min.css integrity=sha384-Lnu1KIAOFhyJWM4oUSzwxyStv1OD4B2ZiTZts6q+0kEuYbz7owWW1K4zyMFI8Kb5 crossorigin=anonymous>
 <link href=/assets/css/styles.css?v5 rel=stylesheet>
 <style>body{--offcanvas-expand-width:300px}</style>
 </head>
 <body data-bs-spy=scroll data-bs-target="#spy #TableOfContents" data-bs-offset=150 tabindex=0>
-<div class="dropdown position-absolute top-0 end-0 m-2" style=z-index:1030>
-<button class="dropdown-toggle btn btn-secondary rounded-pill px-3" id=theme-dropdown data-bs-toggle=dropdown aria-expanded=false>
-<i class="bi bi-circle-half me-1"></i> Themes
-</button>
-<ul class=dropdown-menu aria-labelledby=theme-dropdown>
-<li><button class=dropdown-item data-theme-value=default><i class="bi bi-heart-fill me-2"></i> Deep Purple</button></li>
-<li><button class=dropdown-item data-theme-value=light><i class="bi bi-sun-fill me-2"></i> Light</button></li>
-<li><button class=dropdown-item data-theme-value=dark><i class="bi bi-moon-fill me-2"></i> Dark</button></li>
-<li><button class="dropdown-item active" data-theme-value=auto><i class="bi bi-circle-half me-2"></i> Device Theme</button></li>
-</ul>
-</div>
 <nav id=site-home-top-nav class="navbar flex-column pt-5 pt-sm-2">
 <a class="navbar-brand site-name mx-0" href=/>
 Neeraj Das
 </a>
 <ul class="navbar-nav d-flex flex-row align-items-center justify-content-evenly gap-4 px-4">
 <li class=nav-item>
-<a class="nav-link theme-text-primary" href=/blog>BLOG</a>
+<a class="nav-link text-body" href=/dev>Web Development</a>
 </li>
 <li class=nav-item>
-<a class="nav-link theme-text-primary" href=https://photography.neerajdas.com/>PHOTOGRAPHY</a>
+<a class="nav-link text-body" href=/ux>UX design</a>
 </li>
 <li class=nav-item>
-<a class="nav-link theme-text-primary" href=https://materialstyle.github.io/>MATERIAL STYLE</a>
+<a class="nav-link text-body" href=/blog>Blog</a>
+</li>
+<li class=nav-item>
+<a class="nav-link text-body" href=https://photography.neerajdas.com/>Photography</a>
 </li>
 </ul>
 </nav>
-<div class="m-shape-container shape-top d-block">
-<div style=height:55px;width:100vw></div>
-<div class="angle-top-left size-40"></div>
-<div class="angle-top-right size-40"></div>
-</div>
-<div class="blog-container theme-bg-surface theme-text-primary">
+<div class="blog-container theme-bg-surface rounded-5 py-5" style=--bs-bg-opacity:0.6;--bs-border-radius-2xl:3rem>
 <div class=container>
 <div class=row>
 <div class=col-md-9>
 <article itemscope itemtype=http://schema.org/BlogPosting>
-<header class=mt-5>
-<label class=theme-text-secondary>Aug 18, 2020</label>
+<header>
+<label>Aug 18, 2020</label>
 <h1 class="blog-title m-0" itemprop="name headline">Getting started with PHPUnit</h1>
-<label class="theme-text-secondary mt-1">Updated: Mar 21, 2021</label>
+<label class=mt-1>Updated: Mar 21, 2021</label>
 </header>
 <div class="share-buttons d-flex gap-1 mt-3 mb-5">
-<a href="https://twitter.com/intent/tweet?text=Getting%20started%20with%20PHPUnit&url=https%3a%2f%2fneerajdas.com%2fblog%2fgetting-started-with-phpunit%2f" class="btn btn-secondary rounded-pill fw-bold" aria-label="Tweet this article">
+<a href="https://twitter.com/intent/tweet?text=Getting%20started%20with%20PHPUnit&url=https%3a%2f%2fneerajdas.com%2fblog%2fgetting-started-with-phpunit%2f" class="btn btn-purple rounded-pill fw-bold" aria-label="Tweet this article">
 <i class="bi bi-twitter"></i>
 Tweet
 <span class=ripple-surface></span>
 </a>
-<a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fneerajdas.com%2fblog%2fgetting-started-with-phpunit%2f" class="btn btn-secondary rounded-pill fw-bold" aria-label="Share this article on LinkedIn">
+<a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fneerajdas.com%2fblog%2fgetting-started-with-phpunit%2f" class="btn btn-purple rounded-pill fw-bold" aria-label="Share this article on LinkedIn">
 <i class="bi bi-linkedin"></i>
 Link
 <span class=ripple-surface></span>
 </a>
-<a href="https://www.facebook.com/sharer/sharer.php?caption=Getting%20started%20with%20PHPUnit&u=https%3a%2f%2fneerajdas.com%2fblog%2fgetting-started-with-phpunit%2f" class="btn btn-secondary rounded-pill fw-bold" aria-label="Share this article on Facebook">
+<a href="https://www.facebook.com/sharer/sharer.php?caption=Getting%20started%20with%20PHPUnit&u=https%3a%2f%2fneerajdas.com%2fblog%2fgetting-started-with-phpunit%2f" class="btn btn-purple rounded-pill fw-bold" aria-label="Share this article on Facebook">
 <i class="bi bi-facebook"></i>
 Post
 <span class=ripple-surface></span>
@@ -124,7 +113,7 @@ component or unit behaves as expected.</p>
 process is documented at <a href=https://phpunit.de/>https://phpunit.de/</a>.<br>
 <br></p>
 <h2 id=writing-our-first-test>Writing our first test</h2>
-<div class="p-3 my-3 author-note theme-text-primary">
+<div class="p-3 my-3 author-note">
 Before we begin,<br>
 Please Clone / Download the example code from <a target=_blank href=https://github.com/nkdas91/Getting-started-with-PHPUnit>GitHub</a>.<br>
 Copy <b>env.example.php</b> to <b>env.php</b> and replace default values.<br>
@@ -245,7 +234,7 @@ or failed, another template method called <code>tearDown()</code> is invoked. <c
 we clean up the objects against which we tested.</p>
 <p>In <code>AverageTest.php</code>, it is tedious to instantiate <code>Average</code> class in each test case.
 So, we move it to <code>setUp()</code> and <code>tearDown()</code>.</p>
-<div class="p-3 my-3 author-note theme-text-primary">Also check tests/UserTest.php for another example.</div>
+<div class="p-3 my-3 author-note">Also check tests/UserTest.php for another example.</div>
 <p>tests/AverageTest.php</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-php data-lang=php><span class=o>&lt;?</span><span class=nx>php</span> <span class=k>declare</span><span class=p>(</span><span class=nx>strict_types</span><span class=o>=</span><span class=mi>1</span><span class=p>);</span>
 <span class=k>use</span> <span class=nx>PHPUnit\Framework\TestCase</span><span class=p>;</span>
@@ -510,14 +499,14 @@ the code coverage.</p>
 topics I’ve not touched on, I’ve tried to give you a good point where you can start writing
 your tests.</p>
 </div>
-<label class="theme-text-secondary my-4">Subscribe <a href=/feed.xml>via RSS</a></label>
+<label class=my-4>Subscribe <a href=/feed.xml>via RSS</a></label>
 </article>
 </div>
 <div class=col-md-3>
 <div class=sticky-md-top style=top:3rem>
 <div class="row d-none d-md-block">
 <div class=col>
-<div id=spy class="ms-toc my-2">
+<div id=spy class="ms-toc mb-2">
 <label class=mb-2>CONTENTS</label>
 <nav id=TableOfContents>
 <ul class="nav nav-pills flex-column">
@@ -558,36 +547,30 @@ your tests.</p>
 </div>
 </div>
 </div>
-<div class="m-shape-container shape-bottom d-block">
-<div style=height:55px;width:100vw></div>
-<div class="angle-bottom-left size-40"></div>
-<div class="angle-bottom-right size-40"></div>
-</div>
-<footer class=container>
-<div class=row>
-<div class="col-md-6 d-flex justify-content-md-start justify-content-center align-items-center py-2">
-<div>
-<a href=https://www.linkedin.com/in/neerajkumardas/ class="btn btn-fab btn-secondary shadow-none" aria-label="Neeraj's LinkedIn profile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="22" height="40" class="svg-in-btn" class="social-icon"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1.0 83.5.0 53.8a53.79 53.79.0 01107.58.0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29.0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+<footer class="container d-flex justify-content-between align-items-center gap-3 my-4">
+<div class="d-flex justify-content-center align-items-center gap-1">
+<a href=https://www.linkedin.com/in/neerajkumardas/ class="btn btn-fab btn-purple shadow-none" aria-label="Neeraj's LinkedIn profile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="22" height="44" fill="currentcolor"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1.0 83.5.0 53.8a53.79 53.79.0 01107.58.0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29.0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
 <span class=ripple-surface></span>
 </a>
-<a href=https://github.com/nkdas91/ class="btn btn-fab btn-secondary shadow-none" aria-label="Neeraj's GitHub profile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="22" height="40" class="svg-in-btn" class="social-icon"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6.0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6.0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3.0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1.0-6.2-.3-40.4-.3-61.4.0.0-70 15-84.7-29.8.0.0-11.4-29.1-27.8-36.6.0.0-22.9-15.7 1.6-15.4.0.0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5.0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9.0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4.0 33.7-.3 75.4-.3 83.6.0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6.0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9.0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+<a href=https://github.com/nkdas91/ class="btn btn-fab btn-purple shadow-none" aria-label="Neeraj's GitHub profile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="22" height="44" fill="currentcolor"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6.0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6.0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3.0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1.0-6.2-.3-40.4-.3-61.4.0.0-70 15-84.7-29.8.0.0-11.4-29.1-27.8-36.6.0.0-22.9-15.7 1.6-15.4.0.0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5.0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9.0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4.0 33.7-.3 75.4-.3 83.6.0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6.0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9.0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
 <span class=ripple-surface></span>
 </a>
-<a href=https://www.npmjs.com/~nkdas91 class="btn btn-fab btn-secondary shadow-none" aria-label="Neeraj's NPM profile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="40" height="40" class="svg-in-btn" class="social-icon" style="margin-left:-6px"><path d="M288 288h-32v-64h32v64zm288-128v192H288v32H160v-32H0V160h576zm-416 32H32v128h64v-96h32v96h32V192zm160 0H192v160h64v-32h64V192zm224 0H352v128h64v-96h32v96h32v-96h32v96h32V192z"/></svg>
+<a href=https://www.npmjs.com/~nkdas91 class="btn btn-fab btn-purple shadow-none" aria-label="Neeraj's NPM profile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="44" height="44" fill="currentcolor" style="margin-left:-6px"><path d="M288 288h-32v-64h32v64zm288-128v192H288v32H160v-32H0V160h576zm-416 32H32v128h64v-96h32v96h32V192zm160 0H192v160h64v-32h64V192zm224 0H352v128h64v-96h32v96h32v-96h32v96h32V192z"/></svg>
 <span class=ripple-surface></span>
 </a>
-<a href=https://www.instagram.com/neerajdasphotography/ class="btn btn-fab btn-secondary shadow-none" aria-label="Neeraj Das Photography"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="22" height="40" class="svg-in-btn" class="social-icon"><path d="M224.1 141c-63.6.0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1.0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9.0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9.0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9.0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9.0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8.0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+<a href=https://www.instagram.com/neerajdasphotography/ class="btn btn-fab btn-purple shadow-none" aria-label="Neeraj Das Photography"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="22" height="44" fill="currentcolor"><path d="M224.1 141c-63.6.0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1.0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9.0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9.0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9.0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9.0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8.0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
 <span class=ripple-surface></span>
 </a>
 </div>
-</div>
-<div class="col-md-6 d-flex justify-content-md-end justify-content-center align-items-center py-2">
-<label class="theme-text-primary text-center text-md-end d-block mb-0">
-Built with <a href=https://gohugo.io/ class=text-decoration-none><b>Hugo</b></a>,
-Styled with <a href=https://materialstyle.github.io/ class=text-decoration-none><b>Material Style</b></a>
-and
-Hosted on <a href=https://pages.github.com/ class=text-decoration-none><b>GitHub</b></a>.
-</label>
+<div class="d-flex justify-content-center align-items-center gap-2">
+<label>Themes</label>
+<div class="bg-purple bg-opacity-10 rounded-5">
+<input type=radio class=btn-check name=themes id=theme-auto data-theme=auto autocomplete=off aria-label="Auto Theme">
+<label class="btn btn-theme btn-fab mini-fab fs-5 shadow-none" for=theme-auto><i class="bi bi-circle-half"></i><span class=ripple-surface></span></label>
+<input type=radio class=btn-check name=themes id=theme-light data-theme=light autocomplete=off aria-label="Light Theme">
+<label class="btn btn-theme btn-fab mini-fab fs-5 shadow-none" for=theme-light><i class="bi bi-sun-fill"></i><span class=ripple-surface></span></label>
+<input type=radio class=btn-check name=themes id=theme-dark data-theme=dark autocomplete=off aria-label="Dark Theme">
+<label class="btn btn-theme btn-fab mini-fab fs-5 shadow-none" for=theme-dark><i class="bi bi-moon-stars-fill"></i><span class=ripple-surface></span></label>
 </div>
 </div>
 </footer>

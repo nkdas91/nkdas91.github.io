@@ -3,22 +3,16 @@
 <script>var root=document.documentElement,activeTheme=localStorage.getItem('theme'),checkSystemTheme=function(){activeTheme=localStorage.getItem('theme'),activeTheme||(window.matchMedia('(prefers-color-scheme: dark)').matches?document.documentElement.setAttribute('data-theme','dark'):document.documentElement.removeAttribute('data-theme'))};activeTheme?root.setAttribute('data-theme',activeTheme):(window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){checkSystemTheme()}),checkSystemTheme())</script>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Locked out of SSH after enabling UFW on Ubuntu EC2 instance?
-The solution is to stop the instance and instruct it to disable the firewall program upon restart.
-WARNING: Before starting this procedure, review the following:
- Stopping and starting the instance erases any data on instance store volumes. Be sure that you back up any data on the instance store volume that you want to keep. For more information, see Determine the root device type of your AMI.">
+<meta name=description content="Foodies  Food delivery mobile app.  View case study   Play prototype              Foodies  Food delivery responsive web app.  View case study   Play prototype             Blood Donor  Mobile app to help people donate or find blood donors.  View case study   Play prototype         ">
 <meta name=author content="Neeraj Kumar Das">
 <meta name=generator content="Hugo 0.92.1">
 <meta name=theme-color content="#ffffff">
 <meta property="og:url" content="https://neerajdas.com">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Locked out of SSH after enabling UFW on Ubuntu EC2 instance? · Neeraj Das ">
-<meta property="og:description" content="Locked out of SSH after enabling UFW on Ubuntu EC2 instance?
-The solution is to stop the instance and instruct it to disable the firewall program upon restart.
-WARNING: Before starting this procedure, review the following:
- Stopping and starting the instance erases any data on instance store volumes. Be sure that you back up any data on the instance store volume that you want to keep. For more information, see Determine the root device type of your AMI.">
-<title>Locked out of SSH after enabling UFW on Ubuntu EC2 instance? · Neeraj Das </title>
-<link rel=canonical href=https://neerajdas.com/blog/locked-out-of-ssh-after-enabling-ufw/>
+<meta property="og:title" content="UX Design · Neeraj Das ">
+<meta property="og:description" content="Foodies  Food delivery mobile app.  View case study   Play prototype              Foodies  Food delivery responsive web app.  View case study   Play prototype             Blood Donor  Mobile app to help people donate or find blood donors.  View case study   Play prototype         ">
+<title>UX Design · Neeraj Das </title>
+<link rel=canonical href=https://neerajdas.com/ux/>
 <link rel=icon href=/assets/images/favicon.ico type=image/x-icon>
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
@@ -52,127 +46,74 @@ Neeraj Das
 <div class="blog-container theme-bg-surface rounded-5 py-5" style=--bs-bg-opacity:0.6;--bs-border-radius-2xl:3rem>
 <div class=container>
 <div class=row>
-<div class=col-md-9>
-<article itemscope itemtype=http://schema.org/BlogPosting>
-<header>
-<label>Jun 3, 2021</label>
-<h1 class="blog-title m-0" itemprop="name headline">Locked out of SSH after enabling UFW on Ubuntu EC2 instance?</h1>
-</header>
-<div class="share-buttons d-flex gap-1 mt-3 mb-5">
-<a href="https://twitter.com/intent/tweet?text=Locked%20out%20of%20SSH%20after%20enabling%20UFW%20on%20Ubuntu%20EC2%20instance%3f&url=https%3a%2f%2fneerajdas.com%2fblog%2flocked-out-of-ssh-after-enabling-ufw%2f" class="btn btn-purple rounded-pill fw-bold" aria-label="Tweet this article">
-<i class="bi bi-twitter"></i>
-Tweet
+<div class="col-md-6 pt-0 pt-md-5 pb-5">
+<div class="d-flex align-items-center justify-content-center justify-content-md-start mb-4">
+<span class=theme-text-primary style=font-family:lemonada,cursive;font-size:2rem>Foodies</span>
+</div>
+<h4 class="theme-text-primary text-center text-md-start mb-4">
+Food delivery mobile app.
+</h4>
+<div class="d-flex justify-content-center justify-content-md-start flex-wrap gap-2">
+<a href=/ux/foodies class="btn btn-purple rounded-pill" role=button style=width:250px>
+View case study
 <span class=ripple-surface></span>
 </a>
-<a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fneerajdas.com%2fblog%2flocked-out-of-ssh-after-enabling-ufw%2f" class="btn btn-purple rounded-pill fw-bold" aria-label="Share this article on LinkedIn">
-<i class="bi bi-linkedin"></i>
-Link
-<span class=ripple-surface></span>
-</a>
-<a href="https://www.facebook.com/sharer/sharer.php?caption=Locked%20out%20of%20SSH%20after%20enabling%20UFW%20on%20Ubuntu%20EC2%20instance%3f&u=https%3a%2f%2fneerajdas.com%2fblog%2flocked-out-of-ssh-after-enabling-ufw%2f" class="btn btn-purple rounded-pill fw-bold" aria-label="Share this article on Facebook">
-<i class="bi bi-facebook"></i>
-Post
+<a href="https://www.figma.com/proto/W6EntDiwAN7SqHDTkR2mUZ/Foodies?node-id=238%3A1009&scaling=scale-down&page-id=238%3A1008&starting-point-node-id=238%3A1009" class="btn btn-purple rounded-pill" role=button style=width:250px>
+Play prototype
 <span class=ripple-surface></span>
 </a>
 </div>
-<div class="row d-block d-md-none">
-<div class=col>
-<div class="ms-toc my-2">
-<label class=mb-2>CONTENTS</label>
-<nav id=TableOfContents>
-<ul class="nav nav-pills flex-column">
-<li class=nav-item><a class=nav-link href=#reference>Reference</a></li>
-</ul>
-</nav>
+</div>
+<div class="col-md-6 pt-0 pt-md-5 pb-5">
+<div class="d-flex justify-content-center">
+<img src=/assets/images/foodies/foodies.png class=img-fluid alt="Foodies image" style=max-width:1200px;width:100%>
 </div>
 </div>
-</div>
-<div class="mb-5 article-body" itemprop=articleBody>
-<p>Locked out of SSH after enabling UFW on Ubuntu EC2 instance?</p>
-<p>The solution is to stop the instance and instruct it to disable the firewall program upon restart.</p>
-<p>WARNING: Before starting this procedure, review the following:</p>
-<ul>
-<li>Stopping and starting the instance erases any data on <a href=https://aws.amazon.com/premiumsupport/knowledge-center/instance-store-vs-ebs/>instance store volumes</a>. Be sure that you <a href=https://aws.amazon.com/premiumsupport/knowledge-center/back-up-instance-store-ebs/>back up any data on the instance store volume</a> that you want to keep. For more information, see <a href=https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ComponentsAMIs.html#display-ami-root-device-type>Determine the root device type of your AMI</a>.</li>
-<li>Stopping and restarting the instance changes the public IP address of your instance. It&rsquo;s a best practice to use an <a href=https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html>Elastic IP address</a> instead of a public IP address when routing external traffic to your instance.</li>
-</ul>
-<ol>
-<li>
-<p>Stop your instance. (Do not terminate)</p>
-</li>
-<li>
-<p>In the console, select your instance and go to Actions -> Instance Settings -> Edit user data</p>
-</li>
-<li>
-<p>Select Modify user data as text and paste the following:</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text>Content-Type: multipart/mixed; boundary=&#34;//&#34;
-MIME-Version: 1.0
---//
-Content-Type: text/cloud-config; charset=&#34;us-ascii&#34;
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename=&#34;cloud-config.txt&#34;
-#cloud-config
-cloud_final_modules:
-- [scripts-user, always]
---//
-Content-Type: text/x-shellscript; charset=&#34;us-ascii&#34;
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename=&#34;userdata.txt&#34;
-#!/bin/bash
-ufw disable
-iptables -L
-iptables -F
---//
-</code></pre></div></li>
-<li>
-<p>Save and Restart the instance and SSH should work. The user data disables UFW and flushes any iptable rules blocking SSH access.</p>
-</li>
-<li>
-<p>After successfully connecting via SSH, you may reset the user data by following previous steps.
-Select Modify user data as text, delete all text and save.</p>
-</li>
-</ol>
-<p>When a user data script is processed, it is copied to and run from <code>/var/lib/cloud/instances/instance-id/</code>.
-The script is not deleted after it is run. Be sure to delete the user data scripts from
-<code>/var/lib/cloud/instances/instance-id/</code> before you create an AMI from the instance.
-Otherwise, the script will exist in this directory on any instance launched from the AMI.</p>
-<h2 id=reference>Reference</h2>
-<p><a href=https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html>https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html</a></p>
-<p><a href=https://aws.amazon.com/premiumsupport/knowledge-center/execute-user-data-ec2/>https://aws.amazon.com/premiumsupport/knowledge-center/execute-user-data-ec2/</a></p>
-</div>
-<label class=my-4>Subscribe <a href=/feed.xml>via RSS</a></label>
-</article>
-</div>
-<div class=col-md-3>
-<div class=sticky-md-top style=top:3rem>
-<div class="row d-none d-md-block">
-<div class=col>
-<div id=spy class="ms-toc mb-2">
-<label class=mb-2>CONTENTS</label>
-<nav id=TableOfContents>
-<ul class="nav nav-pills flex-column">
-<li class=nav-item><a class=nav-link href=#reference>Reference</a></li>
-</ul>
-</nav>
-</div>
-</div>
-</div>
+</div><svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse"><g><path d="M114 4c-5.067 4.667-10.133 4.667-15.2.0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4-17.733 8.667-22.8 4-32.933-.667-38 4-48.133 8.667-53.2 4-63.333-.667-68.4 4-78.533 8.667-83.6 4-93.733-.667-98.8 4-108.933 8.667-114 4s-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0" stroke="var(--bs-purple)" stroke-linecap="square"/></g></pattern><rect width="100%" height="100%" fill="url(#s1)"/></svg>
 <div class=row>
-<div class=col>
-<div class="ms-toc mt-4 mb-2">
-<label class=mb-2>OTHER STORIES</label>
-<nav>
-<ul class="nav nav-pills flex-column">
-<li class=nav-item><a class=nav-link href=/blog/adding-phpunit-code-coverage-to-sonarqube/>Adding PHPUnit code coverage to SonarQube</a></li>
-<li class=nav-item><a class=nav-link href=/blog/getting-started-with-phpunit/>Getting started with PHPUnit</a></li>
-<li class=nav-item><a class=nav-link href=/blog/material-style/>Material Style - A UI Library</a></li>
-</ul>
-</nav>
+<div class="col-md-6 pt-0 pt-md-5 pb-5">
+<div class="d-flex align-items-center justify-content-center justify-content-md-start mb-4">
+<span class=theme-text-primary style=font-family:lemonada,cursive;font-size:2rem>Foodies</span>
+</div>
+<h4 class="theme-text-primary text-center text-md-start mb-4">
+Food delivery responsive web app.
+</h4>
+<div class="d-flex justify-content-center justify-content-md-start flex-wrap gap-2">
+<a href=/ux/foodies-web class="btn btn-purple rounded-pill" role=button style=width:250px>
+View case study
+<span class=ripple-surface></span>
+</a>
+<a href="https://www.figma.com/proto/W6EntDiwAN7SqHDTkR2mUZ/Foodies?node-id=545%3A1857&scaling=scale-down&page-id=545%3A1856&starting-point-node-id=545%3A1857" class="btn btn-purple rounded-pill" role=button style=width:250px>
+Play prototype
+<span class=ripple-surface></span>
+</a>
 </div>
 </div>
+<div class="col-md-6 pt-0 pt-md-5 pb-5">
+<img src=/assets/images/foodies_desktop/foodies_desktop.png class=img-fluid alt="Foodies desktop image" style=max-width:1000px;width:100%>
+</div>
+</div><svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse"><g><path d="M114 4c-5.067 4.667-10.133 4.667-15.2.0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4-17.733 8.667-22.8 4-32.933-.667-38 4-48.133 8.667-53.2 4-63.333-.667-68.4 4-78.533 8.667-83.6 4-93.733-.667-98.8 4-108.933 8.667-114 4s-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0-10.133-4.667-15.2.0-10.133 4.667-15.2.0" stroke="var(--bs-purple)" stroke-linecap="square"/></g></pattern><rect width="100%" height="100%" fill="url(#s1)"/></svg>
+<div class=row>
+<div class="col-md-6 pt-0 pt-md-5 pb-5">
+<div class="d-flex align-items-center justify-content-center justify-content-md-start mb-4">
+<span class=theme-text-primary style=font-size:2rem>Blood Donor</span>
+</div>
+<h4 class="theme-text-primary text-center text-md-start mb-4">
+Mobile app to help people donate or find blood donors.
+</h4>
+<div class="d-flex justify-content-center justify-content-md-start flex-wrap gap-2">
+<a href=/ux/blood-donor class="btn btn-purple rounded-pill" role=button style=width:250px>
+View case study
+<span class=ripple-surface></span>
+</a>
+<a href="https://www.figma.com/proto/XCwGka9bxhZJg4w2ALasZs/Blood-Donor?node-id=24%3A200&scaling=scale-down&page-id=0%3A1&starting-point-node-id=24%3A200" class="btn btn-purple rounded-pill" role=button style=width:250px>
+Play prototype
+<span class=ripple-surface></span>
+</a>
 </div>
 </div>
+<div class="col-md-6 pt-0 pt-md-5 pb-5">
+<img src=/assets/images/blood_donor/blood_donor.png class=img-fluid alt="Blood donor app screenshot" style=max-width:1000px;width:100%>
 </div>
 </div>
 </div>
