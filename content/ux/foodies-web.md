@@ -11,7 +11,7 @@ toc: true
 ---
 
 <div class="d-flex justify-content-center mb-5">
-  <img src="/assets/images/foodies_desktop/foodies_desktop.png" class="img-fluid shadow-2dp" alt="Foodies image"
+  <img src="/assets/images/foodies_desktop/foodies_desktop.png" class="img-fluid" alt="Foodies image"
        style="max-width: 1200px; width: 100%;">
 </div>
 
@@ -110,8 +110,8 @@ This user group confirmed initial assumptions about potential customers. Researc
 ### Wireframes
 
 <div class="d-flex justify-content-center mb-3">
-  <img src="/assets/images/foodies/digital_wireframe.png" class="img-fluid" alt="Foodies image"
-       style="max-width: 650px; width: 100%;">
+  <img src="/assets/images/foodies_desktop/wireframes.png" class="img-fluid" alt="Foodies image"
+       style="max-width: 1000px; width: 100%;">
 </div>
 
 <br>
@@ -120,37 +120,27 @@ This user group confirmed initial assumptions about potential customers. Researc
 Using the completed set of digital wireframes, I created a low-fidelity prototype. The primary user flow was to select a restaurant and order food. This prototype was used in a usability study.
 
 <div class="d-flex justify-content-center mb-3">
-  <img src="/assets/images/foodies/lofi.png" class="img-fluid" alt="Foodies image"
+  <img src="/assets/images/foodies_desktop/lofi.png" class="img-fluid" alt="Foodies image"
        style="max-width: 1000px; width: 100%;">
 </div>
 
 {{< squiggle >}}
 
 ## Usability study
-I conducted two rounds of usability studies. Findings from the first study helped guide the designs from wireframes to mockups. The second study used a high-fidelity prototype and revealed what aspects of the mockups needed refining. 
+I used the high-fidelity prototype for the usability study and it revealed aspects of the designs that needed refining. 
 
-### Round 1 findings
-- Users want to be able to edit quantity of food items from the review page as well
-- The button to detect users location was not prominent enough
-
-### Round 2 findings
-- Sign In link was missing from the Sign Up page
+### Findings
+- Menu tab was missing from the restaurant page.
+- Important links: Help, Contact and About were missing from the design.
 
 {{< squiggle >}}
 
 ## Refining the design
-Early designs didn’t have a way to edit quantity from the Review page, but after the usability studies, I updated the Review order page to allow Quantity adjustments.
+I added the Menu tab and the missing links.
 
 <div class="d-flex justify-content-center mb-3">
-  <img src="/assets/images/foodies/refined.png" class="img-fluid" alt="Foodies image"
-       style="max-width: 650px; width: 100%;">
-</div>
-
-The second usability study revealed that the Sign Up page didn’t have a Sign In link. Added it.
-
-<div class="d-flex justify-content-center mb-3">
-  <img src="/assets/images/foodies/refined_2.png" class="img-fluid" alt="Foodies image"
-       style="max-width: 650px; width: 100%;">
+  <img src="/assets/images/foodies_desktop/restaurant.png" class="img-fluid" alt="Foodies image"
+       style="max-width: 1000px; width: 100%;">
 </div>
 
 {{< squiggle >}}
@@ -158,8 +148,14 @@ The second usability study revealed that the Sign Up page didn’t have a Sign I
 ## High fidelity prototype
 The final high-fidelity prototype presented cleaner user flows for ordering food and checkout. It also met user needs for payment on delivery option. 
 
+ <a href="https://www.figma.com/proto/W6EntDiwAN7SqHDTkR2mUZ/Foodies?node-id=545%3A1857&scaling=scale-down&page-id=545%3A1856&starting-point-node-id=545%3A1857"
+   class="btn btn-purple rounded-pill" role="button" style="width:250px;">
+  Play prototype
+  <span class="ripple-surface"></span>
+</a>
+
 <div class="d-flex justify-content-center mb-3">
-  <img src="/assets/images/foodies/hifi.png" class="img-fluid" alt="Foodies image"
+  <img src="/assets/images/foodies_desktop/hifi.png" class="img-fluid" alt="Foodies image"
        style="max-width: 1000px; width: 100%;">
 </div>
 

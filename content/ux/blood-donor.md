@@ -144,21 +144,27 @@ The "blood group" and "state" appeared to be text input fields which should have
 I added a simple phone number and OTP sign-in process to help users track their requests.
 
 <div class="d-flex justify-content-center mb-3">
-  <img src="/assets/images/foodies/refined.png" class="img-fluid" alt="Foodies image"
-       style="max-width: 650px; width: 100%;">
+  <img src="/assets/images/blood_donor/login.png" class="img-fluid" alt="Foodies image"
+       style="max-width: 820px; width: 100%;">
 </div>
 
 I added icons to make "blood group" and "state" appear like dropdown menus.
 
 <div class="d-flex justify-content-center mb-3">
-  <img src="/assets/images/foodies/refined_2.png" class="img-fluid" alt="Foodies image"
-       style="max-width: 650px; width: 100%;">
+  <img src="/assets/images/blood_donor/form.png" class="img-fluid" alt="Foodies image"
+       style="max-width: 820px; width: 100%;">
 </div>
 
 {{< squiggle >}}
 
 ## High fidelity prototype
 The final high-fidelity prototype presented cleaner user flows for finding a blood donor. 
+
+<a href="https://www.figma.com/proto/XCwGka9bxhZJg4w2ALasZs/Blood-Donor?node-id=24%3A200&scaling=scale-down&page-id=0%3A1&starting-point-node-id=24%3A200"
+   class="btn btn-purple rounded-pill" role="button" style="width:250px;">
+  Play prototype
+  <span class="ripple-surface"></span>
+</a>
 
 <div class="d-flex justify-content-center mb-3">
   <img src="/assets/images/blood_donor/hifi.png" class="img-fluid" alt="Blood donor app high fidelity prototype image"

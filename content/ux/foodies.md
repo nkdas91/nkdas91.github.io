@@ -151,13 +151,6 @@ Taking the time to draft iterations of each screen of the app on paper ensured t
 
 As the initial design phase continued, I made sure to base screen designs on feedback and findings from  the user research.
 
-<div class="d-flex justify-content-center mb-3">
-  <img src="/assets/images/foodies/digital_wireframe_2.png" class="img-fluid" alt="Foodies image"
-       style="max-width: 650px; width: 100%;">
-</div>
-
-Ease of use was a key user need to address in the designs in addition to equipping the app to work with assistive technologies.
-
 <br>
 
 ### Low-fidelity prototype
@@ -171,11 +164,10 @@ Using the completed set of digital wireframes, I created a low-fidelity prototyp
 {{< squiggle >}}
 
 ## Usability study
-I conducted two rounds of usability studies. Findings from the first study helped guide the designs from wireframes to mockups. The second study used a high-fidelity prototype and revealed what aspects of the mockups needed refining. 
+I conducted two rounds of usability studies. Findings from the first study helped guide the designs from wireframes to mockups. The second study used a low-fidelity prototype and revealed what aspects of the mockups needed refining. 
 
 ### Round 1 findings
 - Users want to be able to edit quantity of food items from the review page as well
-- The button to detect users location was not prominent enough
 
 ### Round 2 findings
 - Sign In link was missing from the Sign Up page
@@ -186,14 +178,14 @@ I conducted two rounds of usability studies. Findings from the first study helpe
 Early designs didn’t have a way to edit quantity from the Review page, but after the usability studies, I updated the Review order page to allow Quantity adjustments.
 
 <div class="d-flex justify-content-center mb-3">
-  <img src="/assets/images/foodies/refined.png" class="img-fluid" alt="Foodies image"
+  <img src="/assets/images/foodies/review_before_after.png" class="img-fluid" alt="Foodies image"
        style="max-width: 650px; width: 100%;">
 </div>
 
 The second usability study revealed that the Sign Up page didn’t have a Sign In link. Added it.
 
 <div class="d-flex justify-content-center mb-3">
-  <img src="/assets/images/foodies/refined_2.png" class="img-fluid" alt="Foodies image"
+  <img src="/assets/images/foodies/signup_before_after.png" class="img-fluid" alt="Foodies image"
        style="max-width: 650px; width: 100%;">
 </div>
 
@@ -201,6 +193,12 @@ The second usability study revealed that the Sign Up page didn’t have a Sign I
 
 ## High fidelity prototype
 The final high-fidelity prototype presented cleaner user flows for ordering food and checkout. It also met user needs for payment on delivery option. 
+
+<a href="https://www.figma.com/proto/W6EntDiwAN7SqHDTkR2mUZ/Foodies?node-id=238%3A1009&scaling=scale-down&page-id=238%3A1008&starting-point-node-id=238%3A1009"
+   class="btn btn-purple rounded-pill" role="button" style="width:250px;">
+  Play prototype
+  <span class="ripple-surface"></span>
+</a>
 
 <div class="d-flex justify-content-center mb-3">
   <img src="/assets/images/foodies/hifi.png" class="img-fluid" alt="Foodies image"

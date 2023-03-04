@@ -45,20 +45,20 @@ created: Feb 21, 2023
           Food delivery responsive web app.
         </h4>
         <div class="d-flex justify-content-center justify-content-md-start flex-wrap gap-2">
-          <a href="/ux/foodies-responsive"
+          <a href="/ux/foodies-web"
              class="btn btn-purple rounded-pill" role="button" style="width:250px;">
             View case study
             <span class="ripple-surface"></span>
           </a>
-          <a href="https://materialstyle.github.io/"
+          <a href="https://www.figma.com/proto/W6EntDiwAN7SqHDTkR2mUZ/Foodies?node-id=545%3A1857&scaling=scale-down&page-id=545%3A1856&starting-point-node-id=545%3A1857"
              class="btn btn-purple rounded-pill" role="button" style="width:250px;">
-            Play with prototype
+            Play prototype
             <span class="ripple-surface"></span>
           </a>
         </div>
       </div>
       <div class="col-md-6 pt-0 pt-md-5 pb-5">
-        <img src="/assets/images/foodies_desktop/foodies_desktop.png" class="img-fluid shadow-2dp" alt="Foodies desktop image"
+        <img src="/assets/images/foodies_desktop/foodies_desktop.png" class="img-fluid" alt="Foodies desktop image"
              style="max-width: 1000px; width: 100%;">
       </div>
     </div>
@@ -77,9 +77,9 @@ created: Feb 21, 2023
             View case study
             <span class="ripple-surface"></span>
           </a>
-          <a href="https://materialstyle.github.io/"
+          <a href="https://www.figma.com/proto/XCwGka9bxhZJg4w2ALasZs/Blood-Donor?node-id=24%3A200&scaling=scale-down&page-id=0%3A1&starting-point-node-id=24%3A200"
              class="btn btn-purple rounded-pill" role="button" style="width:250px;">
-            Play with prototype
+            Play prototype
             <span class="ripple-surface"></span>
           </a>
         </div>
