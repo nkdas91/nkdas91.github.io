@@ -228,3 +228,20 @@ The final high-fidelity prototype presented cleaner user flows for ordering food
     <p>While designing this app, I learned that the first ideas for an app are only the beginning of the process. Usability studies and peer feedback influenced each iteration of the app's designs.</p>
   </div>
 </div>
+
+{{< squiggle >}}
+
+## Next steps
+
+<div class="row">
+  <div class="col-md-6">
+    <h4><i class="bi bi-1-circle-fill"></i></h4>
+    <p>Conduct another round of usability studies to validate whether the pain points users experienced have been effectively addressed.</p>
+  </div>
+  <div class="col-md-6">
+    <h4><i class="bi bi-2-circle-fill"></i></h4>
+    <p>Conduct more user research to determine any new areas of need.</p>
+  </div>
+</div>
+
+{{< squiggle >}}
