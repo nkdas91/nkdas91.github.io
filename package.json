@@ -19,11 +19,11 @@
   },
   "homepage": "https://github.com/nkdas91/nkdas91.github.io#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "hugo-bin": "^0.92.3",
+    "autoprefixer": "^10.4.14",
+    "hugo-bin": "^0.100.0",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
-    "sass": "^1.58.3"
+    "sass": "^1.59.3"
   },
   "hugo-bin": {
     "buildTags": "extended"
