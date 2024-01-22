@@ -3,7 +3,7 @@ layout: home
 ---
 <div class="container py-5">
   <div class="d-flex justify-content-center mb-4">
-    <img src="/assets/images/Neeraj.jpg" class="rounded-circle" alt="Neeraj's photograph." style="width:200px;height:200px;object-fit:cover;">
+    <img src="/assets/images/Neeraj2.jpg" class="rounded-circle" alt="Neeraj's photograph." style="width:200px;height:200px;object-fit:cover;">
   </div>
   <h1 class="hello-header text-center mb-4">
     Hi, I'm <span class="site-name text-indigo" style="white-space: nowrap;">Neeraj Das</span>.
