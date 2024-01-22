@@ -37,7 +37,7 @@ Some people prefer devices with large screen sizes for online activities.
 &lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
 &lt;/svg>
 &lt;h2 id="user-research">User research&lt;/h2>
-&lt;p>I conducted interviews and created empathy maps to understand the users' problems. The primary user group were people who preferred devices with large screen sizes for online activities.&lt;/p>
+&lt;p>I conducted interviews and created empathy maps to understand the users&amp;rsquo; problems. The primary user group were people who preferred devices with large screen sizes for online activities.&lt;/p>
 &lt;p>This user group confirmed initial assumptions about potential customers. Research also revealed that apart from screen size, the availability of a mobile device was also a factor limiting users from using the mobile app.&lt;/p>
 &lt;br>
 &lt;h3 id="pain-points">Pain points&lt;/h3>
@@ -248,7 +248,7 @@ style="max-width: 1200px; width: 100%;">
 &lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
 &lt;/svg>
 &lt;h2 id="user-research">User research&lt;/h2>
-&lt;p>I conducted interviews and created empathy maps to understand the users' problems. The primary user group were people who had faced a situation where they needed a blood donor.&lt;/p>
+&lt;p>I conducted interviews and created empathy maps to understand the users&amp;rsquo; problems. The primary user group were people who had faced a situation where they needed a blood donor.&lt;/p>
 &lt;br>
 &lt;h3 id="pain-points">Pain points&lt;/h3>
 &lt;div class="row">
@@ -848,27 +848,27 @@ style="max-width: 1000px; width: 100%;">
 &lt;/li>
 &lt;li>
 &lt;p>Select Modify user data as text and paste the following:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">Content-Type: multipart/mixed; boundary=&amp;#34;//&amp;#34;
-MIME-Version: 1.0
---//
-Content-Type: text/cloud-config; charset=&amp;#34;us-ascii&amp;#34;
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename=&amp;#34;cloud-config.txt&amp;#34;
-#cloud-config
-cloud_final_modules:
-- [scripts-user, always]
---//
-Content-Type: text/x-shellscript; charset=&amp;#34;us-ascii&amp;#34;
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: attachment; filename=&amp;#34;userdata.txt&amp;#34;
-#!/bin/bash
-ufw disable
-iptables -L
-iptables -F
---//
-&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">Content-Type: multipart/mixed; boundary=&amp;#34;//&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">MIME-Version: 1.0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">--//
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Content-Type: text/cloud-config; charset=&amp;#34;us-ascii&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">MIME-Version: 1.0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Content-Transfer-Encoding: 7bit
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Content-Disposition: attachment; filename=&amp;#34;cloud-config.txt&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#cloud-config
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cloud_final_modules:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- [scripts-user, always]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">--//
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Content-Type: text/x-shellscript; charset=&amp;#34;us-ascii&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">MIME-Version: 1.0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Content-Transfer-Encoding: 7bit
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Content-Disposition: attachment; filename=&amp;#34;userdata.txt&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#!/bin/bash
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ufw disable
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -L
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">iptables -F
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">--//
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>Save and Restart the instance and SSH should work. The user data disables UFW and flushes any iptable rules blocking SSH access.&lt;/p>
 &lt;/li>
@@ -889,50 +889,52 @@ been more thoroughly tested and has a lower chance of containing software bugs t
 a program with low code coverage.&lt;/p>
 &lt;p>We need Xdebug installed in our system to generate a code coverage report.
 Run the following commands (Linux) or check &lt;a href="https://xdebug.org/">Xdebug&lt;/a> installation instruction if the commands don’t work.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">sudo apt-get install php-xdebug
-sudo service apache2 restart
-&lt;/code>&lt;/pre>&lt;/div>&lt;br/>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">sudo apt-get install php-xdebug
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo service apache2 restart
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;br/>
 &lt;h2 id="generating-code-coverage">Generating code coverage&lt;/h2>
 &lt;p>To generate code coverage, update &lt;code>phpunit.xml&lt;/code> as follows:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-xml" data-lang="xml">&lt;span class="cp">&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;phpunit&lt;/span> &lt;span class="na">xmlns:xsi=&lt;/span>&lt;span class="s">&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span>
-&lt;span class="na">xsi:noNamespaceSchemaLocation=&lt;/span>&lt;span class="s">&amp;#34;https://schema.phpunit.de/9.3/phpunit.xsd&amp;#34;&lt;/span>
-&lt;span class="na">bootstrap=&lt;/span>&lt;span class="s">&amp;#34;vendor/autoload.php&amp;#34;&lt;/span>
-&lt;span class="na">cacheResultFile=&lt;/span>&lt;span class="s">&amp;#34;.phpunit.cache/test-results&amp;#34;&lt;/span>
-&lt;span class="na">executionOrder=&lt;/span>&lt;span class="s">&amp;#34;depends,defects&amp;#34;&lt;/span>
-&lt;span class="na">beStrictAboutOutputDuringTests=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
-&lt;span class="na">beStrictAboutTodoAnnotatedTests=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
-&lt;span class="na">failOnRisky=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
-&lt;span class="na">failOnWarning=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
-&lt;span class="na">verbose=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;php&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;server&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;#34;DOCUMENT_ROOT&amp;#34;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;#34;ABSOLUTE_PATH_TO_DOCUMENT_ROOT&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;/php&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;coverage&lt;/span> &lt;span class="na">cacheDirectory=&lt;/span>&lt;span class="s">&amp;#34;.phpunit.cache/code-coverage&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;include&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;directory&lt;/span> &lt;span class="na">suffix=&lt;/span>&lt;span class="s">&amp;#34;.php&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>src&lt;span class="nt">&amp;lt;/directory&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;/include&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;report&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;clover&lt;/span> &lt;span class="na">outputFile=&lt;/span>&lt;span class="s">&amp;#34;report/tests-clover.xml&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;html&lt;/span> &lt;span class="na">outputDirectory=&lt;/span>&lt;span class="s">&amp;#34;report&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;/report&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;/coverage&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;testsuites&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;testsuite&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;#34;default&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;directory&lt;/span> &lt;span class="na">suffix=&lt;/span>&lt;span class="s">&amp;#34;Test.php&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>tests&lt;span class="nt">&amp;lt;/directory&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;/testsuite&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;/testsuites&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;logging&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;junit&lt;/span> &lt;span class="na">outputFile=&lt;/span>&lt;span class="s">&amp;#34;report/tests-junit.xml&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;testdoxHtml&lt;/span> &lt;span class="na">outputFile=&lt;/span>&lt;span class="s">&amp;#34;report/testdox.html&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;/logging&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;/phpunit&amp;gt;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>And run tests:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">./vendor/bin/phpunit
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>If you get a warning: &lt;code>XDEBUG_MODE=coverage or xdebug.mode=coverage has to be set&lt;/code>,
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-xml" data-lang="xml">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;phpunit&lt;/span> &lt;span class="na">xmlns:xsi=&lt;/span>&lt;span class="s">&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">xsi:noNamespaceSchemaLocation=&lt;/span>&lt;span class="s">&amp;#34;https://schema.phpunit.de/9.3/phpunit.xsd&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">bootstrap=&lt;/span>&lt;span class="s">&amp;#34;vendor/autoload.php&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">cacheResultFile=&lt;/span>&lt;span class="s">&amp;#34;.phpunit.cache/test-results&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">executionOrder=&lt;/span>&lt;span class="s">&amp;#34;depends,defects&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">beStrictAboutOutputDuringTests=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">beStrictAboutTodoAnnotatedTests=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">failOnRisky=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">failOnWarning=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">verbose=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;php&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;server&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;#34;DOCUMENT_ROOT&amp;#34;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;#34;ABSOLUTE_PATH_TO_DOCUMENT_ROOT&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;/php&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;coverage&lt;/span> &lt;span class="na">cacheDirectory=&lt;/span>&lt;span class="s">&amp;#34;.phpunit.cache/code-coverage&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;include&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;directory&lt;/span> &lt;span class="na">suffix=&lt;/span>&lt;span class="s">&amp;#34;.php&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>src&lt;span class="nt">&amp;lt;/directory&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;/include&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;report&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;clover&lt;/span> &lt;span class="na">outputFile=&lt;/span>&lt;span class="s">&amp;#34;report/tests-clover.xml&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;html&lt;/span> &lt;span class="na">outputDirectory=&lt;/span>&lt;span class="s">&amp;#34;report&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;/report&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;/coverage&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;testsuites&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;testsuite&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;#34;default&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;directory&lt;/span> &lt;span class="na">suffix=&lt;/span>&lt;span class="s">&amp;#34;Test.php&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>tests&lt;span class="nt">&amp;lt;/directory&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;/testsuite&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;/testsuites&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;logging&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;junit&lt;/span> &lt;span class="na">outputFile=&lt;/span>&lt;span class="s">&amp;#34;report/tests-junit.xml&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;testdoxHtml&lt;/span> &lt;span class="na">outputFile=&lt;/span>&lt;span class="s">&amp;#34;report/testdox.html&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;/logging&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;/phpunit&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And run tests:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">./vendor/bin/phpunit
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>If you get a warning: &lt;code>XDEBUG_MODE=coverage or xdebug.mode=coverage has to be set&lt;/code>,
 Run the tests as:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">XDEBUG_MODE=coverage ./vendor/bin/phpunit
-&lt;/code>&lt;/pre>&lt;/div>&lt;br/>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">XDEBUG_MODE=coverage ./vendor/bin/phpunit
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;br/>
 &lt;h2 id="viewing-coverage-in-a-browser">Viewing coverage in a browser&lt;/h2>
 &lt;p>Output directory is set as &lt;code>report&lt;/code>. So, open &lt;code>report/index.html&lt;/code> on a browser to see
 the code coverage.&lt;br>
@@ -943,16 +945,16 @@ the code coverage.&lt;br>
 &lt;code>logging.testdoxHtml&lt;/code> generates an HTML report containing a list of Test Cases written.&lt;br>
 &lt;code>outputFile&lt;/code> sets report path.&lt;/p>
 &lt;p>Add report paths to sonar properties file&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">sonar.tests=tests
-sonar.php.tests.reportPath=report/tests-junit.xml
-sonar.php.coverage.reportPath=report/tests-clover.xml
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>sonar.tests&lt;/code> = path to the test directory of your project&lt;br>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">sonar.tests=tests
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sonar.php.tests.reportPath=report/tests-junit.xml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sonar.php.coverage.reportPath=report/tests-clover.xml
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>sonar.tests&lt;/code> = path to the test directory of your project&lt;br>
 &lt;code>sonar.php.tests.reportPath&lt;/code> = path to junit report&lt;br>
 &lt;code>sonar.php.coverage.reportPath&lt;/code> = path to clover report&lt;/p>
 &lt;p>Exclude files that are not unit tested&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">sonar.test.exclusions=tests/app/**
-sonar.coverage.exclusions=tests/app/**
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>sonar.test.exclusions&lt;/code> = files excluded from unit tests&lt;br>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">sonar.test.exclusions=tests/app/**
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sonar.coverage.exclusions=tests/app/**
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>sonar.test.exclusions&lt;/code> = files excluded from unit tests&lt;br>
 &lt;code>sonar.coverage.exclusions&lt;/code> = files excluded from code coverage&lt;/p>
 &lt;p>Run Sonar scanner&lt;/p></description></item><item><title>Getting started with PHPUnit</title><link>https://neerajdas.com/blog/getting-started-with-phpunit/</link><pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate><guid>https://neerajdas.com/blog/getting-started-with-phpunit/</guid><description>&lt;p>A unit test provides a strict, written contract that a piece of code must satisfy.
 As a result, unit tests find problems early in the development cycle.&lt;/p>
@@ -977,29 +979,32 @@ Run &lt;b>composer install&lt;/b> in the root directory.
 &lt;p>To get started, we need something to test, so for the first example, I’ve written a simple
 PHP class &lt;code>Average&lt;/code> that calculates the average of an array of integers.&lt;/p>
 &lt;p>src/Average.php&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="o">&amp;lt;?&lt;/span>&lt;span class="nx">php&lt;/span> &lt;span class="k">declare&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">strict_types&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="k">class&lt;/span> &lt;span class="nc">Average&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="k">private&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">ensureIsValidArrayOfIntegers&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">array&lt;/span> &lt;span class="nv">$numbers&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="k">foreach&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$numbers&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nv">$number&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="nx">filter_var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$number&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">FILTER_VALIDATE_INT&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;span class="k">throw&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">InvalidArgumentException&lt;/span>&lt;span class="p">(&lt;/span>
-&lt;span class="nx">sprintf&lt;/span>&lt;span class="p">(&lt;/span>
-&lt;span class="s1">&amp;#39;&amp;#34;%s&amp;#34; is not a valid number&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;span class="nv">$number&lt;/span>
-&lt;span class="p">)&lt;/span>
-&lt;span class="p">);&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">getAverage&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">array&lt;/span> &lt;span class="nv">$numbers&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">float&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">ensureIsValidArrayOfIntegers&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$numbers&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="k">return&lt;/span> &lt;span class="nx">array_sum&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$numbers&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="nx">count&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$numbers&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Basic coventions for writing tests with PHPUnit:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;lt;?&lt;/span>&lt;span class="nx">php&lt;/span> &lt;span class="k">declare&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">strict_types&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Average&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">private&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">ensureIsValidArrayOfIntegers&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">array&lt;/span> &lt;span class="nv">$numbers&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">foreach&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$numbers&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nv">$number&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="nx">filter_var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$number&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">FILTER_VALIDATE_INT&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">throw&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">InvalidArgumentException&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">sprintf&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s1">&amp;#39;&amp;#34;%s&amp;#34; is not a valid number&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$number&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">getAverage&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">array&lt;/span> &lt;span class="nv">$numbers&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">float&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">ensureIsValidArrayOfIntegers&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$numbers&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="nx">array_sum&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$numbers&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="nx">count&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$numbers&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Basic coventions for writing tests with PHPUnit:&lt;/p>
 &lt;ol>
 &lt;li>The tests for a class &lt;code>Class&lt;/code> go into a class &lt;code>ClassTest&lt;/code>.&lt;/li>
 &lt;li>&lt;code>ClassTest&lt;/code> inherits (most of the time) from &lt;code>PHPUnit\Framework\TestCase&lt;/code>.&lt;/li>
@@ -1009,54 +1014,64 @@ PHP class &lt;code>Average&lt;/code> that calculates the average of an array of 
 &lt;/ol>
 &lt;p>To ensure that our class &lt;code>Average&lt;/code> works, we need to create a test class &lt;code>AverageTest&lt;/code> that extends &lt;code>PHPUnit\Framework\TestCase&lt;/code>.&lt;/p>
 &lt;p>tests/AverageTest.php&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="o">&amp;lt;?&lt;/span>&lt;span class="nx">php&lt;/span> &lt;span class="k">declare&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">strict_types&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="k">use&lt;/span> &lt;span class="nx">PHPUnit\Framework\TestCase&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;span class="k">final&lt;/span> &lt;span class="k">class&lt;/span> &lt;span class="nc">AverageTest&lt;/span> &lt;span class="k">extends&lt;/span> &lt;span class="nx">TestCase&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="sd">/**
-&lt;/span>&lt;span class="sd"> * Test for an Exception if invalid argument type is passed.
-&lt;/span>&lt;span class="sd"> */&lt;/span>
-&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testExceptionFromInvalidArgumentType&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">expectException&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">TypeError&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="nv">$average&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">Average&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;span class="nv">$verage&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;string&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;span class="sd">/**
-&lt;/span>&lt;span class="sd"> * Test for an Exception if invalid argument is passed.
-&lt;/span>&lt;span class="sd"> */&lt;/span>
-&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testExceptionFromInvalidArgument&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">expectException&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">InvalidArgumentException&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="nv">$average&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">Average&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;span class="nv">$average&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;a&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">]);&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;span class="sd">/**
-&lt;/span>&lt;span class="sd"> * Test for an Exception if an empty array is passed.
-&lt;/span>&lt;span class="sd"> */&lt;/span>
-&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testExceptionFromEmptyArrayArgument&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">expectException&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">DivisionByZeroError&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="nv">$average&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">Average&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;span class="nv">$average&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">([]);&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testGetAverage&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="nv">$average&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">Average&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">assertEquals&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mf">3.0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nv">$average&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">]));&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;br/>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;lt;?&lt;/span>&lt;span class="nx">php&lt;/span> &lt;span class="k">declare&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">strict_types&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">use&lt;/span> &lt;span class="nx">PHPUnit\Framework\TestCase&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">final&lt;/span> &lt;span class="k">class&lt;/span> &lt;span class="nc">AverageTest&lt;/span> &lt;span class="k">extends&lt;/span> &lt;span class="nx">TestCase&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="sd">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * Test for an Exception if invalid argument type is passed.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testExceptionFromInvalidArgumentType&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">expectException&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">TypeError&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$average&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">Average&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$verage&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;string&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="sd">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * Test for an Exception if invalid argument is passed.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testExceptionFromInvalidArgument&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">expectException&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">InvalidArgumentException&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$average&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">Average&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$average&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;a&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="sd">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * Test for an Exception if an empty array is passed.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testExceptionFromEmptyArrayArgument&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">expectException&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">DivisionByZeroError&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$average&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">Average&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$average&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">([]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testGetAverage&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$average&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">Average&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">assertEquals&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mf">3.0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nv">$average&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">]));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;br/>
 &lt;h2 id="running-our-tests">Running our tests&lt;/h2>
 &lt;p>Running our tests is as simple as calling the phpunit executable and pointing it at our tests.
 Here’s an example:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">./vendor/bin/phpunit tests
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Output&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">PHPUnit 9.5.0 by Sebastian Bergmann and contributors.
-.... 4 / 4 (100%)
-Time: 00:00.008, Memory: 4.00 MB
-OK (4 tests, 4 assertions)
-&lt;/code>&lt;/pre>&lt;/div>&lt;br/>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">./vendor/bin/phpunit tests
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Output&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">PHPUnit 9.5.0 by Sebastian Bergmann and contributors.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.... 4 / 4 (100%)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Time: 00:00.008, Memory: 4.00 MB
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">OK (4 tests, 4 assertions)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;br/>
 &lt;h2 id="fixtures-setup--teardown">Fixtures (Setup &amp;amp; Teardown)&lt;/h2>
 &lt;p>The purpose of a fixture is to ensure that there is a well known and fixed environment
 in which tests are run. This allows for tests to be repeatable, which is one of the key
@@ -1076,75 +1091,86 @@ we clean up the objects against which we tested.&lt;/p>
 So, we move it to &lt;code>setUp()&lt;/code> and &lt;code>tearDown()&lt;/code>.&lt;/p>
 &lt;div class="p-3 my-3 author-note">Also check tests/UserTest.php for another example.&lt;/div>
 &lt;p>tests/AverageTest.php&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="o">&amp;lt;?&lt;/span>&lt;span class="nx">php&lt;/span> &lt;span class="k">declare&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">strict_types&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="k">use&lt;/span> &lt;span class="nx">PHPUnit\Framework\TestCase&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;span class="k">final&lt;/span> &lt;span class="k">class&lt;/span> &lt;span class="nc">AverageTest&lt;/span> &lt;span class="k">extends&lt;/span> &lt;span class="nx">TestCase&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="k">protected&lt;/span> &lt;span class="nv">$average&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;span class="sd">/**
-&lt;/span>&lt;span class="sd"> * This function is invoked before each test function.
-&lt;/span>&lt;span class="sd"> */&lt;/span>
-&lt;span class="k">protected&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">setUp&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">average&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">Average&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;span class="sd">/**
-&lt;/span>&lt;span class="sd"> * This function is invoked after each test function.
-&lt;/span>&lt;span class="sd"> */&lt;/span>
-&lt;span class="k">protected&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">tearDown&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;span class="nx">unset&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">average&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;span class="sd">/**
-&lt;/span>&lt;span class="sd"> * Test for an Exception if invalid argument type is passed.
-&lt;/span>&lt;span class="sd"> */&lt;/span>
-&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testExceptionFromInvalidArgumentType&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">expectException&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">TypeError&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">average&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;string&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;span class="sd">/**
-&lt;/span>&lt;span class="sd"> * Test for an Exception if invalid argument is passed.
-&lt;/span>&lt;span class="sd"> */&lt;/span>
-&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testExceptionFromInvalidArgument&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">expectException&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">InvalidArgumentException&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">average&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;a&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">]);&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;span class="sd">/**
-&lt;/span>&lt;span class="sd"> * Test for an Exception if an empty array is passed.
-&lt;/span>&lt;span class="sd"> */&lt;/span>
-&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testExceptionFromEmptyArrayArgument&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">expectException&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">DivisionByZeroError&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">average&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">([]);&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testGetAverage&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">assertEquals&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mf">3.0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">average&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">]));&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;br/>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;lt;?&lt;/span>&lt;span class="nx">php&lt;/span> &lt;span class="k">declare&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">strict_types&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">use&lt;/span> &lt;span class="nx">PHPUnit\Framework\TestCase&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">final&lt;/span> &lt;span class="k">class&lt;/span> &lt;span class="nc">AverageTest&lt;/span> &lt;span class="k">extends&lt;/span> &lt;span class="nx">TestCase&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">protected&lt;/span> &lt;span class="nv">$average&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="sd">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * This function is invoked before each test function.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">protected&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">setUp&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">average&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">Average&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="sd">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * This function is invoked after each test function.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">protected&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">tearDown&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">unset&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">average&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="sd">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * Test for an Exception if invalid argument type is passed.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testExceptionFromInvalidArgumentType&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">expectException&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">TypeError&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">average&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;string&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="sd">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * Test for an Exception if invalid argument is passed.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testExceptionFromInvalidArgument&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">expectException&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">InvalidArgumentException&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">average&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;a&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="sd">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * Test for an Exception if an empty array is passed.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testExceptionFromEmptyArrayArgument&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">expectException&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">DivisionByZeroError&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">average&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">([]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testGetAverage&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">assertEquals&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mf">3.0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">average&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">]));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;br/>
 &lt;h2 id="data-providers">Data Providers&lt;/h2>
 &lt;p>A test method can accept arbitrary arguments. These arguments are to be provided by one or
 more data provider methods. The data provider method to be used is specified using the
 &lt;code>@dataProvider&lt;/code> annotation.&lt;/p>
 &lt;p>tests/AverageTest.php&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="sd">/**
-&lt;/span>&lt;span class="sd"> * @dataProvider averageProvider
-&lt;/span>&lt;span class="sd"> */&lt;/span>
-&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testGetAverageUsingDataProvider&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">int&lt;/span> &lt;span class="nv">$a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">int&lt;/span> &lt;span class="nv">$b&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">float&lt;/span> &lt;span class="nv">$expected&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">assertSame&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$expected&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">average&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="nv">$a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nv">$b&lt;/span>&lt;span class="p">]));&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">averageProvider&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="k">array&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="k">return&lt;/span> &lt;span class="p">[&lt;/span>
-&lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">1.5&lt;/span>&lt;span class="p">],&lt;/span>
-&lt;span class="p">[&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">3.5&lt;/span>&lt;span class="p">],&lt;/span>
-&lt;span class="p">[&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">3.0&lt;/span>&lt;span class="p">],&lt;/span>
-&lt;span class="p">[&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">4.0&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;span class="p">];&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;br/>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="line">&lt;span class="cl">&lt;span class="sd">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * @dataProvider averageProvider
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testGetAverageUsingDataProvider&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">int&lt;/span> &lt;span class="nv">$a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">int&lt;/span> &lt;span class="nv">$b&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">float&lt;/span> &lt;span class="nv">$expected&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">assertSame&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$expected&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">average&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="nv">$a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nv">$b&lt;/span>&lt;span class="p">]));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">averageProvider&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="k">array&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">1.5&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">3.5&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">3.0&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">4.0&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;br/>
 &lt;h2 id="test-doubles">Test Doubles&lt;/h2>
 &lt;p>When we are writing a test in which we cannot (or chose not to) use a real depended-on
 component (DOC), we can replace it with a Test Double. The Test Double doesn’t have to
@@ -1166,153 +1192,163 @@ return values is referred to as stubbing. You can use a stub to replace a real c
 on which the SUT depends so that the test has a control point for the indirect inputs of the SUT.&lt;/p>
 &lt;p>Let&amp;rsquo;s stub &lt;code>ensureIsValidArrayOfIntegers&lt;/code> method and skip validation.&lt;/p>
 &lt;p>tests/AverageTest.php&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testStub&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="sd">/**
-&lt;/span>&lt;span class="sd"> * createStub stubs all the methods in the stubbed class.
-&lt;/span>&lt;span class="sd"> * Here, ensureIsValidArrayOfIntegers and getAverage methods
-&lt;/span>&lt;span class="sd"> * won&amp;#39;t be invoked from the Original Average class.
-&lt;/span>&lt;span class="sd"> */&lt;/span>
-&lt;span class="nv">$stub&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">createStub&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">Average&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="sd">/**
-&lt;/span>&lt;span class="sd"> * Since we didn&amp;#39;t specify the return values,
-&lt;/span>&lt;span class="sd"> * default values will be returned based on the functions return type.
-&lt;/span>&lt;span class="sd"> *
-&lt;/span>&lt;span class="sd"> * Return type of ensureIsValidArrayOfIntegers is void. So, nothing is returned.
-&lt;/span>&lt;span class="sd"> * Return type of getAverage is float. So, 0.0 is returned
-&lt;/span>&lt;span class="sd"> */&lt;/span>
-&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">assertEmpty&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$stub&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">ensureIsValidArrayOfIntegers&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">3.5&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">]));&lt;/span>
-&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">assertEquals&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mf">0.0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">round&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$stub&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">3.5&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">]),&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">));&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>tests/AverageTest.php&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testStubUsingMockBuilder&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="sd">/**
-&lt;/span>&lt;span class="sd"> * Here we used getMockBuilder to stub just one method: ensureIsValidArrayOfIntegers.
-&lt;/span>&lt;span class="sd"> * This method won&amp;#39;t be invoked.
-&lt;/span>&lt;span class="sd"> */&lt;/span>
-&lt;span class="nv">$stub&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getMockBuilder&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">Average&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">setMethods&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="s1">&amp;#39;ensureIsValidArrayOfIntegers&amp;#39;&lt;/span>&lt;span class="p">])&lt;/span>
-&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getMock&lt;/span>&lt;span class="p">();&lt;/span>
-&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">assertEmpty&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$stub&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">ensureIsValidArrayOfIntegers&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">3.5&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">]));&lt;/span>
-&lt;span class="sd">/**
-&lt;/span>&lt;span class="sd"> * Since, ensureIsValidArrayOfIntegers method is stubbed,
-&lt;/span>&lt;span class="sd"> * we are able to get an average even if we don&amp;#39;t pass a valid array of Integers.
-&lt;/span>&lt;span class="sd"> *
-&lt;/span>&lt;span class="sd"> * getAverage method of the original Average class is invoked.
-&lt;/span>&lt;span class="sd"> */&lt;/span>
-&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">assertEquals&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mf">2.5&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">round&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$stub&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">3.5&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">]),&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">));&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;br>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="line">&lt;span class="cl">&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testStub&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="sd">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * createStub stubs all the methods in the stubbed class.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * Here, ensureIsValidArrayOfIntegers and getAverage methods
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * won&amp;#39;t be invoked from the Original Average class.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$stub&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">createStub&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">Average&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="sd">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * Since we didn&amp;#39;t specify the return values,
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * default values will be returned based on the functions return type.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> *
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * Return type of ensureIsValidArrayOfIntegers is void. So, nothing is returned.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * Return type of getAverage is float. So, 0.0 is returned
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">assertEmpty&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$stub&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">ensureIsValidArrayOfIntegers&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">3.5&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">]));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">assertEquals&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mf">0.0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">round&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$stub&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">3.5&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">]),&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>tests/AverageTest.php&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="line">&lt;span class="cl">&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testStubUsingMockBuilder&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="sd">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * Here we used getMockBuilder to stub just one method: ensureIsValidArrayOfIntegers.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * This method won&amp;#39;t be invoked.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$stub&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getMockBuilder&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">Average&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">setMethods&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="s1">&amp;#39;ensureIsValidArrayOfIntegers&amp;#39;&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getMock&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">assertEmpty&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$stub&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">ensureIsValidArrayOfIntegers&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">3.5&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">]));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="sd">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * Since, ensureIsValidArrayOfIntegers method is stubbed,
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * we are able to get an average even if we don&amp;#39;t pass a valid array of Integers.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> *
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * getAverage method of the original Average class is invoked.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">assertEquals&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mf">2.5&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">round&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$stub&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">getAverage&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">3.5&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">]),&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;br>
 &lt;h3 id="mock-objects">Mock Objects&lt;/h3>
 &lt;p>The practice of replacing an object with a test double that verifies expectations, for instance
 asserting that a method has been called, is referred to as mocking.&lt;/p>
 &lt;p>Let&amp;rsquo;s create a class &lt;code>Logger&lt;/code> that logs a string.&lt;/p>
 &lt;p>src/Logger.php&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="o">&amp;lt;?&lt;/span>&lt;span class="nx">php&lt;/span> &lt;span class="k">declare&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">strict_types&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="k">class&lt;/span> &lt;span class="nc">Logger&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$text&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="k">echo&lt;/span> &lt;span class="nv">$text&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>We will add a method to the &lt;code>Average&lt;/code> class that uses Logger&amp;rsquo;s log method to log average.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;lt;?&lt;/span>&lt;span class="nx">php&lt;/span> &lt;span class="k">declare&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">strict_types&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Logger&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$text&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">echo&lt;/span> &lt;span class="nv">$text&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>We will add a method to the &lt;code>Average&lt;/code> class that uses Logger&amp;rsquo;s log method to log average.&lt;/p>
 &lt;p>src/Average.php&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">logAverage&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">array&lt;/span> &lt;span class="nv">$numbers&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">Logger&lt;/span> &lt;span class="nv">$logger&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">ensureIsValidArrayOfIntegers&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$numbers&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="nv">$logger&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">array_sum&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$numbers&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="nx">count&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$numbers&lt;/span>&lt;span class="p">));&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now let&amp;rsquo;s Mock &lt;code>Logger&lt;/code> and test if &lt;code>log&lt;/code> method is called.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="line">&lt;span class="cl">&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">logAverage&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">array&lt;/span> &lt;span class="nv">$numbers&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">Logger&lt;/span> &lt;span class="nv">$logger&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">ensureIsValidArrayOfIntegers&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$numbers&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$logger&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">array_sum&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$numbers&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="nx">count&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$numbers&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now let&amp;rsquo;s Mock &lt;code>Logger&lt;/code> and test if &lt;code>log&lt;/code> method is called.&lt;/p>
 &lt;p>tests/AverageTest.php&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testMock&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
-&lt;span class="p">{&lt;/span>
-&lt;span class="sd">/**
-&lt;/span>&lt;span class="sd"> * Here, we are mocking log method of Logger class,
-&lt;/span>&lt;span class="sd"> * just to ensure that it is called with the specified arguments.
-&lt;/span>&lt;span class="sd"> * The Average class does not need to verify what happens within the Logger log method.
-&lt;/span>&lt;span class="sd"> */&lt;/span>
-&lt;span class="nv">$mockObject&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">createMock&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">Logger&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="nv">$mockObject&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">expects&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">once&lt;/span>&lt;span class="p">())&lt;/span>
-&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">method&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;log&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">with&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mf">2.0&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">average&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">logAverage&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="nv">$mockObject&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;br/>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-php" data-lang="php">&lt;span class="line">&lt;span class="cl">&lt;span class="k">public&lt;/span> &lt;span class="k">function&lt;/span> &lt;span class="nf">testMock&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="sd">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * Here, we are mocking log method of Logger class,
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * just to ensure that it is called with the specified arguments.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> * The Average class does not need to verify what happens within the Logger log method.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$mockObject&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">createMock&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">Logger&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="na">class&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$mockObject&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">expects&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">once&lt;/span>&lt;span class="p">())&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">method&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;log&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">with&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mf">2.0&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$this&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">average&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="na">logAverage&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="nv">$mockObject&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;br/>
 &lt;h2 id="xml-configuration">XML Configuration&lt;/h2>
 &lt;p>&lt;code>phpunit.xml&lt;/code> file can be used to compose a test suite and specify other configurations.
 The following is an xml configuration that will add all &lt;code>*Test&lt;/code> classes that are
 found in &lt;code>*Test.php&lt;/code> files when the &lt;code>tests&lt;/code> directory is recursively traversed.&lt;/p>
 &lt;p>phpunit.xml&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-xml" data-lang="xml">&lt;span class="cp">&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;phpunit&lt;/span> &lt;span class="na">xmlns:xsi=&lt;/span>&lt;span class="s">&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span>
-&lt;span class="na">xsi:noNamespaceSchemaLocation=&lt;/span>&lt;span class="s">&amp;#34;https://schema.phpunit.de/9.3/phpunit.xsd&amp;#34;&lt;/span>
-&lt;span class="na">bootstrap=&lt;/span>&lt;span class="s">&amp;#34;vendor/autoload.php&amp;#34;&lt;/span>
-&lt;span class="na">cacheResultFile=&lt;/span>&lt;span class="s">&amp;#34;.phpunit.cache/test-results&amp;#34;&lt;/span>
-&lt;span class="na">executionOrder=&lt;/span>&lt;span class="s">&amp;#34;depends,defects&amp;#34;&lt;/span>
-&lt;span class="na">beStrictAboutOutputDuringTests=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
-&lt;span class="na">beStrictAboutTodoAnnotatedTests=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
-&lt;span class="na">failOnRisky=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
-&lt;span class="na">failOnWarning=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
-&lt;span class="na">verbose=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;php&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;server&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;#34;DOCUMENT_ROOT&amp;#34;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;#34;ABSOLUTE_PATH_TO_DOCUMENT_ROOT&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;/php&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;testsuites&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;testsuite&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;#34;default&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;directory&lt;/span> &lt;span class="na">suffix=&lt;/span>&lt;span class="s">&amp;#34;Test.php&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>tests&lt;span class="nt">&amp;lt;/directory&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;/testsuite&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;/testsuites&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;/phpunit&amp;gt;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>running our tests&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">./vendor/bin/phpunit
-&lt;/code>&lt;/pre>&lt;/div>&lt;br/>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-xml" data-lang="xml">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;phpunit&lt;/span> &lt;span class="na">xmlns:xsi=&lt;/span>&lt;span class="s">&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">xsi:noNamespaceSchemaLocation=&lt;/span>&lt;span class="s">&amp;#34;https://schema.phpunit.de/9.3/phpunit.xsd&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">bootstrap=&lt;/span>&lt;span class="s">&amp;#34;vendor/autoload.php&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">cacheResultFile=&lt;/span>&lt;span class="s">&amp;#34;.phpunit.cache/test-results&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">executionOrder=&lt;/span>&lt;span class="s">&amp;#34;depends,defects&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">beStrictAboutOutputDuringTests=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">beStrictAboutTodoAnnotatedTests=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">failOnRisky=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">failOnWarning=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">verbose=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;php&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;server&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;#34;DOCUMENT_ROOT&amp;#34;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;#34;ABSOLUTE_PATH_TO_DOCUMENT_ROOT&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;/php&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;testsuites&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;testsuite&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;#34;default&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;directory&lt;/span> &lt;span class="na">suffix=&lt;/span>&lt;span class="s">&amp;#34;Test.php&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>tests&lt;span class="nt">&amp;lt;/directory&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;/testsuite&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;/testsuites&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;/phpunit&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>running our tests&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">./vendor/bin/phpunit
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;br/>
 &lt;h2 id="code-coverage">Code Coverage&lt;/h2>
 &lt;p>Code coverage is a measure used to describe the degree to which the source code of a
 program is tested by a particular test suite. A program with high code coverage has
 been more thoroughly tested and has a lower chance of containing software bugs than
 a program with low code coverage.&lt;/p>
 &lt;p>To generate code coverage, update &lt;code>phpunit.xml&lt;/code> as follows:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-xml" data-lang="xml">&lt;span class="cp">&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;phpunit&lt;/span> &lt;span class="na">xmlns:xsi=&lt;/span>&lt;span class="s">&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span>
-&lt;span class="na">xsi:noNamespaceSchemaLocation=&lt;/span>&lt;span class="s">&amp;#34;https://schema.phpunit.de/9.3/phpunit.xsd&amp;#34;&lt;/span>
-&lt;span class="na">bootstrap=&lt;/span>&lt;span class="s">&amp;#34;vendor/autoload.php&amp;#34;&lt;/span>
-&lt;span class="na">cacheResultFile=&lt;/span>&lt;span class="s">&amp;#34;.phpunit.cache/test-results&amp;#34;&lt;/span>
-&lt;span class="na">executionOrder=&lt;/span>&lt;span class="s">&amp;#34;depends,defects&amp;#34;&lt;/span>
-&lt;span class="na">beStrictAboutOutputDuringTests=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
-&lt;span class="na">beStrictAboutTodoAnnotatedTests=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
-&lt;span class="na">failOnRisky=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
-&lt;span class="na">failOnWarning=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
-&lt;span class="na">verbose=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;php&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;server&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;#34;DOCUMENT_ROOT&amp;#34;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;#34;ABSOLUTE_PATH_TO_DOCUMENT_ROOT&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;/php&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;coverage&lt;/span> &lt;span class="na">cacheDirectory=&lt;/span>&lt;span class="s">&amp;#34;.phpunit.cache/code-coverage&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;include&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;directory&lt;/span> &lt;span class="na">suffix=&lt;/span>&lt;span class="s">&amp;#34;.php&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>src&lt;span class="nt">&amp;lt;/directory&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;/include&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;report&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;clover&lt;/span> &lt;span class="na">outputFile=&lt;/span>&lt;span class="s">&amp;#34;report/tests-clover.xml&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;html&lt;/span> &lt;span class="na">outputDirectory=&lt;/span>&lt;span class="s">&amp;#34;report&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;/report&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;/coverage&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;testsuites&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;testsuite&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;#34;default&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;directory&lt;/span> &lt;span class="na">suffix=&lt;/span>&lt;span class="s">&amp;#34;Test.php&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>tests&lt;span class="nt">&amp;lt;/directory&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;/testsuite&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;/testsuites&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;logging&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;junit&lt;/span> &lt;span class="na">outputFile=&lt;/span>&lt;span class="s">&amp;#34;report/tests-junit.xml&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;testdoxHtml&lt;/span> &lt;span class="na">outputFile=&lt;/span>&lt;span class="s">&amp;#34;report/testdox.html&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;/logging&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;/phpunit&amp;gt;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>And run tests:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">./vendor/bin/phpunit
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>If you get a warning: &lt;code>XDEBUG_MODE=coverage or xdebug.mode=coverage has to be set&lt;/code>,
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-xml" data-lang="xml">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;phpunit&lt;/span> &lt;span class="na">xmlns:xsi=&lt;/span>&lt;span class="s">&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">xsi:noNamespaceSchemaLocation=&lt;/span>&lt;span class="s">&amp;#34;https://schema.phpunit.de/9.3/phpunit.xsd&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">bootstrap=&lt;/span>&lt;span class="s">&amp;#34;vendor/autoload.php&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">cacheResultFile=&lt;/span>&lt;span class="s">&amp;#34;.phpunit.cache/test-results&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">executionOrder=&lt;/span>&lt;span class="s">&amp;#34;depends,defects&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">beStrictAboutOutputDuringTests=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">beStrictAboutTodoAnnotatedTests=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">failOnRisky=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">failOnWarning=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">verbose=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;php&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;server&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;#34;DOCUMENT_ROOT&amp;#34;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;#34;ABSOLUTE_PATH_TO_DOCUMENT_ROOT&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;/php&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;coverage&lt;/span> &lt;span class="na">cacheDirectory=&lt;/span>&lt;span class="s">&amp;#34;.phpunit.cache/code-coverage&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;include&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;directory&lt;/span> &lt;span class="na">suffix=&lt;/span>&lt;span class="s">&amp;#34;.php&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>src&lt;span class="nt">&amp;lt;/directory&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;/include&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;report&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;clover&lt;/span> &lt;span class="na">outputFile=&lt;/span>&lt;span class="s">&amp;#34;report/tests-clover.xml&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;html&lt;/span> &lt;span class="na">outputDirectory=&lt;/span>&lt;span class="s">&amp;#34;report&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;/report&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;/coverage&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;testsuites&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;testsuite&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;#34;default&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;directory&lt;/span> &lt;span class="na">suffix=&lt;/span>&lt;span class="s">&amp;#34;Test.php&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>tests&lt;span class="nt">&amp;lt;/directory&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;/testsuite&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;/testsuites&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;logging&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;junit&lt;/span> &lt;span class="na">outputFile=&lt;/span>&lt;span class="s">&amp;#34;report/tests-junit.xml&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;testdoxHtml&lt;/span> &lt;span class="na">outputFile=&lt;/span>&lt;span class="s">&amp;#34;report/testdox.html&amp;#34;&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;lt;/logging&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;/phpunit&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And run tests:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">./vendor/bin/phpunit
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>If you get a warning: &lt;code>XDEBUG_MODE=coverage or xdebug.mode=coverage has to be set&lt;/code>,
 Run the tests as:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">XDEBUG_MODE=coverage ./vendor/bin/phpunit
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Output directory is set as &lt;code>report&lt;/code>. So, open &lt;code>report/index.html&lt;/code> on a browser to see
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">XDEBUG_MODE=coverage ./vendor/bin/phpunit
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Output directory is set as &lt;code>report&lt;/code>. So, open &lt;code>report/index.html&lt;/code> on a browser to see
 the code coverage.&lt;/p>
 &lt;p>I hope this is a good introduction to the world of unit testing. Even though there are several
 topics I’ve not touched on, I’ve tried to give you a good point where you can start writing
