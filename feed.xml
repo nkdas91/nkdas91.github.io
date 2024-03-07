@@ -813,6 +813,35 @@ style="max-width: 1000px; width: 100%;">
 &lt;div class="row">
 &lt;div class="col-md-6 pt-0 pt-md-5 pb-5">
 &lt;div class="d-flex align-items-center justify-content-center justify-content-md-start mb-4">
+&lt;span class="theme-text-primary" style="font-family: 'Kaushan Script', cursive; font-size: 2.5rem;">CueSync&lt;/span>
+&lt;/div>
+&lt;h4 class="theme-text-primary text-center text-md-start mb-4">
+A JavaScript library designed to simplify the integration of interactive transcripts into multimedia content.
+&lt;/h4>
+&lt;div class="d-flex justify-content-center justify-content-md-start flex-wrap gap-2">
+&lt;a href="https://cuesync.github.io/"
+class="btn btn-purple rounded-pill" role="button" style="width:250px;">
+Visit CueSync
+&lt;span class="ripple-surface">&lt;/span>
+&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;div class="col-md-6 pt-0 pt-md-5 pb-5">
+&lt;img src="https://neerajdas.com/assets/images/cuesync.png" class="img-fluid shadow-2dp" alt="CueSync website screenshot"
+style="max-width: 1000px; width: 100%;">
+&lt;/div>
+&lt;/div>
+&lt;svg class="squiggle my-5" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;pattern id="s1" width="91" height="8" patternUnits="userSpaceOnUse">
+&lt;g>
+&lt;path d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="var(--bs-purple)" stroke-linecap="square">&lt;/path>
+&lt;/g>
+&lt;/pattern>
+&lt;rect width="100%" height="100%" fill="url(#s1)">&lt;/rect>
+&lt;/svg>
+&lt;div class="row">
+&lt;div class="col-md-6 pt-0 pt-md-5 pb-5">
+&lt;div class="d-flex align-items-center justify-content-center justify-content-md-start mb-4">
 &lt;span class="theme-text-primary" style="font-family: 'Kaushan Script', cursive; font-size: 2.5rem;">Marqueefy&lt;/span>
 &lt;/div>
 &lt;h4 class="theme-text-primary text-center text-md-start mb-4">
