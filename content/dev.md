@@ -35,6 +35,28 @@ created: Feb 21, 2023
              style="max-width: 1000px; width: 100%;">
       </div>
     </div>
+     {{< squiggle >}}
+    <div class="row">
+      <div class="col-md-6 pt-0 pt-md-5 pb-5">
+        <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-4">
+          <span class="theme-text-primary" style="font-family: 'Kaushan Script', cursive; font-size: 2.5rem;">CueSync</span>
+        </div>
+        <h4 class="theme-text-primary text-center text-md-start mb-4">
+          A JavaScript library designed to simplify the integration of interactive transcripts into multimedia content.
+        </h4>
+        <div class="d-flex justify-content-center justify-content-md-start flex-wrap gap-2">
+          <a href="https://cuesync.github.io/"
+             class="btn btn-purple rounded-pill" role="button" style="width:250px;">
+            Visit CueSync
+            <span class="ripple-surface"></span>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 pt-0 pt-md-5 pb-5">
+        <img src="/assets/images/cuesync.png" class="img-fluid shadow-2dp" alt="CueSync website screenshot"
+             style="max-width: 1000px; width: 100%;">
+      </div>
+    </div>
       {{< squiggle >}}
     <div class="row">
       <div class="col-md-6 pt-0 pt-md-5 pb-5">
