@@ -24,7 +24,7 @@ layout: home
       Blog
       <span class="ripple-surface"></span>
     </a>
-    <a href="https://photography.neerajdas.com/" class="btn btn-pink rounded-pill hero-button" role="button">
+    <a href="https://heyitsme.xyz/@nkdas91" class="btn btn-pink rounded-pill hero-button" role="button">
       Photography
       <span class="ripple-surface"></span>
     </a>
